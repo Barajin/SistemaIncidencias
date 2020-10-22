@@ -1,0 +1,29 @@
+C:\Users\Oscar\Desktop\Sistema_Incidencias\Sistema_Incidencias\bin\Debug\Sistema_Incidencias.exe.config
+C:\Users\Oscar\Desktop\Sistema_Incidencias\Sistema_Incidencias\bin\Debug\Sistema_Incidencias.exe
+C:\Users\Oscar\Desktop\Sistema_Incidencias\Sistema_Incidencias\bin\Debug\Sistema_Incidencias.pdb
+C:\Users\Oscar\Desktop\Sistema_Incidencias\Sistema_Incidencias\bin\Debug\CircularProgressBar.dll
+C:\Users\Oscar\Desktop\Sistema_Incidencias\Sistema_Incidencias\bin\Debug\WinFormAnimation.dll
+C:\Users\Oscar\Desktop\Sistema_Incidencias\Sistema_Incidencias\bin\Debug\CircularProgressBar.xml
+C:\Users\Oscar\Desktop\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.Form1.resources
+C:\Users\Oscar\Desktop\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.FormMenuPrincipal.resources
+C:\Users\Oscar\Desktop\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.Properties.Resources.resources
+C:\Users\Oscar\Desktop\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.csproj.GenerateResource.cache
+C:\Users\Oscar\Desktop\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.csproj.CoreCompileInputs.cache
+C:\Users\Oscar\Desktop\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.csproj.CopyComplete
+C:\Users\Oscar\Desktop\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.exe
+C:\Users\Oscar\Desktop\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.pdb
+C:\Users\Melissa\Documents\Escuela\Gestion de operaciones de TI\Sistema_Incidencias\Sistema_Incidencias\Sistema_Incidencias\bin\Debug\Sistema_Incidencias.exe.config
+C:\Users\Melissa\Documents\Escuela\Gestion de operaciones de TI\Sistema_Incidencias\Sistema_Incidencias\Sistema_Incidencias\bin\Debug\Sistema_Incidencias.exe
+C:\Users\Melissa\Documents\Escuela\Gestion de operaciones de TI\Sistema_Incidencias\Sistema_Incidencias\Sistema_Incidencias\bin\Debug\Sistema_Incidencias.pdb
+C:\Users\Melissa\Documents\Escuela\Gestion de operaciones de TI\Sistema_Incidencias\Sistema_Incidencias\Sistema_Incidencias\bin\Debug\CircularProgressBar.dll
+C:\Users\Melissa\Documents\Escuela\Gestion de operaciones de TI\Sistema_Incidencias\Sistema_Incidencias\Sistema_Incidencias\bin\Debug\WinFormAnimation.dll
+C:\Users\Melissa\Documents\Escuela\Gestion de operaciones de TI\Sistema_Incidencias\Sistema_Incidencias\Sistema_Incidencias\bin\Debug\CircularProgressBar.xml
+C:\Users\Melissa\Documents\Escuela\Gestion de operaciones de TI\Sistema_Incidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.csprojAssemblyReference.cache
+C:\Users\Melissa\Documents\Escuela\Gestion de operaciones de TI\Sistema_Incidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.Form1.resources
+C:\Users\Melissa\Documents\Escuela\Gestion de operaciones de TI\Sistema_Incidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.FormMenuPrincipal.resources
+C:\Users\Melissa\Documents\Escuela\Gestion de operaciones de TI\Sistema_Incidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.Properties.Resources.resources
+C:\Users\Melissa\Documents\Escuela\Gestion de operaciones de TI\Sistema_Incidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.csproj.GenerateResource.cache
+C:\Users\Melissa\Documents\Escuela\Gestion de operaciones de TI\Sistema_Incidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.csproj.CoreCompileInputs.cache
+C:\Users\Melissa\Documents\Escuela\Gestion de operaciones de TI\Sistema_Incidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.csproj.CopyComplete
+C:\Users\Melissa\Documents\Escuela\Gestion de operaciones de TI\Sistema_Incidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.exe
+C:\Users\Melissa\Documents\Escuela\Gestion de operaciones de TI\Sistema_Incidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.pdb
