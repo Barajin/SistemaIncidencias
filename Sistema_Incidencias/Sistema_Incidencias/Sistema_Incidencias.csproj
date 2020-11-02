@@ -55,11 +55,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AltaElementoTI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaElementoTI.designer.cs">
+      <DependentUpon>AltaElementoTI.cs</DependentUpon>
+    </Compile>
     <Compile Include="AltaPersonas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AltaPersonas.Designer.cs">
+    <Compile Include="AltaPersonas.designer.cs">
       <DependentUpon>AltaPersonas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsignarCargo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsignarCargo.designer.cs">
+      <DependentUpon>AsignarCargo.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -67,27 +79,17 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
-    <Compile Include="AltaElementoTI.cs">
+    <Compile Include="FormListadoUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AltaElementoTI.Designer.cs">
-      <DependentUpon>AltaElementoTI.cs</DependentUpon>
-=======
-<<<<<<< HEAD
+    <Compile Include="FormListadoUsuarios.Designer.cs">
+      <DependentUpon>FormListadoUsuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormLogin.designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
-=======
-    <Compile Include="AsignarCargo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AsignarCargo.Designer.cs">
-      <DependentUpon>AsignarCargo.cs</DependentUpon>
->>>>>>> main
->>>>>>> main
     </Compile>
     <Compile Include="FormMenuPrincipal.cs">
       <SubType>Form</SubType>
@@ -98,29 +100,28 @@
     <Compile Include="Personal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Personal.Designer.cs">
+    <Compile Include="Personal.designer.cs">
       <DependentUpon>Personal.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AltaElementoTI.resx">
+      <DependentUpon>AltaElementoTI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AltaPersonas.resx">
       <DependentUpon>AltaPersonas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsignarCargo.resx">
+      <DependentUpon>AsignarCargo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
-    <EmbeddedResource Include="AltaElementoTI.resx">
-      <DependentUpon>AltaElementoTI.cs</DependentUpon>
-=======
-<<<<<<< HEAD
+    <EmbeddedResource Include="FormListadoUsuarios.resx">
+      <DependentUpon>FormListadoUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
-=======
-    <EmbeddedResource Include="AsignarCargo.resx">
-      <DependentUpon>AsignarCargo.cs</DependentUpon>
->>>>>>> main
->>>>>>> main
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuPrincipal.resx">
       <DependentUpon>FormMenuPrincipal.cs</DependentUpon>
@@ -133,15 +134,6 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-<<<<<<< HEAD
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <None Include=".editorconfig" />
-=======
->>>>>>> dev-oscar
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -232,6 +224,8 @@
     <None Include="Resources\Close1.png" />
     <Content Include="Resources\dispositivos.png" />
     <None Include="Resources\dispositivos1.png" />
+    <None Include="Resources\EditarProducto.png" />
+    <None Include="Resources\EliminarProducto.png" />
     <Content Include="Resources\en-espera %282%29.png" />
     <None Include="Resources\en-espera %282%291.png" />
     <None Include="Resources\icono-cliente1.png" />
@@ -265,6 +259,7 @@
     <None Include="Resources\satellite-dish %281%291.png" />
     <None Include="Resources\satellite-dish1.png" />
     <None Include="Resources\shut-down1.png" />
+    <None Include="Resources\SobraCajasTotales.png" />
     <Content Include="Resources\usuario %285%29.png" />
   </ItemGroup>
   <ItemGroup>

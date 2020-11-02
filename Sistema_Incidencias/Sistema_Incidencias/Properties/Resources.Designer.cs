@@ -83,6 +83,26 @@ namespace Sistema_Incidencias.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap EditarProducto {
+            get {
+                object obj = ResourceManager.GetObject("EditarProducto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EliminarProducto {
+            get {
+                object obj = ResourceManager.GetObject("EliminarProducto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap en_espera__2_ {
             get {
                 object obj = ResourceManager.GetObject("en_espera__2_", resourceCulture);
@@ -256,6 +276,16 @@ namespace Sistema_Incidencias.Properties {
         internal static System.Drawing.Bitmap shut_down {
             get {
                 object obj = ResourceManager.GetObject("shut_down", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SobraCajasTotales {
+            get {
+                object obj = ResourceManager.GetObject("SobraCajasTotales", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -41,5 +42,65 @@ namespace Sistema_Incidencias
         {
 
         }
+
+        private void AltaPersonas_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guardarbtn_Click(object sender, EventArgs e)
+        {
+            Insertar();
+        }
+
+        public void Insertar()
+        {
+            string connString = "Server=.\\SQLEXPRESS; Database= Sistema_Incidencias; Integrated Security=True";
+            string nombre = "";
+            string apellidoPaterno = "";
+            string apellidoMaterno = "";
+            string usuario = "";
+            string contraseña = "";
+            string numeroCel = "";
+            string direccion = "";
+
+            nombre = nombreTxtb.Text;
+            apellidoPaterno = paternoTxtb.Text;
+            apellidoMaterno = maternoTxtb.Text;
+            usuario = usuarioTxtb.Text;
+            contraseña = contrasenaTxtb.Text;
+            numeroCel = telefonoTxtb.Text;
+            direccion = dirreccionTxtb.Text;
+
+            using (SqlConnection connection = new SqlConnection(connString))
+            {
+                String query = "INSERT INTO Persona (nombre,apellidoPaterno, apellidoMaterno,usuario,contraseña,numeroCelular,direccion) " +
+                    "VALUES (@nombre,@apellidoPaterno,@apellidoMaterno, @usuario, @contraseña, @numeroCelular, @direccion)";
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@nombre", nombre);
+                    command.Parameters.AddWithValue("@apellidoPaterno", apellidoPaterno);
+                    command.Parameters.AddWithValue("@apellidoMaterno", apellidoMaterno);
+                    command.Parameters.AddWithValue("@usuario", usuario);
+                    command.Parameters.AddWithValue("@contraseña", contraseña);
+                    command.Parameters.AddWithValue("@numeroCelular", numeroCel);
+                    command.Parameters.AddWithValue("@direccion", direccion);
+
+
+                    connection.Open();
+                    int result = command.ExecuteNonQuery();
+
+                    // Check Error
+                    if (result < 0)
+                        Console.WriteLine("Error inserting data into Database!");
+                    else
+                        MessageBox.Show("Insertado!");
+
+                }
+            }
+        }
+
+
     }
 }

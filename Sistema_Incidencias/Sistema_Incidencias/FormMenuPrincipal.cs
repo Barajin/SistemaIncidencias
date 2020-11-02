@@ -202,6 +202,8 @@ namespace Sistema_Incidencias
 
         private void button3_Click(object sender, EventArgs e)
         {
+            FormListadoUsuarios listadoUsuarios = new FormListadoUsuarios();
+            listadoUsuarios.Show();
 
         }
 
@@ -260,6 +262,30 @@ namespace Sistema_Incidencias
         private void panelMenu_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AltaElementoTI alta = new AltaElementoTI();
+            alta.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            AltaPersonas alta = new AltaPersonas();
+            alta.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            AltaPersonas alta = new AltaPersonas();
+            alta.Show();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Personal per = new Personal();
+            per.Show();
         }
 
         //METODO PARA HORA Y FECHA ACTUAL ----------------------------------------------------------
