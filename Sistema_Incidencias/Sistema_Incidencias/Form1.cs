@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
-using System.Runtime.InteropServices;
 
 namespace Sistema_Incidencias
 {
@@ -47,8 +46,8 @@ namespace Sistema_Incidencias
             if (circularProgressBar1.Value == 100)
             {
                 timer1.Enabled = false;
-                FormMenuPrincipal menuPrincipal_form = new FormMenuPrincipal();
-                menuPrincipal_form.Show();
+                FormLogin login = new FormLogin();
+                login.Show();
                 this.Hide();
             }
         }
