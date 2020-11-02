@@ -38,6 +38,9 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.1.2, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.8.2\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -52,17 +55,39 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AltaPersonas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaPersonas.Designer.cs">
+      <DependentUpon>AltaPersonas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="AltaElementoTI.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AltaElementoTI.Designer.cs">
       <DependentUpon>AltaElementoTI.cs</DependentUpon>
+=======
+<<<<<<< HEAD
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+=======
+    <Compile Include="AsignarCargo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsignarCargo.Designer.cs">
+      <DependentUpon>AsignarCargo.cs</DependentUpon>
+>>>>>>> main
+>>>>>>> main
     </Compile>
     <Compile Include="FormMenuPrincipal.cs">
       <SubType>Form</SubType>
@@ -70,32 +95,63 @@
     <Compile Include="FormMenuPrincipal.Designer.cs">
       <DependentUpon>FormMenuPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Personal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal.Designer.cs">
+      <DependentUpon>Personal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AltaPersonas.resx">
+      <DependentUpon>AltaPersonas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="AltaElementoTI.resx">
       <DependentUpon>AltaElementoTI.cs</DependentUpon>
+=======
+<<<<<<< HEAD
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="AsignarCargo.resx">
+      <DependentUpon>AsignarCargo.cs</DependentUpon>
+>>>>>>> main
+>>>>>>> main
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuPrincipal.resx">
       <DependentUpon>FormMenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Personal.resx">
+      <DependentUpon>Personal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+<<<<<<< HEAD
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include=".editorconfig" />
+=======
+>>>>>>> dev-oscar
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -172,14 +228,58 @@
     <None Include="Resources\shut-down.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\usuario %285%291.png" />
+    <None Include="Resources\Close1.png" />
     <Content Include="Resources\dispositivos.png" />
+    <None Include="Resources\dispositivos1.png" />
     <Content Include="Resources\en-espera %282%29.png" />
+    <None Include="Resources\en-espera %282%291.png" />
+    <None Include="Resources\icono-cliente1.png" />
     <Content Include="Resources\informe-de-ganancias.png" />
+    <None Include="Resources\informe-de-ganancias1.png" />
+    <None Include="Resources\logoUI21.png" />
     <Content Include="Resources\logout.png" />
+    <None Include="Resources\logout1.png" />
+    <None Include="Resources\maximize1.png" />
+    <None Include="Resources\maximize21.png" />
+    <None Include="Resources\maximize31.png" />
     <Content Include="Resources\megafono.png" />
+    <None Include="Resources\megafono1.png" />
+    <None Include="Resources\Membresia1.PNG" />
     <Content Include="Resources\menu1.png" />
+    <None Include="Resources\menu2.png" />
+    <None Include="Resources\menu11.png" />
+    <None Include="Resources\Minimize2.png" />
+    <None Include="Resources\Minimize11.png" />
+    <None Include="Resources\new logo6.png" />
+    <None Include="Resources\new logo11.png" />
+    <None Include="Resources\new logo21.png" />
+    <None Include="Resources\new logo31.png" />
+    <None Include="Resources\new logo41.png" />
+    <None Include="Resources\new logo51.png" />
+    <None Include="Resources\Normal1.png" />
+    <None Include="Resources\perfil1.png" />
+    <None Include="Resources\Planes1.PNG" />
     <Content Include="Resources\salpicadero.png" />
+    <None Include="Resources\salpicadero1.png" />
+    <None Include="Resources\satellite-dish %281%291.png" />
+    <None Include="Resources\satellite-dish1.png" />
+    <None Include="Resources\shut-down1.png" />
     <Content Include="Resources\usuario %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{79fa36fd-9f46-4e36-be19-3adb05115590}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{08653584-07c6-4652-b84d-5bca110c7373}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dominio\Dominio.csproj">
+      <Project>{81d08da0-3861-494a-aed3-b3b4b93fec56}</Project>
+      <Name>Dominio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
