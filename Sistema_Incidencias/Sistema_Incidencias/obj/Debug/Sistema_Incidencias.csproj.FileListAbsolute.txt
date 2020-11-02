@@ -27,3 +27,9 @@ C:\Users\Melissa\Documents\Escuela\Gestion de operaciones de TI\Sistema_Incidenc
 C:\Users\Melissa\Documents\Escuela\Gestion de operaciones de TI\Sistema_Incidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.csproj.CopyComplete
 C:\Users\Melissa\Documents\Escuela\Gestion de operaciones de TI\Sistema_Incidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.exe
 C:\Users\Melissa\Documents\Escuela\Gestion de operaciones de TI\Sistema_Incidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.pdb
+C:\Users\Oscar\Desktop\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.csprojAssemblyReference.cache
+C:\Users\Oscar\Desktop\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.Form1.resources
+C:\Users\Oscar\Desktop\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.FormMenuPrincipal.resources
+C:\Users\Oscar\Desktop\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.csproj.GenerateResource.cache
+C:\Users\Oscar\Desktop\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.exe
+C:\Users\Oscar\Desktop\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.pdb
