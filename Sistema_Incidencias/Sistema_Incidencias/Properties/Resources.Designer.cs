@@ -63,29 +63,9 @@ namespace Sistema_Incidencias.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap APs {
-            get {
-                object obj = ResourceManager.GetObject("APs", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Close {
             get {
                 object obj = ResourceManager.GetObject("Close", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Dashboard {
-            get {
-                object obj = ResourceManager.GetObject("Dashboard", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,29 +83,9 @@ namespace Sistema_Incidencias.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap en_espera {
-            get {
-                object obj = ResourceManager.GetObject("en-espera", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap en_espera__1_ {
-            get {
-                object obj = ResourceManager.GetObject("en-espera (1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap en_espera__2_ {
             get {
-                object obj = ResourceManager.GetObject("en-espera (2)", resourceCulture);
+                object obj = ResourceManager.GetObject("en_espera__2_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -145,17 +105,7 @@ namespace Sistema_Incidencias.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap informe_de_ganancias {
             get {
-                object obj = ResourceManager.GetObject("informe-de-ganancias", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap logoUI {
-            get {
-                object obj = ResourceManager.GetObject("logoUI", resourceCulture);
+                object obj = ResourceManager.GetObject("informe_de_ganancias", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -196,16 +146,6 @@ namespace Sistema_Incidencias.Properties {
         internal static System.Drawing.Bitmap maximize2 {
             get {
                 object obj = ResourceManager.GetObject("maximize2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap maximize3 {
-            get {
-                object obj = ResourceManager.GetObject("maximize3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -273,76 +213,6 @@ namespace Sistema_Incidencias.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Minimize1 {
-            get {
-                object obj = ResourceManager.GetObject("Minimize1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap new_logo {
-            get {
-                object obj = ResourceManager.GetObject("new_logo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap new_logo1 {
-            get {
-                object obj = ResourceManager.GetObject("new_logo1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap new_logo2 {
-            get {
-                object obj = ResourceManager.GetObject("new_logo2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap new_logo3 {
-            get {
-                object obj = ResourceManager.GetObject("new_logo3", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap new_logo4 {
-            get {
-                object obj = ResourceManager.GetObject("new_logo4", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap new_logo5 {
-            get {
-                object obj = ResourceManager.GetObject("new_logo5", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Normal {
             get {
                 object obj = ResourceManager.GetObject("Normal", resourceCulture);
@@ -383,26 +253,6 @@ namespace Sistema_Incidencias.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap satellite_dish {
-            get {
-                object obj = ResourceManager.GetObject("satellite_dish", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap satellite_dish__1_ {
-            get {
-                object obj = ResourceManager.GetObject("satellite_dish__1_", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap shut_down {
             get {
                 object obj = ResourceManager.GetObject("shut_down", resourceCulture);
@@ -413,59 +263,9 @@ namespace Sistema_Incidencias.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap tablero {
-            get {
-                object obj = ResourceManager.GetObject("tablero", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap usuario {
-            get {
-                object obj = ResourceManager.GetObject("usuario", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap usuario__2_ {
-            get {
-                object obj = ResourceManager.GetObject("usuario (2)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap usuario__3_ {
-            get {
-                object obj = ResourceManager.GetObject("usuario (3)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap usuario__4_ {
-            get {
-                object obj = ResourceManager.GetObject("usuario (4)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap usuario__5_ {
             get {
-                object obj = ResourceManager.GetObject("usuario (5)", resourceCulture);
+                object obj = ResourceManager.GetObject("usuario__5_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

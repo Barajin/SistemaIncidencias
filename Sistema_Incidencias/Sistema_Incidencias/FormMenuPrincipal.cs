@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Common.Cache;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,6 +10,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Common.Cache;
 
 namespace Sistema_Incidencias
 {
@@ -162,6 +164,13 @@ namespace Sistema_Incidencias
         private void FormMenuPrincipal_Load(object sender, EventArgs e)
         {
             MostrarFormLogo();
+            LoadUserData();
+        }
+
+        private void LoadUserData()
+        {
+            label3.Text = UserLoginCache.Nombres;
+            label4.Text = UserLoginCache.ApellidoPaterno;
         }
         //METODO PARA MOSTRAR FORMULARIO DE LOGO Al CERRAR OTROS FORM ----------------------------------------------------------
         private void MostrarFormLogoAlCerrarForms(object sender, FormClosedEventArgs e)
@@ -234,6 +243,21 @@ namespace Sistema_Incidencias
         }
 
         private void PanelBarraTitulo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelContenedorForm_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelMenu_Paint(object sender, PaintEventArgs e)
         {
 
         }
