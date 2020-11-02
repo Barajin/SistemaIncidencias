@@ -34,3 +34,4 @@ C:\Users\Luise\Desktop\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencia
 C:\Users\Luise\Desktop\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.exe
 C:\Users\Luise\Desktop\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.pdb
 C:\Users\Luise\Desktop\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.AltaPersonas.resources
+C:\Users\Luise\Desktop\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.Personal.resources
