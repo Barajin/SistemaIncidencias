@@ -29,9 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMenuPrincipal));
             this.panelContenedorPrincipal = new System.Windows.Forms.Panel();
             this.panelContenedorForm = new System.Windows.Forms.Panel();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -64,12 +72,9 @@
             this.tmExpandirMenu = new System.Windows.Forms.Timer(this.components);
             this.tmContraerMenu = new System.Windows.Forms.Timer(this.components);
             this.tmFechaHora = new System.Windows.Forms.Timer(this.components);
-            this.button2 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
             this.panelContenedorPrincipal.SuspendLayout();
             this.panelContenedorForm.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panelMenu.SuspendLayout();
@@ -101,6 +106,7 @@
             // panelContenedorForm
             // 
             this.panelContenedorForm.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panelContenedorForm.Controls.Add(this.chart1);
             this.panelContenedorForm.Controls.Add(this.button8);
             this.panelContenedorForm.Controls.Add(this.button7);
             this.panelContenedorForm.Controls.Add(this.button4);
@@ -111,6 +117,75 @@
             this.panelContenedorForm.Size = new System.Drawing.Size(870, 457);
             this.panelContenedorForm.TabIndex = 6;
             this.panelContenedorForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedorForm_Paint);
+            // 
+            // chart1
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(265, 28);
+            this.chart1.Name = "chart1";
+            series1.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            series1.BorderColor = System.Drawing.SystemColors.MenuText;
+            series1.BorderWidth = 2;
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedBar;
+            series1.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series1.IsValueShownAsLabel = true;
+            series1.LabelForeColor = System.Drawing.Color.White;
+            series1.Legend = "Legend1";
+            series1.LegendText = "Cantidad De Elementos Por Departamento";
+            series1.MarkerBorderColor = System.Drawing.Color.Black;
+            series1.Name = "Series1";
+            series1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.BrightPastel;
+            series1.ShadowColor = System.Drawing.SystemColors.ControlDarkDark;
+            series1.YValuesPerPoint = 4;
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(481, 207);
+            this.chart1.TabIndex = 4;
+            this.chart1.Text = "Cantidad";
+            this.chart1.Click += new System.EventHandler(this.chart1_Click);
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(40, 163);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(75, 23);
+            this.button8.TabIndex = 3;
+            this.button8.Text = "Personal";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(40, 117);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.TabIndex = 2;
+            this.button7.Text = "Asignar cargo";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(12, 61);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(112, 23);
+            this.button4.TabIndex = 1;
+            this.button4.Text = "Alta Personas";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(12, 32);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(139, 23);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "Alta Elemento";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel1
             // 
@@ -534,46 +609,6 @@
             this.tmFechaHora.Enabled = true;
             this.tmFechaHora.Tick += new System.EventHandler(this.tmFechaHora_Tick);
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(86, 41);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(139, 23);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Alta Elemento";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(86, 90);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(112, 23);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "Alta Personas";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(84, 136);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 2;
-            this.button7.Text = "Asignar cargo";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(86, 190);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 3;
-            this.button8.Text = "Personal";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
             // FormMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -590,6 +625,7 @@
             this.Load += new System.EventHandler(this.FormMenuPrincipal_Load);
             this.panelContenedorPrincipal.ResumeLayout(false);
             this.panelContenedorForm.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -649,6 +685,7 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
     }
 }
 

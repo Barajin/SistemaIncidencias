@@ -11,11 +11,22 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Common.Cache;
+using System.Data;
+using System.Data.SqlClient;
+using System.Collections;
 
 namespace Sistema_Incidencias
 {
     public partial class FormMenuPrincipal : Form
     {
+        SqlConnection Conexion = new SqlConnection("Server=.\\SQLEXPRESS; Database= Sistema_Incidencias; Integrated Security=True");
+        SqlCommand cmd;
+        SqlDataReader dr;
+
+        ArrayList Departamentos = new ArrayList();
+        ArrayList CantidadElementos = new ArrayList();
+
+
         //Constructor
         public FormMenuPrincipal()
         {
@@ -165,7 +176,28 @@ namespace Sistema_Incidencias
         {
             MostrarFormLogo();
             LoadUserData();
+            GrafCategorias();
+
         }
+
+
+        private void GrafCategorias()
+        {
+            cmd = new SqlCommand("ElementosTIPorDepartamento", Conexion);
+            cmd.CommandType = CommandType.StoredProcedure;
+            Conexion.Open();
+            dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                Departamentos.Add(dr.GetString(1));
+                CantidadElementos.Add(dr.GetInt32(2));
+
+            }
+            chart1.Series[0].Points.DataBindXY(Departamentos, CantidadElementos);
+            dr.Close();
+            Conexion.Close();
+        }
+
 
         private void LoadUserData()
         {
@@ -286,6 +318,11 @@ namespace Sistema_Incidencias
         {
             Personal per = new Personal();
             per.Show();
+        }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
         }
 
         //METODO PARA HORA Y FECHA ACTUAL ----------------------------------------------------------

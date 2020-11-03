@@ -26,10 +26,5 @@ namespace Sistema_Incidencias
         {
 
         }
-
-        private void PanelBarraTitulo_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }
