@@ -36,10 +36,6 @@
             this.panelContenedorPrincipal = new System.Windows.Forms.Panel();
             this.panelContenedorForm = new System.Windows.Forms.Panel();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -72,6 +68,7 @@
             this.tmExpandirMenu = new System.Windows.Forms.Timer(this.components);
             this.tmContraerMenu = new System.Windows.Forms.Timer(this.components);
             this.tmFechaHora = new System.Windows.Forms.Timer(this.components);
+            this.button2 = new System.Windows.Forms.Button();
             this.panelContenedorPrincipal.SuspendLayout();
             this.panelContenedorForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
@@ -107,10 +104,6 @@
             // 
             this.panelContenedorForm.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.panelContenedorForm.Controls.Add(this.chart1);
-            this.panelContenedorForm.Controls.Add(this.button8);
-            this.panelContenedorForm.Controls.Add(this.button7);
-            this.panelContenedorForm.Controls.Add(this.button4);
-            this.panelContenedorForm.Controls.Add(this.button2);
             this.panelContenedorForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenedorForm.Location = new System.Drawing.Point(230, 43);
             this.panelContenedorForm.Name = "panelContenedorForm";
@@ -124,7 +117,7 @@
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(265, 28);
+            this.chart1.Location = new System.Drawing.Point(12, 15);
             this.chart1.Name = "chart1";
             series1.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             series1.BorderColor = System.Drawing.SystemColors.MenuText;
@@ -142,50 +135,10 @@
             series1.ShadowColor = System.Drawing.SystemColors.ControlDarkDark;
             series1.YValuesPerPoint = 4;
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(481, 207);
+            this.chart1.Size = new System.Drawing.Size(482, 207);
             this.chart1.TabIndex = 4;
             this.chart1.Text = "Cantidad";
             this.chart1.Click += new System.EventHandler(this.chart1_Click);
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(40, 163);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 3;
-            this.button8.Text = "Personal";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(40, 117);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 2;
-            this.button7.Text = "Asignar cargo";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(12, 61);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(112, 23);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "Alta Personas";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(12, 32);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(139, 23);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Alta Elemento";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel1
             // 
@@ -275,6 +228,7 @@
             // 
             this.panelMenu.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.panelMenu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelMenu.Controls.Add(this.button2);
             this.panelMenu.Controls.Add(this.btnSalir);
             this.panelMenu.Controls.Add(this.btnMenu);
             this.panelMenu.Controls.Add(this.pictureBox5);
@@ -341,7 +295,7 @@
             this.button5.ForeColor = System.Drawing.Color.Navy;
             this.button5.Image = global::Sistema_Incidencias.Properties.Resources.logout;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(0, 282);
+            this.button5.Location = new System.Drawing.Point(0, 333);
             this.button5.Name = "button5";
             this.button5.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.button5.Size = new System.Drawing.Size(230, 50);
@@ -609,6 +563,26 @@
             this.tmFechaHora.Enabled = true;
             this.tmFechaHora.Tick += new System.EventHandler(this.tmFechaHora_Tick);
             // 
+            // button2
+            // 
+            this.button2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Navy;
+            this.button2.Image = global::Sistema_Incidencias.Properties.Resources.usuario__5_;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(-1, 283);
+            this.button2.Name = "button2";
+            this.button2.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.button2.Size = new System.Drawing.Size(230, 50);
+            this.button2.TabIndex = 14;
+            this.button2.Text = "Personal";
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
             // FormMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -681,11 +655,8 @@
         private System.Windows.Forms.Timer tmExpandirMenu;
         private System.Windows.Forms.Timer tmContraerMenu;
         private System.Windows.Forms.Timer tmFechaHora;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.Button button2;
     }
 }
 

@@ -101,6 +101,9 @@ namespace Sistema_Incidencias
             }
         }
 
-
+        private void cerrarbtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

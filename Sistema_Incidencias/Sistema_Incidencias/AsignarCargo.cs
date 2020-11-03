@@ -248,6 +248,11 @@ namespace Sistema_Incidencias
 
         }
 
+        private void btn_cerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         //METODO PARA HORA Y FECHA ACTUAL ----------------------------------------------------------
         private void tmFechaHora_Tick(object sender, EventArgs e)
         {

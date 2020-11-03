@@ -20,7 +20,7 @@ namespace Sistema_Incidencias
 
         private void FormLogin_Load(object sender, EventArgs e)
         {
-
+		MessageBox.Show("Versión de Prueba 2.1");
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -21,5 +21,17 @@ namespace Sistema_Incidencias
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AsignarCargo asignar = new AsignarCargo();
+            asignar.Show();
+        }
+
+        private void Agregarbtn_Click(object sender, EventArgs e)
+        {
+            AltaPersonas alta = new AltaPersonas();
+            alta.Show();
+        }
     }
 }

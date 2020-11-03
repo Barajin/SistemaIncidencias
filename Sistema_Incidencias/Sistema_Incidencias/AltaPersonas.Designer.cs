@@ -366,6 +366,7 @@ namespace Sistema_Incidencias
             this.cerrarbtn.Text = "Cerrar";
             this.cerrarbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.cerrarbtn.UseVisualStyleBackColor = true;
+            this.cerrarbtn.Click += new System.EventHandler(this.cerrarbtn_Click);
             // 
             // contrasenaTxtb
             // 

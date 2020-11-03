@@ -143,6 +143,10 @@ namespace Sistema_Incidencias
 
         }
 
-
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AltaPersonas alta = new AltaPersonas();
+            alta.Show();
+        }
     }
 }

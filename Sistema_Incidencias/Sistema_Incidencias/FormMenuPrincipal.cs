@@ -241,7 +241,9 @@ namespace Sistema_Incidencias
 
         private void button6_Click(object sender, EventArgs e)
         {
-
+            AltaElementoTI alta = new AltaElementoTI();
+            alta.Show();
+            
         }
 
         private void button5_Click_1(object sender, EventArgs e)
@@ -310,8 +312,8 @@ namespace Sistema_Incidencias
 
         private void button7_Click(object sender, EventArgs e)
         {
-            AltaPersonas alta = new AltaPersonas();
-            alta.Show();
+            AsignarCargo asignar = new AsignarCargo();
+            asignar.Show();
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -323,6 +325,12 @@ namespace Sistema_Incidencias
         private void chart1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Personal verPersonal = new Personal();
+            verPersonal.Show();
         }
 
         //METODO PARA HORA Y FECHA ACTUAL ----------------------------------------------------------
