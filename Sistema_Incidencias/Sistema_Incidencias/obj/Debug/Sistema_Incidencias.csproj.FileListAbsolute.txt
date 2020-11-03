@@ -81,3 +81,7 @@ C:\Users\Oscar\Desktop\Errores 2\SistemaIncidencias\Sistema_Incidencias\Sistema_
 C:\Users\Oscar\Desktop\Errores 2\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.AltaPersonas.resources
 C:\Users\Oscar\Desktop\Errores 2\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.AsignarCargo.resources
 C:\Users\Oscar\Desktop\Errores 2\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.Personal.resources
+C:\Users\Oscar\Desktop\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.AltaElementoTI.resources
+C:\Users\Oscar\Desktop\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.AltaPersonas.resources
+C:\Users\Oscar\Desktop\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.AsignarCargo.resources
+C:\Users\Oscar\Desktop\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.Personal.resources
