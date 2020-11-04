@@ -63,6 +63,26 @@ namespace Sistema_Incidencias.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Buscar {
+            get {
+                object obj = ResourceManager.GetObject("Buscar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CerrarForm {
+            get {
+                object obj = ResourceManager.GetObject("CerrarForm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Close {
             get {
                 object obj = ResourceManager.GetObject("Close", resourceCulture);
@@ -126,6 +146,16 @@ namespace Sistema_Incidencias.Properties {
         internal static System.Drawing.Bitmap informe_de_ganancias {
             get {
                 object obj = ResourceManager.GetObject("informe_de_ganancias", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Instalaciones__Gris {
+            get {
+                object obj = ResourceManager.GetObject("Instalaciones__Gris", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -253,6 +283,16 @@ namespace Sistema_Incidencias.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Personas_Gris {
+            get {
+                object obj = ResourceManager.GetObject("Personas_Gris", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Planes {
             get {
                 object obj = ResourceManager.GetObject("Planes", resourceCulture);
@@ -286,6 +326,16 @@ namespace Sistema_Incidencias.Properties {
         internal static System.Drawing.Bitmap SobraCajasTotales {
             get {
                 object obj = ResourceManager.GetObject("SobraCajasTotales", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Trabajadores_Gris {
+            get {
+                object obj = ResourceManager.GetObject("Trabajadores_Gris", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

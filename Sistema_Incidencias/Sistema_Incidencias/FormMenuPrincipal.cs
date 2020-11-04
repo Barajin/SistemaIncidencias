@@ -253,7 +253,7 @@ namespace Sistema_Incidencias
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+           
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -265,14 +265,16 @@ namespace Sistema_Incidencias
 
         private void button6_Click(object sender, EventArgs e)
         {
-            AltaElementoTI alta = new AltaElementoTI();
-            alta.Show();
+            FormVerElementosTI verElementos = new FormVerElementosTI();
+            verElementos.Show();
             
         }
 
         private void button5_Click_1(object sender, EventArgs e)
         {
-
+            this.Close();
+            FormLogin login = new FormLogin();
+            login.Show();
         }
 
         private void btnSalir_Click_1(object sender, EventArgs e)
@@ -355,6 +357,12 @@ namespace Sistema_Incidencias
         {
             Personal verPersonal = new Personal();
             verPersonal.Show();
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            FormDepartamentos departamentos = new FormDepartamentos();
+            departamentos.Show();
         }
 
         //METODO PARA HORA Y FECHA ACTUAL ----------------------------------------------------------

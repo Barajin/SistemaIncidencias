@@ -38,7 +38,7 @@ namespace Sistema_Incidencias
         private void Personal_Load(object sender, EventArgs e)
         {
 
-            var select = "Select persona.id, persona.nombre, persona.apellidoPaterno, departamento.nombre as 'Departamento', departamento.id as 'Clave de Departamento', cargo_persona.cargo From persona Inner Join cargo_persona On cargo_persona.fk_persona = persona.id Inner Join departamento ON cargo_persona.fk_departamento = departamento.id";
+            var select = "Select id as 'Código de Personal', nombre  +' '+ apellidoPaterno+  +' '+ apellidoMaterno as 'Nombre', numeroCelular as 'Número Telefónico', direccion as 'Dirección' From persona";
             var comando = new SqlConnection("Server=.\\SQLEXPRESS; Database= Sistema_Incidencias; Integrated Security=True"); // Your Connection String here
             var dataAdapter = new SqlDataAdapter(select, comando);
 
@@ -63,5 +63,19 @@ namespace Sistema_Incidencias
         {
 
         }
+
+        private void lblHora_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tmFechaHora_Tick(object sender, EventArgs e)
+        {
+            lbFecha.Text = DateTime.Now.ToLongDateString();
+            lblHora.Text = DateTime.Now.ToString("HH:mm:ssss");
+        }
+
+
+
     }
 }

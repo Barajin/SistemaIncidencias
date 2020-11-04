@@ -29,15 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMenuPrincipal));
             this.panelContenedorPrincipal = new System.Windows.Forms.Panel();
             this.panelContenedorForm = new System.Windows.Forms.Panel();
+            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
@@ -47,6 +48,7 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.lblHora = new System.Windows.Forms.Label();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.PictureBox();
             this.btnMenu = new System.Windows.Forms.PictureBox();
@@ -72,9 +74,9 @@
             this.tmExpandirMenu = new System.Windows.Forms.Timer(this.components);
             this.tmContraerMenu = new System.Windows.Forms.Timer(this.components);
             this.tmFechaHora = new System.Windows.Forms.Timer(this.components);
-            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panelContenedorPrincipal.SuspendLayout();
             this.panelContenedorForm.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -89,7 +91,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.PanelBarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             this.SuspendLayout();
             // 
             // panelContenedorPrincipal
@@ -116,6 +117,29 @@
             this.panelContenedorForm.Size = new System.Drawing.Size(870, 457);
             this.panelContenedorForm.TabIndex = 6;
             this.panelContenedorForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedorForm_Paint);
+            // 
+            // chart2
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart2.Legends.Add(legend1);
+            this.chart2.Location = new System.Drawing.Point(12, 206);
+            this.chart2.Name = "chart2";
+            this.chart2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
+            series1.BorderColor = System.Drawing.SystemColors.InfoText;
+            series1.BorderWidth = 2;
+            series1.ChartArea = "ChartArea1";
+            series1.Color = System.Drawing.SystemColors.ActiveBorder;
+            series1.LabelBorderWidth = 3;
+            series1.Legend = "Legend1";
+            series1.LegendText = "Incidencias sin Liberar";
+            series1.MarkerColor = System.Drawing.Color.Black;
+            series1.Name = "Series1";
+            this.chart2.Series.Add(series1);
+            this.chart2.Size = new System.Drawing.Size(306, 222);
+            this.chart2.TabIndex = 5;
+            this.chart2.Text = "chart2";
             // 
             // chart1
             // 
@@ -168,9 +192,9 @@
             this.label5.ForeColor = System.Drawing.Color.LightGray;
             this.label5.Location = new System.Drawing.Point(83, 54);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(76, 16);
+            this.label5.Size = new System.Drawing.Size(11, 16);
             this.label5.TabIndex = 7;
-            this.label5.Text = "Barrendera";
+            this.label5.Text = ".";
             // 
             // label4
             // 
@@ -234,6 +258,7 @@
             // 
             this.panelMenu.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.panelMenu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelMenu.Controls.Add(this.button4);
             this.panelMenu.Controls.Add(this.button2);
             this.panelMenu.Controls.Add(this.btnSalir);
             this.panelMenu.Controls.Add(this.btnMenu);
@@ -256,6 +281,26 @@
             this.panelMenu.TabIndex = 2;
             this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
             // 
+            // button4
+            // 
+            this.button4.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.Navy;
+            this.button4.Image = global::Sistema_Incidencias.Properties.Resources.Instalaciones__Gris;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(-1, 334);
+            this.button4.Name = "button4";
+            this.button4.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.button4.Size = new System.Drawing.Size(230, 50);
+            this.button4.TabIndex = 15;
+            this.button4.Text = "Instalaciones";
+            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
+            // 
             // button2
             // 
             this.button2.Cursor = System.Windows.Forms.Cursors.Default;
@@ -264,7 +309,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Navy;
-            this.button2.Image = global::Sistema_Incidencias.Properties.Resources.usuario__5_;
+            this.button2.Image = global::Sistema_Incidencias.Properties.Resources.Personas_Gris;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(-1, 283);
             this.button2.Name = "button2";
@@ -321,7 +366,7 @@
             this.button5.ForeColor = System.Drawing.Color.Navy;
             this.button5.Image = global::Sistema_Incidencias.Properties.Resources.logout;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(0, 333);
+            this.button5.Location = new System.Drawing.Point(0, 383);
             this.button5.Name = "button5";
             this.button5.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.button5.Size = new System.Drawing.Size(230, 50);
@@ -351,7 +396,7 @@
             this.button6.ForeColor = System.Drawing.Color.Navy;
             this.button6.Image = global::Sistema_Incidencias.Properties.Resources.dispositivos;
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(0, 233);
+            this.button6.Location = new System.Drawing.Point(0, 234);
             this.button6.Name = "button6";
             this.button6.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.button6.Size = new System.Drawing.Size(230, 50);
@@ -380,12 +425,12 @@
             this.button3.ForeColor = System.Drawing.Color.Navy;
             this.button3.Image = global::Sistema_Incidencias.Properties.Resources.informe_de_ganancias;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(0, 184);
+            this.button3.Location = new System.Drawing.Point(0, 185);
             this.button3.Name = "button3";
             this.button3.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.button3.Size = new System.Drawing.Size(230, 50);
             this.button3.TabIndex = 6;
-            this.button3.Text = "  Mis Reportes";
+            this.button3.Text = "Reportes";
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -409,13 +454,13 @@
             this.btnMembresia.ForeColor = System.Drawing.Color.Navy;
             this.btnMembresia.Image = global::Sistema_Incidencias.Properties.Resources.megafono;
             this.btnMembresia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMembresia.Location = new System.Drawing.Point(0, 135);
+            this.btnMembresia.Location = new System.Drawing.Point(0, 136);
             this.btnMembresia.Name = "btnMembresia";
             this.btnMembresia.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnMembresia.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnMembresia.Size = new System.Drawing.Size(230, 50);
             this.btnMembresia.TabIndex = 4;
-            this.btnMembresia.Text = "  Mis Incidencias";
+            this.btnMembresia.Text = "Incidencias";
             this.btnMembresia.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnMembresia.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMembresia.UseVisualStyleBackColor = true;
@@ -589,29 +634,6 @@
             this.tmFechaHora.Enabled = true;
             this.tmFechaHora.Tick += new System.EventHandler(this.tmFechaHora_Tick);
             // 
-            // chart2
-            // 
-            chartArea1.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart2.Legends.Add(legend1);
-            this.chart2.Location = new System.Drawing.Point(12, 206);
-            this.chart2.Name = "chart2";
-            this.chart2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
-            series1.BorderColor = System.Drawing.SystemColors.InfoText;
-            series1.BorderWidth = 2;
-            series1.ChartArea = "ChartArea1";
-            series1.Color = System.Drawing.SystemColors.ActiveBorder;
-            series1.LabelBorderWidth = 3;
-            series1.Legend = "Legend1";
-            series1.LegendText = "Incidencias sin Liberar";
-            series1.MarkerColor = System.Drawing.Color.Black;
-            series1.Name = "Series1";
-            this.chart2.Series.Add(series1);
-            this.chart2.Size = new System.Drawing.Size(306, 222);
-            this.chart2.TabIndex = 5;
-            this.chart2.Text = "chart2";
-            // 
             // FormMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -628,6 +650,7 @@
             this.Load += new System.EventHandler(this.FormMenuPrincipal_Load);
             this.panelContenedorPrincipal.ResumeLayout(false);
             this.panelContenedorForm.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -644,7 +667,6 @@
             this.PanelBarraTitulo.ResumeLayout(false);
             this.PanelBarraTitulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -688,6 +710,7 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
+        private System.Windows.Forms.Button button4;
     }
 }
 

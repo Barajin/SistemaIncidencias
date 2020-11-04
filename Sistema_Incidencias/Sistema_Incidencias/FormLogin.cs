@@ -20,7 +20,7 @@ namespace Sistema_Incidencias
 
         private void FormLogin_Load(object sender, EventArgs e)
         {
-		MessageBox.Show("Versión de Prueba 2.1");
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -43,5 +43,24 @@ namespace Sistema_Incidencias
         {
 
         }
+
+        private void btnEntrar_Click(object sender, EventArgs e)
+        {
+            UserModel user = new UserModel();
+            var validLogin = user.LoginUser(textBox1.Text, textBox2.Text);
+            if (validLogin == true)
+            {
+                FormMenuPrincipal mainMenu = new FormMenuPrincipal();
+                mainMenu.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Error de datos");
+            }
+        }
+
+
+
     }
 }

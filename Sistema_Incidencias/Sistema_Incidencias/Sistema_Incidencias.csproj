@@ -80,6 +80,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAltaDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAltaDepartamento.Designer.cs">
+      <DependentUpon>FormAltaDepartamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDepartamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDepartamentos.Designer.cs">
+      <DependentUpon>FormDepartamentos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormIncidenciaDetalle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +115,12 @@
     </Compile>
     <Compile Include="FormMenuPrincipal.Designer.cs">
       <DependentUpon>FormMenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVerElementosTI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVerElementosTI.Designer.cs">
+      <DependentUpon>FormVerElementosTI.cs</DependentUpon>
     </Compile>
     <Compile Include="FormVerIncidencias.cs">
       <SubType>Form</SubType>
@@ -130,6 +148,12 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormAltaDepartamento.resx">
+      <DependentUpon>FormAltaDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDepartamentos.resx">
+      <DependentUpon>FormDepartamentos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormIncidenciaDetalle.resx">
       <DependentUpon>FormIncidenciaDetalle.cs</DependentUpon>
     </EmbeddedResource>
@@ -141,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuPrincipal.resx">
       <DependentUpon>FormMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVerElementosTI.resx">
+      <DependentUpon>FormVerElementosTI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormVerIncidencias.resx">
       <DependentUpon>FormVerIncidencias.cs</DependentUpon>
@@ -241,6 +268,8 @@
   <ItemGroup>
     <None Include="Resources\usuario %285%291.png" />
     <None Include="Resources\Close1.png" />
+    <None Include="Resources\Buscar.png" />
+    <None Include="Resources\CerrarForm.png" />
     <Content Include="Resources\dispositivos.png" />
     <None Include="Resources\dispositivos1.png" />
     <None Include="Resources\EditarProducto.png" />
@@ -251,6 +280,7 @@
     <Content Include="Resources\informe-de-ganancias.png" />
     <None Include="Resources\informe-de-ganancias1.png" />
     <None Include="Resources\logoUI21.png" />
+    <None Include="Resources\Instalaciones  Gris.png" />
     <Content Include="Resources\logout.png" />
     <None Include="Resources\logout1.png" />
     <None Include="Resources\maximize1.png" />
@@ -273,12 +303,14 @@
     <None Include="Resources\Normal1.png" />
     <None Include="Resources\perfil1.png" />
     <None Include="Resources\Planes1.PNG" />
+    <None Include="Resources\Personas Gris.png" />
     <Content Include="Resources\salpicadero.png" />
     <None Include="Resources\salpicadero1.png" />
     <None Include="Resources\satellite-dish %281%291.png" />
     <None Include="Resources\satellite-dish1.png" />
     <None Include="Resources\shut-down1.png" />
     <None Include="Resources\SobraCajasTotales.png" />
+    <None Include="Resources\Trabajadores Gris.png" />
     <Content Include="Resources\usuario %285%29.png" />
   </ItemGroup>
   <ItemGroup>

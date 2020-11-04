@@ -100,6 +100,7 @@ namespace Sistema_Incidencias
             // tmFechaHora
             // 
             this.tmFechaHora.Enabled = true;
+            this.tmFechaHora.Tick += new System.EventHandler(this.tmFechaHora_Tick);
             // 
             // tmExpandirMenu
             // 
@@ -550,6 +551,7 @@ namespace Sistema_Incidencias
             this.lblHora.Size = new System.Drawing.Size(205, 54);
             this.lblHora.TabIndex = 1;
             this.lblHora.Text = "21:49:45";
+            this.lblHora.Click += new System.EventHandler(this.lblHora_Click);
             // 
             // panelMenu
             // 
