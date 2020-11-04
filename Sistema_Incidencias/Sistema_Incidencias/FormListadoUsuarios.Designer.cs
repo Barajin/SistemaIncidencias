@@ -48,12 +48,13 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.columnEditar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.columnEliminar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -285,8 +286,9 @@
             this.panel4.BackColor = System.Drawing.Color.Transparent;
             this.panel4.BackgroundImage = global::Sistema_Incidencias.Properties.Resources.SobraCajasTotales;
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel4.Controls.Add(this.label11);
-            this.panel4.Controls.Add(this.label10);
+            this.panel4.Controls.Add(this.label5);
+            this.panel4.Controls.Add(this.label3);
+            this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.label9);
             this.panel4.Controls.Add(this.dataGridView1);
             this.panel4.Location = new System.Drawing.Point(3, 109);
@@ -294,24 +296,6 @@
             this.panel4.Size = new System.Drawing.Size(1006, 477);
             this.panel4.TabIndex = 4;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(203, 38);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(86, 13);
-            this.label11.TabIndex = 3;
-            this.label11.Text = "Apellido Materno";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(103, 38);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(84, 13);
-            this.label10.TabIndex = 2;
-            this.label10.Text = "Apellido Paterno";
             // 
             // label9
             // 
@@ -354,6 +338,7 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dataGridView1.Size = new System.Drawing.Size(958, 393);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dataGridView1_CellPainting);
             // 
             // columnEditar
@@ -367,6 +352,33 @@
             this.columnEliminar.HeaderText = "ELIMINAR";
             this.columnEliminar.Name = "columnEliminar";
             this.columnEliminar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(203, 38);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(74, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Departamento";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(510, 38);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Cargo";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(332, 38);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(125, 13);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Código de Departamento";
             // 
             // FormListadoUsuarios
             // 
@@ -421,9 +433,10 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewButtonColumn columnEditar;
         private System.Windows.Forms.DataGridViewButtonColumn columnEliminar;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label5;
     }
 }

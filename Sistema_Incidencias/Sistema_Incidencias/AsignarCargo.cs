@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Common.Cache;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Reflection;
@@ -15,6 +17,8 @@ namespace Sistema_Incidencias
     public partial class AsignarCargo : Form
     {
         //Constructor
+        string connString = "Server=.\\SQLEXPRESS; Database= Sistema_Incidencias; Integrated Security=True";
+
         public AsignarCargo()
         {
             InitializeComponent();
@@ -125,19 +129,13 @@ namespace Sistema_Incidencias
 
         private void tmExpandirMenu_Tick(object sender, EventArgs e)
         {
-            if (panelMenu.Width >= 230)
-                this.tmExpandirMenu.Stop();
-            else
-                panelMenu.Width = panelMenu.Width + 5;
+           
 
         }
 
         private void tmContraerMenu_Tick(object sender, EventArgs e)
         {
-            if (panelMenu.Width <= 55)
-                this.tmContraerMenu.Stop();
-            else
-                panelMenu.Width = panelMenu.Width - 5;
+            
         }
 
         //METODO PARA ABRIR FORM DENTRO DE PANEL-----------------------------------------------------
@@ -162,6 +160,13 @@ namespace Sistema_Incidencias
         private void FormMenuPrincipal_Load(object sender, EventArgs e)
         {
             MostrarFormLogo();
+            LoadUserData();
+
+            DataTable dt = ObtenerEmpleados();
+            comboBox3.DataSource = dt;
+            comboBox3.ValueMember = "id";
+            comboBox3.DisplayMember = "apellidoPaterno";
+
         }
         //METODO PARA MOSTRAR FORMULARIO DE LOGO Al CERRAR OTROS FORM ----------------------------------------------------------
         private void MostrarFormLogoAlCerrarForms(object sender, FormClosedEventArgs e)
@@ -216,15 +221,7 @@ namespace Sistema_Incidencias
 
         private void btnMenu_Click_1(object sender, EventArgs e)
         {
-            //-------CON EFECTO SLIDING
-            if (panelMenu.Width == 230)
-            {
-                this.tmContraerMenu.Start();
-            }
-            else if (panelMenu.Width == 55)
-            {
-                this.tmExpandirMenu.Start();
-            }
+            
 
         }
 
@@ -265,6 +262,33 @@ namespace Sistema_Incidencias
         {
             AbrirFormEnPanel(new Form1());
         }
+
+        private void LoadUserData()
+        {
+            label3.Text = UserLoginCache.Nombres;
+            label4.Text = UserLoginCache.ApellidoPaterno;
+        }
+
+
+        public DataTable ObtenerEmpleados()
+        {
+
+            using (var cn = new SqlConnection(connString))
+            {
+                using (var da = new SqlDataAdapter())
+                {
+                    using (var cmd = cn.CreateCommand())
+                    {
+                        cmd.CommandText = "SELECT id, apellidoPaterno From Persona";
+                        da.SelectCommand = cmd;
+                        var dt = new DataTable();
+                        da.Fill(dt);
+                        return dt;
+                    }
+                }
+            }
+        }
+
 
 
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Common.Cache;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -35,8 +36,15 @@ namespace Sistema_Incidencias
             alta.Show();
         }
 
+        private void LoadUserData()
+        {
+            label3.Text = UserLoginCache.Nombres;
+            label4.Text = UserLoginCache.ApellidoPaterno;
+        }
+
         private void Personal_Load(object sender, EventArgs e)
         {
+            LoadUserData();
 
             var select = "Select id as 'Código de Personal', nombre  +' '+ apellidoPaterno+  +' '+ apellidoMaterno as 'Nombre', numeroCelular as 'Número Telefónico', direccion as 'Dirección' From persona";
             var comando = new SqlConnection("Server=.\\SQLEXPRESS; Database= Sistema_Incidencias; Integrated Security=True"); // Your Connection String here

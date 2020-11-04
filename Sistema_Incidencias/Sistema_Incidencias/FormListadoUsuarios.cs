@@ -20,7 +20,10 @@ namespace Sistema_Incidencias
         {
             InitializeComponent();
 
-            var select = "SELECT * FROM Persona";
+            var select = "Select persona.id, persona.nombre + ' ' + persona.apellidoPaterno + ' ' + persona.apellidoMaterno as 'Nombre', departamento.nombre as 'Departamento', departamento.id as 'Clave de Departamento', cargo_persona.cargo From persona " +
+            "Inner Join cargo_persona On cargo_persona.fk_persona = persona.id Inner Join departamento ON cargo_persona.fk_departamento = departamento.id";
+            
+            
             var comando = new SqlConnection("Server=.\\SQLEXPRESS; Database= Sistema_Incidencias; Integrated Security=True"); // Your Connection String here
             var dataAdapter = new SqlDataAdapter(select, comando);
 
@@ -109,8 +112,10 @@ namespace Sistema_Incidencias
         public void ocultarMoverAnchoColumnas() {
             dataGridView1.Columns[2].Visible = false;
 
-            dataGridView1.Columns[0].DisplayIndex = 9;
-            dataGridView1.Columns[1].DisplayIndex = 9;
+            dataGridView1.Columns[0].DisplayIndex = 6;
+            dataGridView1.Columns[1].DisplayIndex = 6;
+
+
 
         }
 
@@ -151,7 +156,21 @@ namespace Sistema_Incidencias
 
         private void FormListadoUsuarios_Load(object sender, EventArgs e)
         {
-
+            
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 0)
+            {
+                //MessageBox.Show((e.RowIndex + 1) + "  Row  " + (e.ColumnIndex + 1) + "  Column button clicked ");
+                AsignarCargo asignarCargo = new AsignarCargo();
+                asignarCargo.ShowDialog();
+            }
+        }
+
+
+
+
     }
 }

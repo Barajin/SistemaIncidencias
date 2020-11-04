@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Common.Cache;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -45,7 +46,7 @@ namespace Sistema_Incidencias
 
         private void AltaPersonas_Load(object sender, EventArgs e)
         {
-
+            LoadUserData();
         }
 
         private void guardarbtn_Click(object sender, EventArgs e)
@@ -104,6 +105,23 @@ namespace Sistema_Incidencias
         private void cerrarbtn_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void tmFechaHora_Tick(object sender, EventArgs e)
+        {
+            lbFecha.Text = DateTime.Now.ToLongDateString();
+            lblHora.Text = DateTime.Now.ToString("HH:mm:ssss");
+        }
+
+        private void LoadUserData()
+        {
+            label3.Text = UserLoginCache.Nombres;
+            label4.Text = UserLoginCache.ApellidoPaterno;
+        }
+
+        private void PanelBarraTitulo_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

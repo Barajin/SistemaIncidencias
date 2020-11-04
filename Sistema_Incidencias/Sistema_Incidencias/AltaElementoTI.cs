@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Common.Cache;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,6 +23,7 @@ namespace Sistema_Incidencias
 
         private void AltaElementoTI_Load(object sender, EventArgs e)
         {
+            LoadUserData();
             DataTable dt = CategoryAll();
             CmbTipoElemento.DataSource = dt;
             CmbTipoElemento.ValueMember = "id";
@@ -62,8 +64,26 @@ namespace Sistema_Incidencias
             }
         }
 
-       
+        private void PanelBarraTitulo_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
 
+        private void LoadUserData()
+        {
+            label10.Text = UserLoginCache.Nombres;
+            label9.Text = UserLoginCache.ApellidoPaterno;
+        }
+
+        private void tmContraerMenu_Tick(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void tmFechaHora_Tick(object sender, EventArgs e)
+        {
+            lbFecha.Text = DateTime.Now.ToLongDateString();
+            lblHora.Text = DateTime.Now.ToString("HH:mm:ssss");
+        }
     }
 }

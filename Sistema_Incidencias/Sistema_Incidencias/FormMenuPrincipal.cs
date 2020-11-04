@@ -365,6 +365,11 @@ namespace Sistema_Incidencias
             departamentos.Show();
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         //METODO PARA HORA Y FECHA ACTUAL ----------------------------------------------------------
         private void tmFechaHora_Tick(object sender, EventArgs e)
         {
