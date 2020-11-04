@@ -148,5 +148,10 @@ namespace Sistema_Incidencias
             AltaPersonas alta = new AltaPersonas();
             alta.Show();
         }
+
+        private void FormListadoUsuarios_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

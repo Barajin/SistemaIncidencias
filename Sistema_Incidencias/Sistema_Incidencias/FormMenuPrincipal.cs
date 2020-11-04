@@ -26,6 +26,12 @@ namespace Sistema_Incidencias
         ArrayList Departamentos = new ArrayList();
         ArrayList CantidadElementos = new ArrayList();
 
+        //Segundo chart
+        ArrayList CantidadIncidencias = new ArrayList();
+        ArrayList IncidenciasDepartamentos = new ArrayList();
+
+
+
 
         //Constructor
         public FormMenuPrincipal()
@@ -177,6 +183,7 @@ namespace Sistema_Incidencias
             MostrarFormLogo();
             LoadUserData();
             GrafCategorias();
+            GrafCantidadIncidencias();
 
         }
 
@@ -194,6 +201,22 @@ namespace Sistema_Incidencias
 
             }
             chart1.Series[0].Points.DataBindXY(Departamentos, CantidadElementos);
+            dr.Close();
+            Conexion.Close();
+        }
+
+        private void GrafCantidadIncidencias()
+        {
+            cmd = new SqlCommand("CantidadIncidencias", Conexion);
+            cmd.CommandType = CommandType.StoredProcedure;
+            Conexion.Open();
+            dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                IncidenciasDepartamentos.Add(dr.GetString(1));
+                CantidadIncidencias.Add(dr.GetInt32(2));
+            }
+            chart2.Series[0].Points.DataBindXY(IncidenciasDepartamentos, CantidadIncidencias);
             dr.Close();
             Conexion.Close();
         }
@@ -219,7 +242,8 @@ namespace Sistema_Incidencias
 
         private void btnMembresia_Click(object sender, EventArgs e)
         {
-          
+            FormVerIncidencias incidencias = new FormVerIncidencias();
+            incidencias.Show();
         }
 
         private void lblHora_Click(object sender, EventArgs e)

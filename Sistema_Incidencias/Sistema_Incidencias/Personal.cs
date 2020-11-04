@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -32,6 +33,35 @@ namespace Sistema_Incidencias
         {
             AltaPersonas alta = new AltaPersonas();
             alta.Show();
+        }
+
+        private void Personal_Load(object sender, EventArgs e)
+        {
+
+            var select = "Select persona.id, persona.nombre, persona.apellidoPaterno, departamento.nombre as 'Departamento', departamento.id as 'Clave de Departamento', cargo_persona.cargo From persona Inner Join cargo_persona On cargo_persona.fk_persona = persona.id Inner Join departamento ON cargo_persona.fk_departamento = departamento.id";
+            var comando = new SqlConnection("Server=.\\SQLEXPRESS; Database= Sistema_Incidencias; Integrated Security=True"); // Your Connection String here
+            var dataAdapter = new SqlDataAdapter(select, comando);
+
+            var commandBuilder = new SqlCommandBuilder(dataAdapter);
+            var ds = new DataSet();
+            dataAdapter.Fill(ds);
+            tablaPersonalDGV.DataSource = ds.Tables[0];
+
+            tablaPersonalDGV.Columns[0].Visible = false;
+            tablaPersonalDGV.Columns[1].Visible = false;
+            tablaPersonalDGV.Columns[2].Visible = false;
+            tablaPersonalDGV.Columns[3].Visible = false;
+            tablaPersonalDGV.Columns[4].Visible = false;
+            tablaPersonalDGV.Columns[5].Visible = false;
+            tablaPersonalDGV.Columns[6].Visible = false;
+            tablaPersonalDGV.Columns[7].Visible = false;
+
+
+        }
+
+        private void panelContenedorForm_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

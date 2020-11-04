@@ -46,6 +46,7 @@
             this.lblCantidadJefesTaller = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -53,7 +54,6 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.columnEditar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.columnEliminar = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.button1 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -270,6 +270,16 @@
             this.pictureBox4.TabIndex = 0;
             this.pictureBox4.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(827, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(106, 48);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Añadir Personal";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Transparent;
@@ -358,16 +368,6 @@
             this.columnEliminar.Name = "columnEliminar";
             this.columnEliminar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(827, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 48);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Añadir Personal";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // FormListadoUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -377,6 +377,7 @@
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "FormListadoUsuarios";
             this.Text = "FormListadoUsuarios";
+            this.Load += new System.EventHandler(this.FormListadoUsuarios_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();

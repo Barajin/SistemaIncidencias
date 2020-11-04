@@ -80,6 +80,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormIncidenciaDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIncidenciaDetalle.Designer.cs">
+      <DependentUpon>FormIncidenciaDetalle.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormListadoUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,12 @@
     </Compile>
     <Compile Include="FormMenuPrincipal.Designer.cs">
       <DependentUpon>FormMenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVerIncidencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVerIncidencias.Designer.cs">
+      <DependentUpon>FormVerIncidencias.cs</DependentUpon>
     </Compile>
     <Compile Include="Personal.cs">
       <SubType>Form</SubType>
@@ -118,6 +130,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormIncidenciaDetalle.resx">
+      <DependentUpon>FormIncidenciaDetalle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormListadoUsuarios.resx">
       <DependentUpon>FormListadoUsuarios.cs</DependentUpon>
     </EmbeddedResource>
@@ -126,6 +141,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuPrincipal.resx">
       <DependentUpon>FormMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVerIncidencias.resx">
+      <DependentUpon>FormVerIncidencias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Personal.resx">
       <DependentUpon>Personal.cs</DependentUpon>
