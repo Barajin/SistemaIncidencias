@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Common.Cache;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,24 @@ namespace Sistema_Incidencias
         public FormMenuJefeDepto()
         {
             InitializeComponent();
+        }
+
+        private void FormMenuJefeDepto_Load(object sender, EventArgs e)
+        {
+            LoadUserData();
+        }
+
+        private void LoadUserData()
+        {
+            label3.Text = UserLoginCache.Nombres;
+            label4.Text = UserLoginCache.ApellidoPaterno;
+            label5.Text = UserLoginCache.Cargo;
+        }
+
+        private void tmFechaHora_Tick(object sender, EventArgs e)
+        {
+            lbFecha.Text = DateTime.Now.ToLongDateString();
+            lblHora.Text = DateTime.Now.ToString("HH:mm:ssss");
         }
     }
 }

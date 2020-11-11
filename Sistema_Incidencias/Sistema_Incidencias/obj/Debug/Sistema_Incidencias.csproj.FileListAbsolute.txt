@@ -91,3 +91,5 @@ C:\Users\Oscar\Desktop\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencia
 C:\Users\Oscar\Desktop\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.FormVerElementosTI.resources
 C:\Users\Oscar\Desktop\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.FormAltaDepartamento.resources
 C:\Users\Oscar\Desktop\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.FormMenuTecnico.resources
+C:\Users\Oscar\Desktop\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.FormMenuJefeDepto.resources
+C:\Users\Oscar\Desktop\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.FormMenuJefeTaller.resources

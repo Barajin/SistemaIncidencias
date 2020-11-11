@@ -181,6 +181,12 @@
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuJefeDepto.resx">
+      <DependentUpon>FormMenuJefeDepto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuJefeTaller.resx">
+      <DependentUpon>FormMenuJefeTaller.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMenuPrincipal.resx">
       <DependentUpon>FormMenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
