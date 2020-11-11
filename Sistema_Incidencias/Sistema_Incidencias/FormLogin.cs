@@ -1,4 +1,5 @@
-﻿using Dominio;
+﻿using Common.Cache;
+using Dominio;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -50,8 +51,31 @@ namespace Sistema_Incidencias
             var validLogin = user.LoginUser(textBox1.Text, textBox2.Text);
             if (validLogin == true)
             {
-                FormMenuPrincipal mainMenu = new FormMenuPrincipal();
-                mainMenu.Show();
+                if (UserLoginCache.Cargo.Contains("Jefe de Taller"))
+                {
+                    FormMenuJefeTaller mainMenuTaller = new FormMenuJefeTaller();
+                    mainMenuTaller.Show();
+
+                }
+
+                else if (UserLoginCache.Cargo.Contains("Técnico"))
+                {
+                    FormMenuTecnico mainMenuTecnico = new FormMenuTecnico();
+                    mainMenuTecnico.Show();
+                }
+
+                else if (UserLoginCache.Cargo.Contains("Jefe del depto.") || UserLoginCache.Cargo.Contains("Jefa del depto."))
+                {
+                       FormMenuJefeDepto mainMenuJefeDepto = new FormMenuJefeDepto();
+                       mainMenuJefeDepto.Show();
+                }
+
+                else if(UserLoginCache.Cargo.Contains("Administrador"))
+                {
+                    FormMenuPrincipal mainMenu = new FormMenuPrincipal();
+                    mainMenu.Show();
+                }
+             
                 this.Hide();
             }
             else

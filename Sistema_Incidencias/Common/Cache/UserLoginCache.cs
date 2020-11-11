@@ -20,6 +20,7 @@ namespace Common.Cache
 
         public static string Direccion { get; set; }
 
+        public static string Cargo { get; set; }
 
 
 

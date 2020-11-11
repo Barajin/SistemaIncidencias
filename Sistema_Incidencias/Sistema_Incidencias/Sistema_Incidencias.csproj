@@ -110,11 +110,29 @@
     <Compile Include="FormLogin.designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMenuJefeDepto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuJefeDepto.Designer.cs">
+      <DependentUpon>FormMenuJefeDepto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenuJefeTaller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuJefeTaller.Designer.cs">
+      <DependentUpon>FormMenuJefeTaller.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormMenuPrincipal.Designer.cs">
       <DependentUpon>FormMenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenuTecnico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuTecnico.Designer.cs">
+      <DependentUpon>FormMenuTecnico.cs</DependentUpon>
     </Compile>
     <Compile Include="FormVerElementosTI.cs">
       <SubType>Form</SubType>
@@ -165,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuPrincipal.resx">
       <DependentUpon>FormMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuTecnico.resx">
+      <DependentUpon>FormMenuTecnico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormVerElementosTI.resx">
       <DependentUpon>FormVerElementosTI.cs</DependentUpon>
