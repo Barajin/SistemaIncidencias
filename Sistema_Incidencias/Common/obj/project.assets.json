@@ -180,19 +180,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Oscar\\.nuget\\packages\\": {}
+    "C:\\Users\\Melissa\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Oscar\\Desktop\\SistemaIncidencias\\Sistema_Incidencias\\Common\\Common.csproj",
+      "projectUniqueName": "C:\\Users\\Melissa\\Documents\\Escuela\\Gestion de operaciones de TI\\SistemaIncidencias\\Sistema_Incidencias\\Common\\Common.csproj",
       "projectName": "Common",
-      "projectPath": "C:\\Users\\Oscar\\Desktop\\SistemaIncidencias\\Sistema_Incidencias\\Common\\Common.csproj",
-      "packagesPath": "C:\\Users\\Oscar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Oscar\\Desktop\\SistemaIncidencias\\Sistema_Incidencias\\Common\\obj\\",
+      "projectPath": "C:\\Users\\Melissa\\Documents\\Escuela\\Gestion de operaciones de TI\\SistemaIncidencias\\Sistema_Incidencias\\Common\\Common.csproj",
+      "packagesPath": "C:\\Users\\Melissa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Melissa\\Documents\\Escuela\\Gestion de operaciones de TI\\SistemaIncidencias\\Sistema_Incidencias\\Common\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Oscar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Melissa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
