@@ -15,8 +15,8 @@ INSERT INTO persona(
 
 VALUES
  /***** Jefes de departamento *****/
-	('Roberto', 'León', 'Piña', 'UserRobertoLeón', 'contra', '6673236540', 'Av. Juan de Dios Bátiz 310 Pte. Col. Guadalupe, C.P. 80220.'),
-	('Yareli Ariana', 'López', 'Arce', 'UserYareliLópez', 'contra', '6673236540', 'Av. Juan de Dios Bátiz 310 Pte. Col. Guadalupe, C.P. 80220.'),
+	('Roberto', 'León', 'Piña', 'UserRL', 'contra', '6673236540', 'Av. Juan de Dios Bátiz 310 Pte. Col. Guadalupe, C.P. 80220.'),
+	('Yareli Ariana', 'López', 'Arce', 'UserYareliL', 'contra', '6673236540', 'Av. Juan de Dios Bátiz 310 Pte. Col. Guadalupe, C.P. 80220.'),
 	('Cristal Gabriela  ', 'Ramírez', 'Escobar', 'UserCristalRamírez', 'contra', '6673236540', 'Av. Juan de Dios Bátiz 310 Pte. Col. Guadalupe, C.P. 80220.'),
 	('Dinorah', 'Meza', 'García', 'UserDinorahMeza', 'contra', '6673236540', 'Av. Juan de Dios Bátiz 310 Pte. Col. Guadalupe, C.P. 80220.'),
 	('Juan Francisco', 'Núñez', 'López', 'UserJuanNúñez', 'contra', '6673236540', 'Av. Juan de Dios Bátiz 310 Pte. Col. Guadalupe, C.P. 80220.'),
