@@ -31,4 +31,7 @@ VALUES
 (18, 'Jefa del depto. de Ingeniería Eléctrica-Electrónica', 7),
 (19, 'Jefe del depto. de Ciencias Económico-Administrativas', 6),
 (20, 'Jefe del depto. de Ciencias Básicas', 2),
-(21, 'Jefa del depto. de División de Estudios de Posgrado e Investigación', 5)
+(21, 'Jefa del depto. de División de Estudios de Posgrado e Investigación', 5),
+(22, 'Jefe de Taller de Hardware', 1),
+(23, 'Técnico', 1),
+(24, 'Administrador', 1)

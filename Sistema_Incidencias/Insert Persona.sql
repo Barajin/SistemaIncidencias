@@ -15,8 +15,8 @@ INSERT INTO persona(
 
 VALUES
  /***** Jefes de departamento *****/
-	('Roberto', 'León', 'Piña', 'UserRobertoLeón', 'contra', '6673236540', 'Av. Juan de Dios Bátiz 310 Pte. Col. Guadalupe, C.P. 80220.'),
-	('Yareli Ariana', 'López', 'Arce', 'UserYareliLópez', 'contra', '6673236540', 'Av. Juan de Dios Bátiz 310 Pte. Col. Guadalupe, C.P. 80220.'),
+	('Roberto', 'León', 'Piña', 'UserRL', 'contra', '6673236540', 'Av. Juan de Dios Bátiz 310 Pte. Col. Guadalupe, C.P. 80220.'),
+	('Yareli Ariana', 'López', 'Arce', 'UserYareliL', 'contra', '6673236540', 'Av. Juan de Dios Bátiz 310 Pte. Col. Guadalupe, C.P. 80220.'),
 	('Cristal Gabriela  ', 'Ramírez', 'Escobar', 'UserCristalRamírez', 'contra', '6673236540', 'Av. Juan de Dios Bátiz 310 Pte. Col. Guadalupe, C.P. 80220.'),
 	('Dinorah', 'Meza', 'García', 'UserDinorahMeza', 'contra', '6673236540', 'Av. Juan de Dios Bátiz 310 Pte. Col. Guadalupe, C.P. 80220.'),
 	('Juan Francisco', 'Núñez', 'López', 'UserJuanNúñez', 'contra', '6673236540', 'Av. Juan de Dios Bátiz 310 Pte. Col. Guadalupe, C.P. 80220.'),
@@ -35,11 +35,9 @@ VALUES
 	('Jaredt Guadalupe', 'Torres', 'Lopes', 'UserJaredtTorres', 'contra', '6673236540', 'Av. Juan de Dios Bátiz 310 Pte. Col. Guadalupe, C.P. 80220.'),
 	('Joel Arturo', 'Sánchez', 'Borboa', 'UserJoelSánchez', 'contra', '6673236540', 'Av. Juan de Dios Bátiz 310 Pte. Col. Guadalupe, C.P. 80220.'),
 	('Alfredo', 'Anaya', 'Hill', 'UserAlfredoAnaya', 'contra', '6673236540', 'Av. Juan de Dios Bátiz 310 Pte. Col. Guadalupe, C.P. 80220.'),
-	('María Aracely', 'Martínez', 'Amaya', 'UserMaríaMartínez', 'contra', '6673236540', 'Av. Juan de Dios Bátiz 310 Pte. Col. Guadalupe, C.P. 80220.')
-
-	declare @user varchar(55)='userAlfredoAnaya'
-	declare @pass varchar(20)='contra'
-	Select * from Persona where usuario=@user and contraseña=@pass	
-
+	('María Aracely', 'Martínez', 'Amaya', 'UserMaríaMartínez', 'contra', '6673236540', 'Av. Juan de Dios Bátiz 310 Pte. Col. Guadalupe, C.P. 80220.'),
+	('Jesus', 'Barajas', 'Villegas', 'barajin', 'enojon', '6673236540', 'Tartarus'),
+	('Melissa', 'Lion', 'Leona', 'meli', 'lion', '6612938271', 'La Fama'),
+	('Marco', 'Rodríguez', 'Astorga', 'admin', 'pass', '6677125132', 'Juan de Dios Bátiz')
 
 
