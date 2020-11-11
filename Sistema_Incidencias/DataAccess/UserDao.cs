@@ -19,7 +19,8 @@ namespace DataAccess
                 using (var command = new SqlCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = "Select * from Persona where usuario=@user and contraseña=@pass";
+                    command.CommandText = "Select persona.id, persona.nombre, persona.apellidoPaterno, persona.apellidoMaterno, persona.usuario, persona.contraseña, persona.numeroCelular, persona.direccion, cargo_persona.cargo From persona " +
+                    "Inner Join cargo_persona On cargo_persona.fk_persona = persona.id Inner Join departamento ON cargo_persona.fk_departamento = departamento.id where persona.usuario=@user and persona.contraseña=@pass";
                     command.Parameters.AddWithValue("@user", user);
                     command.Parameters.AddWithValue("@pass", pass);
                     command.CommandType = CommandType.Text;
@@ -37,6 +38,7 @@ namespace DataAccess
                             UserLoginCache.Contraseña = reader.GetString(5);
                             UserLoginCache.NumeroCelular = reader.GetString(6);
                             UserLoginCache.Direccion = reader.GetString(7);
+                            UserLoginCache.Cargo = reader.GetString(8);
                         }
                         return true;
                     }

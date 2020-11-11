@@ -226,6 +226,7 @@ namespace Sistema_Incidencias
         {
             label3.Text = UserLoginCache.Nombres;
             label4.Text = UserLoginCache.ApellidoPaterno;
+            label5.Text = UserLoginCache.Cargo;
         }
         //METODO PARA MOSTRAR FORMULARIO DE LOGO Al CERRAR OTROS FORM ----------------------------------------------------------
         private void MostrarFormLogoAlCerrarForms(object sender, FormClosedEventArgs e)
