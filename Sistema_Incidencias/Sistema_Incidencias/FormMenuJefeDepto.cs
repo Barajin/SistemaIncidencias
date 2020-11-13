@@ -35,5 +35,17 @@ namespace Sistema_Incidencias
             lbFecha.Text = DateTime.Now.ToLongDateString();
             lblHora.Text = DateTime.Now.ToString("HH:mm:ssss");
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            formVerElementosDepartamento elementos = new formVerElementosDepartamento();
+            elementos.Show();
+        }
+
+        private void btnMembresia_Click(object sender, EventArgs e)
+        {
+            FormTimbrarIncidencias incidencias = new FormTimbrarIncidencias();
+            incidencias.Show();
+        }
     }
 }
