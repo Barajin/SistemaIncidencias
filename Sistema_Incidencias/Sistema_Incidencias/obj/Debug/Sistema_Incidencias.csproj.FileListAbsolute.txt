@@ -190,3 +190,4 @@ C:\Users\Luise\Desktop\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencia
 C:\Users\Luise\Desktop\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.pdb
 C:\Users\Luise\Desktop\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.formVerElementosDepartamento.resources
 C:\Users\Luise\Desktop\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.FormTimbrarIncidencias.resources
+C:\Users\Luise\Desktop\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.FormEvaluarIncidencias.resources

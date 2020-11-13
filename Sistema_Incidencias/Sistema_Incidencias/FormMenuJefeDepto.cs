@@ -47,5 +47,11 @@ namespace Sistema_Incidencias
             FormTimbrarIncidencias incidencias = new FormTimbrarIncidencias();
             incidencias.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FormEvaluarIncidencias EvaluacionIncidencias = new FormEvaluarIncidencias();
+            EvaluacionIncidencias.Show();
+        }
     }
 }
