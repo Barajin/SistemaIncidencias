@@ -37,5 +37,11 @@ namespace Sistema_Incidencias
         {
 
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            FormAñadirElementosDepartamentos addElement = new FormAñadirElementosDepartamentos();
+            addElement.Show();
+        }
     }
 }

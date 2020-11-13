@@ -53,5 +53,20 @@ namespace Sistema_Incidencias
             FormEvaluarIncidencias EvaluacionIncidencias = new FormEvaluarIncidencias();
             EvaluacionIncidencias.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            FormLogin login = new FormLogin();
+            login.Show();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Está seguro de cerrar?", "Alerta¡¡", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
     }
 }

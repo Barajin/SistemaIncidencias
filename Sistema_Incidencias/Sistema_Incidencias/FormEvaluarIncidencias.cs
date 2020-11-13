@@ -10,11 +10,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Collections;
+using System.Data.SqlClient;
+using System.Drawing;
 
 namespace Sistema_Incidencias
 {
     public partial class FormEvaluarIncidencias : Form
     {
+        string connString = "Server=.\\SQLEXPRESS; Database= Sistema_Incidencias; Integrated Security=True";
         public FormEvaluarIncidencias()
         {
             InitializeComponent();
@@ -31,6 +34,30 @@ namespace Sistema_Incidencias
             var ds = new DataSet();
             dataAdapter.Fill(ds);
             dataGridView1.DataSource = ds.Tables[0];
+
+            DataTable dt = ObtenerIdIncidencia();
+            comboBox1.DataSource = dt;
+            comboBox1.ValueMember = "id";
+            comboBox1.DisplayMember = "id";
+        }
+
+        public DataTable ObtenerIdIncidencia()
+        {
+
+            using (var cn = new SqlConnection(connString))
+            {
+                using (var da = new SqlDataAdapter())
+                {
+                    using (var cmd = cn.CreateCommand())
+                    {
+                        cmd.CommandText = "SELECT id, titulo From incidencia";
+                        da.SelectCommand = cmd;
+                        var dt = new DataTable();
+                        da.Fill(dt);
+                        return dt;
+                    }
+                }
+            }
         }
     }
 }

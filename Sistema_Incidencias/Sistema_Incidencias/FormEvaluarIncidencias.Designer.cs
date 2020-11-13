@@ -69,6 +69,12 @@ namespace Sistema_Incidencias
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
             this.comboBox2.Location = new System.Drawing.Point(378, 126);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(239, 24);
@@ -116,7 +122,7 @@ namespace Sistema_Incidencias
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
             this.Name = "FormEvaluarIncidencias";
-            this.Text = "FormEvaluarIncidencias";
+            this.Text = "Evaluar Incidencia";
             this.Load += new System.EventHandler(this.FormEvaluarIncidencias_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
