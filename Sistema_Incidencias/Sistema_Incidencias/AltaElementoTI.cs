@@ -85,5 +85,62 @@ namespace Sistema_Incidencias
             lbFecha.Text = DateTime.Now.ToLongDateString();
             lblHora.Text = DateTime.Now.ToString("HH:mm:ssss");
         }
+
+        private void btnAgregarElementoTI_Click(object sender, EventArgs e)
+        {
+           
+            String modelo = "";
+            String marca = "";
+            String descripcion = "";
+
+            int tipoElemento =Convert.ToInt32(CmbTipoElemento.SelectedValue.ToString());
+            modelo = txtModelo.Text;
+            marca= txtmarca.Text;
+            descripcion = txtDescripcion.Text;
+            DateTime fechaCompra = PickerFechaCompra.Value.Date;
+            int  garantia =Convert.ToInt32(NumGarantia.Value);
+
+            if(modelo ==""|marca== "" | descripcion==""){
+                MessageBox.Show(("Error de datos, campos vacios"), "No se adminten campos vacíos en el alta de elementos de TI",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+
+            }
+            else
+            {
+                string connString = "Server=.\\SQLEXPRESS; Database= Sistema_Incidencias; Integrated Security=True";
+
+
+
+                using (SqlConnection connection = new SqlConnection(connString))
+                {
+                    String query = "INSERT INTO elementoTI(tipo,marca,modelo,Descripcion,garantia,fechaCompra) " +
+                        "VALUES (@tipo,@marca,@modelo,@Descripcion,@garantia,@fechaCompra)";
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@tipo", tipoElemento);
+                        command.Parameters.AddWithValue("@modelo", modelo);
+                        command.Parameters.AddWithValue("@marca", marca);
+                        command.Parameters.AddWithValue("@Descripcion", descripcion);
+                        command.Parameters.AddWithValue("@fechaCompra", fechaCompra);
+                        command.Parameters.AddWithValue("@garantia", garantia);
+                        
+
+                        connection.Open();
+                        int result = command.ExecuteNonQuery();
+
+                        // Check Error
+                        if (result < 0)
+                            Console.WriteLine("Error inserting data into Database!");
+                        else
+                            MessageBox.Show(("Alta de elemento correcta"), "Alta de elemento de TI Correcta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    }
+                }
+
+
+                
+            }
+
+        }
     }
 }

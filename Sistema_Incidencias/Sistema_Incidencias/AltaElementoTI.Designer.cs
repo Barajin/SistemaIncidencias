@@ -293,9 +293,9 @@
             this.btnCancelar.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnCancelar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnCancelar.Location = new System.Drawing.Point(433, 310);
+            this.btnCancelar.Location = new System.Drawing.Point(424, 305);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(96, 31);
+            this.btnCancelar.Size = new System.Drawing.Size(116, 41);
             this.btnCancelar.TabIndex = 15;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
@@ -311,6 +311,7 @@
             this.btnAgregarElementoTI.TabIndex = 14;
             this.btnAgregarElementoTI.Text = "Agregar Elemento TI";
             this.btnAgregarElementoTI.UseVisualStyleBackColor = false;
+            this.btnAgregarElementoTI.Click += new System.EventHandler(this.btnAgregarElementoTI_Click);
             // 
             // NumGarantia
             // 
