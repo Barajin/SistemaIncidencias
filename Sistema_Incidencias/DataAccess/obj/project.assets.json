@@ -872,19 +872,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Melissa\\.nuget\\packages\\": {}
+    "C:\\Users\\JesusBarajas\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Melissa\\Documents\\Escuela\\Gestion de operaciones de TI\\SistemaIncidencias\\Sistema_Incidencias\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\JesusBarajas\\Documents\\GitHub\\SistemaIncidencias\\Sistema_Incidencias\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "C:\\Users\\Melissa\\Documents\\Escuela\\Gestion de operaciones de TI\\SistemaIncidencias\\Sistema_Incidencias\\DataAccess\\DataAccess.csproj",
-      "packagesPath": "C:\\Users\\Melissa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Melissa\\Documents\\Escuela\\Gestion de operaciones de TI\\SistemaIncidencias\\Sistema_Incidencias\\DataAccess\\obj\\",
+      "projectPath": "C:\\Users\\JesusBarajas\\Documents\\GitHub\\SistemaIncidencias\\Sistema_Incidencias\\DataAccess\\DataAccess.csproj",
+      "packagesPath": "C:\\Users\\JesusBarajas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\JesusBarajas\\Documents\\GitHub\\SistemaIncidencias\\Sistema_Incidencias\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Melissa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\JesusBarajas\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -897,8 +897,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\Melissa\\Documents\\Escuela\\Gestion de operaciones de TI\\SistemaIncidencias\\Sistema_Incidencias\\Common\\Common.csproj": {
-              "projectPath": "C:\\Users\\Melissa\\Documents\\Escuela\\Gestion de operaciones de TI\\SistemaIncidencias\\Sistema_Incidencias\\Common\\Common.csproj"
+            "C:\\Users\\JesusBarajas\\Documents\\GitHub\\SistemaIncidencias\\Sistema_Incidencias\\Common\\Common.csproj": {
+              "projectPath": "C:\\Users\\JesusBarajas\\Documents\\GitHub\\SistemaIncidencias\\Sistema_Incidencias\\Common\\Common.csproj"
             }
           }
         }

@@ -22,3 +22,15 @@ C:\Users\Melissa\Documents\Escuela\Gestion de operaciones de TI\SistemaIncidenci
 C:\Users\Melissa\Documents\Escuela\Gestion de operaciones de TI\SistemaIncidencias\Sistema_Incidencias\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CopyComplete
 C:\Users\Melissa\Documents\Escuela\Gestion de operaciones de TI\SistemaIncidencias\Sistema_Incidencias\DataAccess\obj\Debug\netstandard2.0\DataAccess.dll
 C:\Users\Melissa\Documents\Escuela\Gestion de operaciones de TI\SistemaIncidencias\Sistema_Incidencias\DataAccess\obj\Debug\netstandard2.0\DataAccess.pdb
+C:\Users\JesusBarajas\Documents\GitHub\SistemaIncidencias\Sistema_Incidencias\DataAccess\bin\Debug\netstandard2.0\DataAccess.deps.json
+C:\Users\JesusBarajas\Documents\GitHub\SistemaIncidencias\Sistema_Incidencias\DataAccess\bin\Debug\netstandard2.0\DataAccess.dll
+C:\Users\JesusBarajas\Documents\GitHub\SistemaIncidencias\Sistema_Incidencias\DataAccess\bin\Debug\netstandard2.0\DataAccess.pdb
+C:\Users\JesusBarajas\Documents\GitHub\SistemaIncidencias\Sistema_Incidencias\DataAccess\bin\Debug\netstandard2.0\Common.dll
+C:\Users\JesusBarajas\Documents\GitHub\SistemaIncidencias\Sistema_Incidencias\DataAccess\bin\Debug\netstandard2.0\Common.pdb
+C:\Users\JesusBarajas\Documents\GitHub\SistemaIncidencias\Sistema_Incidencias\DataAccess\obj\Debug\netstandard2.0\DataAccess.csprojAssemblyReference.cache
+C:\Users\JesusBarajas\Documents\GitHub\SistemaIncidencias\Sistema_Incidencias\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\JesusBarajas\Documents\GitHub\SistemaIncidencias\Sistema_Incidencias\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfo.cs
+C:\Users\JesusBarajas\Documents\GitHub\SistemaIncidencias\Sistema_Incidencias\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\JesusBarajas\Documents\GitHub\SistemaIncidencias\Sistema_Incidencias\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CopyComplete
+C:\Users\JesusBarajas\Documents\GitHub\SistemaIncidencias\Sistema_Incidencias\DataAccess\obj\Debug\netstandard2.0\DataAccess.dll
+C:\Users\JesusBarajas\Documents\GitHub\SistemaIncidencias\Sistema_Incidencias\DataAccess\obj\Debug\netstandard2.0\DataAccess.pdb
