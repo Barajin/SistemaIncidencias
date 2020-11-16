@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\danic\\Source\\Repos\\SistemaIncidencias\\Sistema_Incidencias\\Common\\Common.csproj": {}
+    "C:\\Users\\Melissa\\Documents\\Escuela\\Gestion de operaciones de TI\\SistemaIncidencias\\Sistema_Incidencias\\Common\\Common.csproj": {}
   },
   "projects": {
-    "C:\\Users\\danic\\Source\\Repos\\SistemaIncidencias\\Sistema_Incidencias\\Common\\Common.csproj": {
+    "C:\\Users\\Melissa\\Documents\\Escuela\\Gestion de operaciones de TI\\SistemaIncidencias\\Sistema_Incidencias\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\danic\\Source\\Repos\\SistemaIncidencias\\Sistema_Incidencias\\Common\\Common.csproj",
+        "projectUniqueName": "C:\\Users\\Melissa\\Documents\\Escuela\\Gestion de operaciones de TI\\SistemaIncidencias\\Sistema_Incidencias\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "C:\\Users\\danic\\Source\\Repos\\SistemaIncidencias\\Sistema_Incidencias\\Common\\Common.csproj",
-        "packagesPath": "C:\\Users\\danic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\danic\\Source\\Repos\\SistemaIncidencias\\Sistema_Incidencias\\Common\\obj\\",
+        "projectPath": "C:\\Users\\Melissa\\Documents\\Escuela\\Gestion de operaciones de TI\\SistemaIncidencias\\Sistema_Incidencias\\Common\\Common.csproj",
+        "packagesPath": "C:\\Users\\Melissa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Melissa\\Documents\\Escuela\\Gestion de operaciones de TI\\SistemaIncidencias\\Sistema_Incidencias\\Common\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\danic\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Melissa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -59,7 +55,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
