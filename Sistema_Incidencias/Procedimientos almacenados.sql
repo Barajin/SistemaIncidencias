@@ -1,3 +1,6 @@
+Use Sistema_Incidencias
+Go
+
 create proc ElementosTIPorDepartamento
 as
 Select departamento.id as 'Departamento', departamento.nombre, count(elementoTI.id) as 'Cantidad de elementos'  From elementoTI
