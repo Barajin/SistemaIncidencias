@@ -892,20 +892,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Melissa\\.nuget\\packages\\": {}
+    "C:\\Users\\danic\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Melissa\\Documents\\Escuela\\Gestion de operaciones de TI\\SistemaIncidencias\\Sistema_Incidencias\\Dominio\\Dominio.csproj",
+      "projectUniqueName": "C:\\Users\\danic\\Source\\Repos\\SistemaIncidencias\\Sistema_Incidencias\\Dominio\\Dominio.csproj",
       "projectName": "Dominio",
-      "projectPath": "C:\\Users\\Melissa\\Documents\\Escuela\\Gestion de operaciones de TI\\SistemaIncidencias\\Sistema_Incidencias\\Dominio\\Dominio.csproj",
-      "packagesPath": "C:\\Users\\Melissa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Melissa\\Documents\\Escuela\\Gestion de operaciones de TI\\SistemaIncidencias\\Sistema_Incidencias\\Dominio\\obj\\",
+      "projectPath": "C:\\Users\\danic\\Source\\Repos\\SistemaIncidencias\\Sistema_Incidencias\\Dominio\\Dominio.csproj",
+      "packagesPath": "C:\\Users\\danic\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\danic\\Source\\Repos\\SistemaIncidencias\\Sistema_Incidencias\\Dominio\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Melissa\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\danic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
@@ -917,11 +922,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\Melissa\\Documents\\Escuela\\Gestion de operaciones de TI\\SistemaIncidencias\\Sistema_Incidencias\\Common\\Common.csproj": {
-              "projectPath": "C:\\Users\\Melissa\\Documents\\Escuela\\Gestion de operaciones de TI\\SistemaIncidencias\\Sistema_Incidencias\\Common\\Common.csproj"
+            "C:\\Users\\danic\\Source\\Repos\\SistemaIncidencias\\Sistema_Incidencias\\Common\\Common.csproj": {
+              "projectPath": "C:\\Users\\danic\\Source\\Repos\\SistemaIncidencias\\Sistema_Incidencias\\Common\\Common.csproj"
             },
-            "C:\\Users\\Melissa\\Documents\\Escuela\\Gestion de operaciones de TI\\SistemaIncidencias\\Sistema_Incidencias\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "C:\\Users\\Melissa\\Documents\\Escuela\\Gestion de operaciones de TI\\SistemaIncidencias\\Sistema_Incidencias\\DataAccess\\DataAccess.csproj"
+            "C:\\Users\\danic\\Source\\Repos\\SistemaIncidencias\\Sistema_Incidencias\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\danic\\Source\\Repos\\SistemaIncidencias\\Sistema_Incidencias\\DataAccess\\DataAccess.csproj"
             }
           }
         }
@@ -956,7 +961,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
