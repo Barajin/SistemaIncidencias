@@ -87,11 +87,23 @@
     <Compile Include="FormAltaDepartamento.Designer.cs">
       <DependentUpon>FormAltaDepartamento.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAñadirElementosDepartamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAñadirElementosDepartamentos.Designer.cs">
+      <DependentUpon>FormAñadirElementosDepartamentos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDepartamentos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormDepartamentos.Designer.cs">
       <DependentUpon>FormDepartamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEvaluarIncidencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEvaluarIncidencias.Designer.cs">
+      <DependentUpon>FormEvaluarIncidencias.cs</DependentUpon>
     </Compile>
     <Compile Include="FormIncidenciaDetalle.cs">
       <SubType>Form</SubType>
@@ -135,6 +147,18 @@
     <Compile Include="FormMenuTecnico.Designer.cs">
       <DependentUpon>FormMenuTecnico.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTimbrarIncidencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTimbrarIncidencias.Designer.cs">
+      <DependentUpon>FormTimbrarIncidencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formVerElementosDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formVerElementosDepartamento.Designer.cs">
+      <DependentUpon>formVerElementosDepartamento.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormVerElementosTI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,8 +194,14 @@
     <EmbeddedResource Include="FormAltaDepartamento.resx">
       <DependentUpon>FormAltaDepartamento.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormAñadirElementosDepartamentos.resx">
+      <DependentUpon>FormAñadirElementosDepartamentos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormDepartamentos.resx">
       <DependentUpon>FormDepartamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEvaluarIncidencias.resx">
+      <DependentUpon>FormEvaluarIncidencias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormIncidenciaDetalle.resx">
       <DependentUpon>FormIncidenciaDetalle.cs</DependentUpon>
@@ -193,6 +223,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuTecnico.resx">
       <DependentUpon>FormMenuTecnico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTimbrarIncidencias.resx">
+      <DependentUpon>FormTimbrarIncidencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formVerElementosDepartamento.resx">
+      <DependentUpon>formVerElementosDepartamento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormVerElementosTI.resx">
       <DependentUpon>FormVerElementosTI.cs</DependentUpon>

@@ -263,6 +263,16 @@ namespace Sistema_Incidencias
             AbrirFormEnPanel(new Form1());
         }
 
+        private void lbl_asignarCargoTitulo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void LoadUserData()
         {
             label3.Text = UserLoginCache.Nombres;
