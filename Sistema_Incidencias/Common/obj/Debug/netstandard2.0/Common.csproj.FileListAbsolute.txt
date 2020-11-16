@@ -16,12 +16,12 @@ C:\Users\Melissa\Documents\Escuela\Gestion de operaciones de TI\SistemaIncidenci
 C:\Users\Melissa\Documents\Escuela\Gestion de operaciones de TI\SistemaIncidencias\Sistema_Incidencias\Common\obj\Debug\netstandard2.0\Common.csproj.CoreCompileInputs.cache
 C:\Users\Melissa\Documents\Escuela\Gestion de operaciones de TI\SistemaIncidencias\Sistema_Incidencias\Common\obj\Debug\netstandard2.0\Common.dll
 C:\Users\Melissa\Documents\Escuela\Gestion de operaciones de TI\SistemaIncidencias\Sistema_Incidencias\Common\obj\Debug\netstandard2.0\Common.pdb
-C:\Users\JesusBarajas\Documents\GitHub\SistemaIncidencias\Sistema_Incidencias\Common\bin\Debug\netstandard2.0\Common.deps.json
-C:\Users\JesusBarajas\Documents\GitHub\SistemaIncidencias\Sistema_Incidencias\Common\bin\Debug\netstandard2.0\Common.dll
-C:\Users\JesusBarajas\Documents\GitHub\SistemaIncidencias\Sistema_Incidencias\Common\bin\Debug\netstandard2.0\Common.pdb
-C:\Users\JesusBarajas\Documents\GitHub\SistemaIncidencias\Sistema_Incidencias\Common\obj\Debug\netstandard2.0\Common.csprojAssemblyReference.cache
-C:\Users\JesusBarajas\Documents\GitHub\SistemaIncidencias\Sistema_Incidencias\Common\obj\Debug\netstandard2.0\Common.AssemblyInfoInputs.cache
-C:\Users\JesusBarajas\Documents\GitHub\SistemaIncidencias\Sistema_Incidencias\Common\obj\Debug\netstandard2.0\Common.AssemblyInfo.cs
-C:\Users\JesusBarajas\Documents\GitHub\SistemaIncidencias\Sistema_Incidencias\Common\obj\Debug\netstandard2.0\Common.csproj.CoreCompileInputs.cache
-C:\Users\JesusBarajas\Documents\GitHub\SistemaIncidencias\Sistema_Incidencias\Common\obj\Debug\netstandard2.0\Common.dll
-C:\Users\JesusBarajas\Documents\GitHub\SistemaIncidencias\Sistema_Incidencias\Common\obj\Debug\netstandard2.0\Common.pdb
+C:\Users\danic\Source\Repos\SistemaIncidencias\Sistema_Incidencias\Common\bin\Debug\netstandard2.0\Common.deps.json
+C:\Users\danic\Source\Repos\SistemaIncidencias\Sistema_Incidencias\Common\bin\Debug\netstandard2.0\Common.dll
+C:\Users\danic\Source\Repos\SistemaIncidencias\Sistema_Incidencias\Common\bin\Debug\netstandard2.0\Common.pdb
+C:\Users\danic\Source\Repos\SistemaIncidencias\Sistema_Incidencias\Common\obj\Debug\netstandard2.0\Common.csprojAssemblyReference.cache
+C:\Users\danic\Source\Repos\SistemaIncidencias\Sistema_Incidencias\Common\obj\Debug\netstandard2.0\Common.AssemblyInfoInputs.cache
+C:\Users\danic\Source\Repos\SistemaIncidencias\Sistema_Incidencias\Common\obj\Debug\netstandard2.0\Common.AssemblyInfo.cs
+C:\Users\danic\Source\Repos\SistemaIncidencias\Sistema_Incidencias\Common\obj\Debug\netstandard2.0\Common.csproj.CoreCompileInputs.cache
+C:\Users\danic\Source\Repos\SistemaIncidencias\Sistema_Incidencias\Common\obj\Debug\netstandard2.0\Common.dll
+C:\Users\danic\Source\Repos\SistemaIncidencias\Sistema_Incidencias\Common\obj\Debug\netstandard2.0\Common.pdb

@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "HuzA8+xuFBxeA0EoO5Q8qtfmoFbBH/2hy9N6DujXip3He+Uu57D5qV5SnvjAHQb5MsaTjvDH7oJoESfRTFf47g==",
+  "dgSpecHash": "wLrFEsc/aiKNE3/VHunIkaajroRSSasgFJSSpHh+I6MhGmNaKNu9M6MJEGDAHHDu61qb2oiinVIbeF1YWpxR3Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\JesusBarajas\\Documents\\GitHub\\SistemaIncidencias\\Sistema_Incidencias\\Common\\Common.csproj",
+  "projectFilePath": "C:\\Users\\danic\\Source\\Repos\\SistemaIncidencias\\Sistema_Incidencias\\Common\\Common.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\JesusBarajas\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\JesusBarajas\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\danic\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\danic\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }
