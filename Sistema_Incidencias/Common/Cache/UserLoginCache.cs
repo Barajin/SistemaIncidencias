@@ -22,6 +22,8 @@ namespace Common.Cache
 
         public static string Cargo { get; set; }
 
+        public static int departamento { get; set; }
+
 
 
     }

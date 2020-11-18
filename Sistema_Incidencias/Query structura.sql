@@ -67,7 +67,7 @@ CREATE TABLE persona(
 CREATE TABLE cargo_persona(
 	fk_persona int NOT NULL,
 	cargo VARCHAR(80) NOT NULL,
-	fk_departamento int NOT NULL,
+	fk_departamento int NULL,
 
 	FOREIGN KEY (fk_persona)
         REFERENCES persona(id)
