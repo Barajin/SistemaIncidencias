@@ -335,6 +335,7 @@
             this.btnMembresia.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnMembresia.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMembresia.UseVisualStyleBackColor = true;
+            this.btnMembresia.Click += new System.EventHandler(this.btnMembresia_Click);
             // 
             // pictureBox4
             // 

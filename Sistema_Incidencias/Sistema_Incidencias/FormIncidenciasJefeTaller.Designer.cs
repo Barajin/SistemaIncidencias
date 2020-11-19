@@ -155,12 +155,18 @@
             // 
             // dgvIncidencias
             // 
+            this.dgvIncidencias.AllowUserToAddRows = false;
+            this.dgvIncidencias.AllowUserToDeleteRows = false;
+            this.dgvIncidencias.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvIncidencias.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvIncidencias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvIncidencias.Location = new System.Drawing.Point(49, 85);
+            this.dgvIncidencias.Location = new System.Drawing.Point(12, 86);
             this.dgvIncidencias.Name = "dgvIncidencias";
-            this.dgvIncidencias.Size = new System.Drawing.Size(690, 257);
+            this.dgvIncidencias.ReadOnly = true;
+            this.dgvIncidencias.Size = new System.Drawing.Size(776, 257);
             this.dgvIncidencias.TabIndex = 0;
             this.dgvIncidencias.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvIncidencias_CellClick);
+            this.dgvIncidencias.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvIncidencias_CellContentClick);
             // 
             // FormIncidenciasJefeTaller
             // 

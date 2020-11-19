@@ -83,6 +83,13 @@ namespace Sistema_Incidencias
                 }
 
             }
+
+            else if (e.ColumnIndex == dgvIncidencias.Columns["detalles"].Index)
+            {
+                FormIncidenciaDetalle detalles = new FormIncidenciaDetalle();
+                detalles.Show();
+            }
+
         }
 
         public void llenarTabla()
@@ -139,6 +146,18 @@ namespace Sistema_Incidencias
             {
                 dgvIncidencias.Columns.Insert(columnIndex1, rechazarButtonColumn);
             }
+
+            
+            DataGridViewButtonColumn VerDetallesButtonColumn = new DataGridViewButtonColumn();
+            VerDetallesButtonColumn.Name = "detalles";
+            VerDetallesButtonColumn.Text = "Detalles";
+            VerDetallesButtonColumn.UseColumnTextForButtonValue = true;
+            int columnIndex2 = dgvIncidencias.ColumnCount;
+            if (dgvIncidencias.Columns["detalles"] == null)
+            {
+                dgvIncidencias.Columns.Insert(columnIndex2, VerDetallesButtonColumn);
+            }
+            
         }
 
         private void btnRegresar_Click(object sender, EventArgs e)
@@ -148,6 +167,9 @@ namespace Sistema_Incidencias
             this.Close();
         }
 
+        private void dgvIncidencias_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
+        }
     }
 }
