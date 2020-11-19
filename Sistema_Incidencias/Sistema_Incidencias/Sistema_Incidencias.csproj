@@ -111,6 +111,12 @@
     <Compile Include="FormIncidenciaDetalle.Designer.cs">
       <DependentUpon>FormIncidenciaDetalle.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormIncidenciasJefeTaller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIncidenciasJefeTaller.Designer.cs">
+      <DependentUpon>FormIncidenciasJefeTaller.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormListadoUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +152,12 @@
     </Compile>
     <Compile Include="FormMenuTecnico.Designer.cs">
       <DependentUpon>FormMenuTecnico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTecnicosJefeTaller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTecnicosJefeTaller.Designer.cs">
+      <DependentUpon>FormTecnicosJefeTaller.cs</DependentUpon>
     </Compile>
     <Compile Include="FormTimbrarIncidencias.cs">
       <SubType>Form</SubType>
@@ -206,6 +218,9 @@
     <EmbeddedResource Include="FormIncidenciaDetalle.resx">
       <DependentUpon>FormIncidenciaDetalle.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormIncidenciasJefeTaller.resx">
+      <DependentUpon>FormIncidenciasJefeTaller.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormListadoUsuarios.resx">
       <DependentUpon>FormListadoUsuarios.cs</DependentUpon>
     </EmbeddedResource>
@@ -223,6 +238,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuTecnico.resx">
       <DependentUpon>FormMenuTecnico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTecnicosJefeTaller.resx">
+      <DependentUpon>FormTecnicosJefeTaller.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTimbrarIncidencias.resx">
       <DependentUpon>FormTimbrarIncidencias.cs</DependentUpon>
@@ -334,6 +352,7 @@
     <None Include="Resources\Close1.png" />
     <None Include="Resources\Buscar.png" />
     <None Include="Resources\CerrarForm.png" />
+    <None Include="Resources\conexion %281%29.png" />
     <Content Include="Resources\dispositivos.png" />
     <None Include="Resources\dispositivos1.png" />
     <None Include="Resources\EditarProducto.png" />

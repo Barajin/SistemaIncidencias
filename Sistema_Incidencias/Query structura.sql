@@ -291,6 +291,7 @@ Inner Join departamento
 ON cargo_persona.fk_departamento = departamento.id
 Inner Join inserted
 On cargo_persona.fk_departamento = inserted.fk_departamento
+where cargo_persona.fk_departamento IS NOT NULL
 )
 
 Set @ubicacion = 'Ubicación X'
@@ -419,9 +420,9 @@ VALUES
 (19, 'Jefe del depto. de Ciencias Económico-Administrativas', 6),
 (20, 'Jefe del depto. de Ciencias Básicas', 2),
 (21, 'Jefa del depto. de División de Estudios de Posgrado e Investigación', 5),
-(22, 'Jefe de Taller de Hardware', 1),
-(23, 'Técnico', 1),
-(24, 'Administrador', 1);
+(22, 'Jefe de Taller de Hardware', null),
+(23, 'Técnico', null),
+(24, 'Administrador', null);
 GO
 
 INSERT INTO tipos_elementoTI(
