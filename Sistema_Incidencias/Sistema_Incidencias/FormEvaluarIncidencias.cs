@@ -67,7 +67,7 @@ namespace Sistema_Incidencias
 
         public void Insertar()
         {
-            string connString = "Server=.\\SQLEXPRESS; Database= Sistema_Incidencias; Integrated Security=True";
+            //string connString = "Server=.\\SQLEXPRESS; Database= Sistema_Incidencias; Integrated Security=True";
 
             using (SqlConnection connection = new SqlConnection(connString))
             {
