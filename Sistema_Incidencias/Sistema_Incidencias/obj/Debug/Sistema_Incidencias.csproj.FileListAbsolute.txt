@@ -201,6 +201,7 @@ C:\Users\Oscar\Desktop\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencia
 C:\Users\Oscar\Desktop\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.formVerElementosDepartamento.resources
 C:\Users\Oscar\Desktop\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.FormIncidenciasJefeTaller.resources
 C:\Users\Oscar\Desktop\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.FormTecnicosJefeTaller.resources
+<<<<<<< HEAD
 C:\Users\JesusBarajas\Source\Repos\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencias\bin\Debug\Sistema_Incidencias.exe.config
 C:\Users\JesusBarajas\Source\Repos\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencias\bin\Debug\Sistema_Incidencias.exe
 C:\Users\JesusBarajas\Source\Repos\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencias\bin\Debug\Sistema_Incidencias.pdb
@@ -245,3 +246,5 @@ C:\Users\JesusBarajas\Source\Repos\SistemaIncidencias\Sistema_Incidencias\Sistem
 C:\Users\JesusBarajas\Source\Repos\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.csproj.CopyComplete
 C:\Users\JesusBarajas\Source\Repos\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.exe
 C:\Users\JesusBarajas\Source\Repos\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.pdb
+=======
+>>>>>>> c91bfe6fc81a41eb9983fd047e62a1960ed723a7
