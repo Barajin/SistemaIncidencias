@@ -75,6 +75,12 @@
     <Compile Include="AsignarCargo.designer.cs">
       <DependentUpon>AsignarCargo.cs</DependentUpon>
     </Compile>
+    <Compile Include="AsignarSolucion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsignarSolucion.Designer.cs">
+      <DependentUpon>AsignarSolucion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AsignarCargo.resx">
       <DependentUpon>AsignarCargo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsignarSolucion.resx">
+      <DependentUpon>AsignarSolucion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

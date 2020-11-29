@@ -175,7 +175,7 @@ CREATE TABLE incidencia_detalle(
 
 CREATE TABLE incidencia_soluciones(
 	fk_incidencia int not null,
-    fk_elementoTI int not null,
+    fk_elementoTI int null,
     fk_servicio int not null,
 	
 	FOREIGN KEY (fk_incidencia)
@@ -555,3 +555,18 @@ Values(1, 1, 1, 21, null, null, null, null, null, null),
 	  (2, null, null, 6, null, null, null, null, null, null),
       (3, null, null, 2, null, null, null, null, null, null);
 GO
+
+Insert Into servicios(
+descripcion,
+nombre,
+tiempo_estimado
+)
+Values
+('Formateo', 'Formateo de equipos', null),
+('Se cambia disco duro y se instala todo el contenido del disco reemplazado', 'Cambio de disco duro', null),
+('Se descargan o actualizan los controladores', 'Instalación de drivers', null),
+('Se cambia la dirección IP de enlace para obtenerla correctamente por DHCP', 'Cambio Puerta Enlace IP', null),
+('Se reemplazan las unidades de memoria ram anteriores', 'Cambio de memoria ram', null),
+('Se busca la contraseña en la base de datos y se actualiza o se mantiene', 'Cambio o restauración de contraseña', null),
+('Se coloca pasta térmica en el procesador del equipo', 'Colocación de Pasta térmica', null);
+Go

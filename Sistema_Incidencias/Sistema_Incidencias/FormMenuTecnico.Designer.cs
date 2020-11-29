@@ -305,6 +305,7 @@
             this.btnMiPerfil.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnMiPerfil.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMiPerfil.UseVisualStyleBackColor = true;
+            this.btnMiPerfil.Click += new System.EventHandler(this.btnMiPerfil_Click);
             // 
             // pictureBox2
             // 
@@ -364,6 +365,7 @@
             this.button3.Text = "Reportes";
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // pictureBox3
             // 
