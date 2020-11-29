@@ -45,5 +45,28 @@ namespace Sistema_Incidencias
             lbFecha.Text = DateTime.Now.ToLongDateString();
             lblHora.Text = DateTime.Now.ToString("HH:mm:ssss");
         }
+
+        private void btnIncidencia_Click(object sender, EventArgs e)
+        {
+            FormIncidenciasJefeTaller incidencias = new FormIncidenciasJefeTaller();
+            incidencias.Show();
+        }
+
+        private void btnTecnicos_Click(object sender, EventArgs e)
+        {
+            FormTecnicosJefeTaller tecnicos = new FormTecnicosJefeTaller();
+            tecnicos.Show();
+        }
+
+        private void btnReporte_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FormAsignarTecnico AbrirAsignar = new FormAsignarTecnico();
+            AbrirAsignar.Show();
+        }
     }
 }

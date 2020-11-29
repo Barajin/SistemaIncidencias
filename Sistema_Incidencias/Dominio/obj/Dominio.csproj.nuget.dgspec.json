@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Oscar\\Desktop\\SistemaIncidencias\\Sistema_Incidencias\\Dominio\\Dominio.csproj": {}
+    "C:\\Users\\JesusBarajas\\source\\repos\\SistemaIncidencias\\Sistema_Incidencias\\Dominio\\Dominio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Oscar\\Desktop\\SistemaIncidencias\\Sistema_Incidencias\\Common\\Common.csproj": {
+    "C:\\Users\\JesusBarajas\\source\\repos\\SistemaIncidencias\\Sistema_Incidencias\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Oscar\\Desktop\\SistemaIncidencias\\Sistema_Incidencias\\Common\\Common.csproj",
+        "projectUniqueName": "C:\\Users\\JesusBarajas\\source\\repos\\SistemaIncidencias\\Sistema_Incidencias\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "C:\\Users\\Oscar\\Desktop\\SistemaIncidencias\\Sistema_Incidencias\\Common\\Common.csproj",
-        "packagesPath": "C:\\Users\\Oscar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Oscar\\Desktop\\SistemaIncidencias\\Sistema_Incidencias\\Common\\obj\\",
+        "projectPath": "C:\\Users\\JesusBarajas\\source\\repos\\SistemaIncidencias\\Sistema_Incidencias\\Common\\Common.csproj",
+        "packagesPath": "C:\\Users\\JesusBarajas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\JesusBarajas\\source\\repos\\SistemaIncidencias\\Sistema_Incidencias\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Oscar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\JesusBarajas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -59,17 +59,17 @@
         }
       }
     },
-    "C:\\Users\\Oscar\\Desktop\\SistemaIncidencias\\Sistema_Incidencias\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\JesusBarajas\\source\\repos\\SistemaIncidencias\\Sistema_Incidencias\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Oscar\\Desktop\\SistemaIncidencias\\Sistema_Incidencias\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\JesusBarajas\\source\\repos\\SistemaIncidencias\\Sistema_Incidencias\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\Oscar\\Desktop\\SistemaIncidencias\\Sistema_Incidencias\\DataAccess\\DataAccess.csproj",
-        "packagesPath": "C:\\Users\\Oscar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Oscar\\Desktop\\SistemaIncidencias\\Sistema_Incidencias\\DataAccess\\obj\\",
+        "projectPath": "C:\\Users\\JesusBarajas\\source\\repos\\SistemaIncidencias\\Sistema_Incidencias\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\JesusBarajas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\JesusBarajas\\source\\repos\\SistemaIncidencias\\Sistema_Incidencias\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Oscar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\JesusBarajas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -82,8 +82,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\Oscar\\Desktop\\SistemaIncidencias\\Sistema_Incidencias\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\Oscar\\Desktop\\SistemaIncidencias\\Sistema_Incidencias\\Common\\Common.csproj"
+              "C:\\Users\\JesusBarajas\\source\\repos\\SistemaIncidencias\\Sistema_Incidencias\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\JesusBarajas\\source\\repos\\SistemaIncidencias\\Sistema_Incidencias\\Common\\Common.csproj"
               }
             }
           }
@@ -122,17 +122,17 @@
         }
       }
     },
-    "C:\\Users\\Oscar\\Desktop\\SistemaIncidencias\\Sistema_Incidencias\\Dominio\\Dominio.csproj": {
+    "C:\\Users\\JesusBarajas\\source\\repos\\SistemaIncidencias\\Sistema_Incidencias\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Oscar\\Desktop\\SistemaIncidencias\\Sistema_Incidencias\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\JesusBarajas\\source\\repos\\SistemaIncidencias\\Sistema_Incidencias\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "C:\\Users\\Oscar\\Desktop\\SistemaIncidencias\\Sistema_Incidencias\\Dominio\\Dominio.csproj",
-        "packagesPath": "C:\\Users\\Oscar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Oscar\\Desktop\\SistemaIncidencias\\Sistema_Incidencias\\Dominio\\obj\\",
+        "projectPath": "C:\\Users\\JesusBarajas\\source\\repos\\SistemaIncidencias\\Sistema_Incidencias\\Dominio\\Dominio.csproj",
+        "packagesPath": "C:\\Users\\JesusBarajas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\JesusBarajas\\source\\repos\\SistemaIncidencias\\Sistema_Incidencias\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Oscar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\JesusBarajas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -145,11 +145,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\Oscar\\Desktop\\SistemaIncidencias\\Sistema_Incidencias\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\Oscar\\Desktop\\SistemaIncidencias\\Sistema_Incidencias\\Common\\Common.csproj"
+              "C:\\Users\\JesusBarajas\\source\\repos\\SistemaIncidencias\\Sistema_Incidencias\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\JesusBarajas\\source\\repos\\SistemaIncidencias\\Sistema_Incidencias\\Common\\Common.csproj"
               },
-              "C:\\Users\\Oscar\\Desktop\\SistemaIncidencias\\Sistema_Incidencias\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\Oscar\\Desktop\\SistemaIncidencias\\Sistema_Incidencias\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\JesusBarajas\\source\\repos\\SistemaIncidencias\\Sistema_Incidencias\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\JesusBarajas\\source\\repos\\SistemaIncidencias\\Sistema_Incidencias\\DataAccess\\DataAccess.csproj"
               }
             }
           }
