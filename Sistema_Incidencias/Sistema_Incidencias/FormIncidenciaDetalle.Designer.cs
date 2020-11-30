@@ -35,17 +35,21 @@
             // dgvIncidencias
             // 
             this.dgvIncidencias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvIncidencias.Location = new System.Drawing.Point(12, 26);
+            this.dgvIncidencias.Location = new System.Drawing.Point(16, 32);
+            this.dgvIncidencias.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvIncidencias.Name = "dgvIncidencias";
-            this.dgvIncidencias.Size = new System.Drawing.Size(776, 286);
+            this.dgvIncidencias.RowHeadersWidth = 51;
+            this.dgvIncidencias.Size = new System.Drawing.Size(1035, 352);
             this.dgvIncidencias.TabIndex = 0;
+            this.dgvIncidencias.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvIncidencias_CellContentClick);
             // 
             // FormIncidenciaDetalle
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.dgvIncidencias);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormIncidenciaDetalle";
             this.Text = "FormIncidenciaDetalle";
             this.Load += new System.EventHandler(this.FormIncidenciaDetalle_Load);

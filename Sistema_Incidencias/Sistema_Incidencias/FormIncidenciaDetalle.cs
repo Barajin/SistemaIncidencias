@@ -27,8 +27,7 @@ namespace Sistema_Incidencias
 
         public void llenarTabla()
         {
-            var select = "select i.titulo, i.descripcion, i.prioridad, p.nombre  +' '+ p.apellidoPaterno as 'Jefe Departamento', ti.nombre as Tipo  from incidencia i" +
-               " join persona p on i.persona = p.id join tipos_incidencia ti on i.tipo = ti.id";
+            var select = "select i.titulo, i.descripcion, i.prioridad, p.nombre, p.apellidoPaterno as 'Jefe Departamento', i.calificacion, ti.nombre as Tipo, cp.cargo, cp.fk_persona, inc.tecnico, inc.departamento, inc.fechaInicio, inc.fechaTerminacion from incidencia i  join persona p on i.persona = p.id  join cargo_persona cp on p.id = cp.fk_persona join tipos_incidencia ti on i.tipo = ti.id join incidencia_detalle inc on inc.fk_incidencia = i.id";
 
 
             if (UserLoginCache.Cargo == "Jefe de Taller de Hardware" || UserLoginCache.Cargo == "Técnico en Hardware")
@@ -60,7 +59,10 @@ namespace Sistema_Incidencias
             dgvIncidencias.DataSource = ds.Tables[0];
         }
 
+        private void dgvIncidencias_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
+        }
     }
 
 

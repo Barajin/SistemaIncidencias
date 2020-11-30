@@ -29,9 +29,9 @@ namespace Sistema_Incidencias
             comboBox1.DisplayMember = "nombre";
 
             DataTable dt2 = ObtenereMarca();
-            comboBox1.DataSource = dt;
-            comboBox1.ValueMember = "marca";
-            comboBox1.DisplayMember = "marca";
+            comboBox2.DataSource = dt;
+            comboBox2.ValueMember = "marca";
+            comboBox2.DisplayMember = "marca";
         }
 
         public DataTable ObtenereElemento()
