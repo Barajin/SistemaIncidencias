@@ -180,19 +180,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Oscar\\.nuget\\packages\\": {}
+    "C:\\Users\\JesusBarajas\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Oscar\\Desktop\\SistemaIncidencias\\Sistema_Incidencias\\Common\\Common.csproj",
+      "projectUniqueName": "C:\\Users\\JesusBarajas\\Source\\Repos\\SistemaIncidencias\\Sistema_Incidencias\\Common\\Common.csproj",
       "projectName": "Common",
-      "projectPath": "C:\\Users\\Oscar\\Desktop\\SistemaIncidencias\\Sistema_Incidencias\\Common\\Common.csproj",
-      "packagesPath": "C:\\Users\\Oscar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Oscar\\Desktop\\SistemaIncidencias\\Sistema_Incidencias\\Common\\obj\\",
+      "projectPath": "C:\\Users\\JesusBarajas\\Source\\Repos\\SistemaIncidencias\\Sistema_Incidencias\\Common\\Common.csproj",
+      "packagesPath": "C:\\Users\\JesusBarajas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\JesusBarajas\\Source\\Repos\\SistemaIncidencias\\Sistema_Incidencias\\Common\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Oscar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\JesusBarajas\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

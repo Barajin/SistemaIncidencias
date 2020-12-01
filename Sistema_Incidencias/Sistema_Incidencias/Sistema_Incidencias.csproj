@@ -93,6 +93,12 @@
     <Compile Include="FormAltaDepartamento.Designer.cs">
       <DependentUpon>FormAltaDepartamento.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAsignarTecnico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAsignarTecnico.Designer.cs">
+      <DependentUpon>FormAsignarTecnico.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAñadirElementosDepartamentos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -214,6 +220,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAltaDepartamento.resx">
       <DependentUpon>FormAltaDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAsignarTecnico.resx">
+      <DependentUpon>FormAsignarTecnico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormAñadirElementosDepartamentos.resx">
       <DependentUpon>FormAñadirElementosDepartamentos.cs</DependentUpon>
