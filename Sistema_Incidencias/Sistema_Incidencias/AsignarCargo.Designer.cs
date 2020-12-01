@@ -58,6 +58,8 @@
             this.tmExpandirMenu = new System.Windows.Forms.Timer(this.components);
             this.tmContraerMenu = new System.Windows.Forms.Timer(this.components);
             this.tmFechaHora = new System.Windows.Forms.Timer(this.components);
+            this.lblPrueba = new System.Windows.Forms.Label();
+            this.lblPrueba1 = new System.Windows.Forms.Label();
             this.panelContenedorPrincipal.SuspendLayout();
             this.panelContenedorForm.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -81,6 +83,8 @@
             // panelContenedorForm
             // 
             this.panelContenedorForm.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panelContenedorForm.Controls.Add(this.lblPrueba1);
+            this.panelContenedorForm.Controls.Add(this.lblPrueba);
             this.panelContenedorForm.Controls.Add(this.comboBox3);
             this.panelContenedorForm.Controls.Add(this.btn_cerrar);
             this.panelContenedorForm.Controls.Add(this.btn_guardar);
@@ -100,6 +104,7 @@
             // 
             // comboBox3
             // 
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Location = new System.Drawing.Point(410, 164);
             this.comboBox3.Name = "comboBox3";
@@ -150,6 +155,7 @@
             // 
             // comboBox2
             // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(410, 203);
             this.comboBox2.Name = "comboBox2";
@@ -159,6 +165,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(410, 235);
             this.comboBox1.Name = "comboBox1";
@@ -187,9 +194,10 @@
             // 
             // textBox1
             // 
+            this.textBox1.Enabled = false;
             this.textBox1.Location = new System.Drawing.Point(570, 165);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 20);
+            this.textBox1.Size = new System.Drawing.Size(28, 20);
             this.textBox1.TabIndex = 0;
             // 
             // panel1
@@ -379,6 +387,24 @@
             this.tmFechaHora.Enabled = true;
             this.tmFechaHora.Tick += new System.EventHandler(this.tmFechaHora_Tick);
             // 
+            // lblPrueba
+            // 
+            this.lblPrueba.AutoSize = true;
+            this.lblPrueba.Location = new System.Drawing.Point(410, 103);
+            this.lblPrueba.Name = "lblPrueba";
+            this.lblPrueba.Size = new System.Drawing.Size(35, 13);
+            this.lblPrueba.TabIndex = 10;
+            this.lblPrueba.Text = "label8";
+            // 
+            // lblPrueba1
+            // 
+            this.lblPrueba1.AutoSize = true;
+            this.lblPrueba1.Location = new System.Drawing.Point(410, 131);
+            this.lblPrueba1.Name = "lblPrueba1";
+            this.lblPrueba1.Size = new System.Drawing.Size(35, 13);
+            this.lblPrueba1.TabIndex = 11;
+            this.lblPrueba1.Text = "label8";
+            // 
             // AsignarCargo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -436,6 +462,8 @@
         private System.Windows.Forms.Button btn_cerrar;
         private System.Windows.Forms.Button btn_guardar;
         private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Label lblPrueba;
+        private System.Windows.Forms.Label lblPrueba1;
     }
 }
 

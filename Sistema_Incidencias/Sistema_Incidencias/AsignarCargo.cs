@@ -322,6 +322,8 @@ namespace Sistema_Incidencias
 
         private void btn_guardar_Click(object sender, EventArgs e)
         {
+            MessageBox.Show(("Entrando a asignar"), "ASIGNAR", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             Asignar();
         }
 
@@ -333,7 +335,7 @@ namespace Sistema_Incidencias
                 {
                     using (var cmd = cn.CreateCommand())
                     {
-                        cmd.CommandText = "SELECT * From departamento WHERE NOT EXISTS (SELECT NULL FROM cargo_persona WHERE cargo_persona.fk_departamento = departamento.id)";
+                        cmd.CommandText = " SELECT d.id,d.nombre FROM cargo_persona cp inner join departamento d on d.id=cp.fk_departamento WHERE NOT EXISTS (SELECT NULL FROM persona p WHERE  p.id = cp.fk_persona) ";
                         da.SelectCommand = cmd;
                         var dt = new DataTable();
                         da.Fill(dt);
@@ -346,6 +348,8 @@ namespace Sistema_Incidencias
 
         public void Asignar()
         {
+            //MessageBox.Show(("Dentro de asignar"), "ASIGNAR", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             int fk_persona = 0;
             string cargo = "";
             int fk_departamento = 0;
@@ -361,42 +365,154 @@ namespace Sistema_Incidencias
             else
             {
                 fk_departamento = Convert.ToInt32(comboBox1.SelectedValue.ToString());
-            }
+               // MessageBox.Show(("Entrando a validar cargo"), "VALIDAR", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            using (SqlConnection connection = new SqlConnection(connString))
-            {
-                String query = "INSERT INTO cargo_persona(fk_persona,cargo,fk_departamento) " +
+                if (CargoAsignado(fk_departamento, cargo))
+                {
+
+
+                    using (SqlConnection connection = new SqlConnection(connString))
+                    {
+                        MessageBox.Show(("Entrando a actualizar"), "ACTUALIZAR", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        String query = "INSERT INTO cargo_persona(fk_persona,cargo,fk_departamento) " +
                     "VALUES (@fk_persona,@cargo,@fk_departamento)";
 
-                using (SqlCommand command = new SqlCommand(query, connection))
+                        var sql = "UPDATE cargo_persona SET fk_persona = @fk_persona where  fk_departamento = @fk_departamento and cargo like '%@cargo'";// repeat for all variables
+
+
+                        using (SqlCommand command = new SqlCommand(sql, connection))
+                        {
+                            command.Parameters.AddWithValue("@fk_persona", fk_persona);
+                            command.Parameters.AddWithValue("@cargo", cargo);
+                            if (fk_departamento == 0)
+                            {
+                              
+                                command.Parameters.AddWithValue("@fk_departamento", DBNull.Value);
+                            }
+                            else
+                            {
+                                command.Parameters.AddWithValue("@fk_departamento", fk_departamento);
+
+                            }
+
+
+
+                            connection.Open();
+                            int result = command.ExecuteNonQuery();
+
+                            // Check Error
+                            if (result < 0)
+                                Console.WriteLine("Error inserting data into Database!");
+                            else
+                                MessageBox.Show(("Cargo asignado"), "Cargo asignado correctamente", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        }
+                    }
+                }
+                else
                 {
-                    command.Parameters.AddWithValue("@fk_persona", fk_persona);
-                    command.Parameters.AddWithValue("@cargo", cargo);
-                    if (fk_departamento == 0)
-                    {
-                        command.Parameters.AddWithValue("@fk_departamento", DBNull.Value);
-                    }
-                    else
-                    {
-                        command.Parameters.AddWithValue("@fk_departamento", fk_departamento);
+                    MessageBox.Show(("Cargo no disponible"), "Cargo no disponible, seleccione otro.", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-                    }
-
-
-
-                    connection.Open();
-                    int result = command.ExecuteNonQuery();
-
-                    // Check Error
-                    if (result < 0)
-                        Console.WriteLine("Error inserting data into Database!");
-                    else
-                        MessageBox.Show(("Cargo asignado"), "Cargo asignado correctamente", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 }
             }
+
         }
 
+        public bool BuscarCargo(int id)
+        {
+            bool cargoOcupado = false;
+            string connString = "Server=.\\SQLEXPRESS; Database= Sistema_Incidencias; Integrated Security=True";
+
+            SqlConnection conn = new SqlConnection(connString);
+            try
+            {
+                conn.Open();
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Imposible conectar con los datos");
+
+                foreach (SqlError err in ex.Errors)
+                {
+                    MessageBox.Show(err.Message);
+                }
+                return true;
+
+            }
+            SqlDataReader lector = null;
+
+            string strComando = "select p.nombre ,cp.fk_persona from cargo_persona cp inner join persona p on p.id=cp.fk_persona where cp.fk_persona ="+ id +"";
+
+            SqlCommand cmd = new SqlCommand(strComando, conn);
+
+            lector = cmd.ExecuteReader();
+
+            if (lector.HasRows)
+            {
+                cargoOcupado = true;
+            }
+
+            conn.Close();
+            return cargoOcupado;
+        }
+
+        public bool CargoAsignado( int fk_departamento, string cargo)
+        {
+            lblPrueba.Text = fk_departamento.ToString();
+            lblPrueba1.Text = cargo;
+            bool asignado = false;
+            string connString = "Server=.\\SQLEXPRESS; Database= Sistema_Incidencias; Integrated Security=True";
+
+            SqlConnection conn = new SqlConnection(connString);
+            try
+            {
+                conn.Open();
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Imposible conectar con los datos");
+
+                foreach (SqlError err in ex.Errors)
+                {
+                    MessageBox.Show(err.Message);
+                }
+                return true;
+
+            }
+            SqlDataReader lector = null;
+
+            if(fk_departamento == null)
+            {
+                string strComando = "select d.nombre, cp.cargo from departamento d inner join cargo_persona cp on d.id=cp.fk_departamento where cp.cargo = '%" + cargo + "'%;";
+                SqlCommand cmd = new SqlCommand(strComando, conn);
+                lector = cmd.ExecuteReader();
+
+                if (lector.HasRows)
+                {
+                    asignado = true;
+                }
+            }
+            else
+            {
+                string strComando = "select d.nombre, cp.cargo from departamento d inner join cargo_persona cp on d.id=cp.fk_departamento where cp.fk_departamento = " + fk_departamento + ";";
+                SqlCommand cmd = new SqlCommand(strComando, conn);
+                lector = cmd.ExecuteReader();
+
+                if (lector.HasRows)
+                {
+                    asignado = true;
+                }
+            }
+
+           
+
+           
+
+            conn.Close();
+            return asignado;
+        }
         public void LlenarComboCargos()
         {
             comboBox2.Items.Add("Jefe de departamento");

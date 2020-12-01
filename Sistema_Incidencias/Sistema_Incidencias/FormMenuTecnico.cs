@@ -38,7 +38,9 @@ namespace Sistema_Incidencias
 
         private void btnMembresia_Click(object sender, EventArgs e)
         {
-
+            FormIncidenciasAsignadasTecnico incidencias = new FormIncidenciasAsignadasTecnico();
+            incidencias.Show();
+          
         }
 
         private void button3_Click(object sender, EventArgs e)
