@@ -24,3 +24,4 @@ C:\Users\Luise\Desktop\SistemaIncidencias\Sistema_Incidencias\Common\obj\Debug\n
 C:\Users\Luise\Desktop\SistemaIncidencias\Sistema_Incidencias\Common\obj\Debug\netstandard2.0\Common.csproj.CoreCompileInputs.cache
 C:\Users\Luise\Desktop\SistemaIncidencias\Sistema_Incidencias\Common\obj\Debug\netstandard2.0\Common.dll
 C:\Users\Luise\Desktop\SistemaIncidencias\Sistema_Incidencias\Common\obj\Debug\netstandard2.0\Common.pdb
+C:\Users\Oscar\Desktop\SistemaIncidencias\Sistema_Incidencias\Common\obj\Debug\netstandard2.0\Common.csprojAssemblyReference.cache

@@ -78,15 +78,18 @@ namespace Sistema_Incidencias
             VariableEstado = 1; //Abierta
             VariableCalificacion = "0";
 
-            //Para el insert into incidencia_Detalle
-            VariableTipoElementoTI = Convert.ToInt32(textBox5.Text);
-            DatagriedVariableidElemento = Convert.ToInt32(textBox4.Text);
-         
+            if(VariableTipoIncidencia == 1)
+            {
+                //Para el insert into incidencia_Detalle
+                VariableTipoElementoTI = Convert.ToInt32(textBox5.Text);
+                DatagriedVariableidElemento = Convert.ToInt32(textBox4.Text);
+            }
 
-          
-
-
-
+            else 
+            {
+                VariableTipoElementoTI = 0;
+                DatagriedVariableidElemento = 0;
+            }
 
             using (SqlConnection connection = new SqlConnection(connString))
             {
@@ -130,9 +133,26 @@ namespace Sistema_Incidencias
                     "VALUES (@fk_incidencia,@elementoTI,@tipo_elementoTI,@departamento,@tecnico,@fechaInicio,@fechaTerminacion,@tiempoAtender, @tiempo_estimado_Solucion, @tiempoSolucionReal)";
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
+                    
                     command.Parameters.AddWithValue("@fk_incidencia", idIncidencia);
-                    command.Parameters.AddWithValue("@elementoTI", DatagriedVariableidElemento);
-                    command.Parameters.AddWithValue("@tipo_elementoTI", VariableTipoElementoTI);
+                    if(DatagriedVariableidElemento == 0)
+                    {
+                        command.Parameters.AddWithValue("@elementoTI", DBNull.Value);
+                    }
+                    else
+                    {
+                        command.Parameters.AddWithValue("@elementoTI", DatagriedVariableidElemento);
+
+                    }
+
+                    if(VariableTipoElementoTI == 0)
+                    {
+                        command.Parameters.AddWithValue("@tipo_elementoTI", DBNull.Value);
+                    }
+                    else
+                    {
+                        command.Parameters.AddWithValue("@tipo_elementoTI", VariableTipoElementoTI);
+                    }
                     command.Parameters.AddWithValue("@departamento", departamento);
                     command.Parameters.AddWithValue("@tecnico", DBNull.Value);
                     command.Parameters.AddWithValue("@fechaInicio", DBNull.Value);
@@ -239,7 +259,18 @@ namespace Sistema_Incidencias
             }
         }
 
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox3.SelectedIndex == 0)
+            {
+                dataGridView1.Visible = true;
+            }
 
+            else
+            {
+                dataGridView1.Visible = false;
+            }
+        }
 
 
     }
