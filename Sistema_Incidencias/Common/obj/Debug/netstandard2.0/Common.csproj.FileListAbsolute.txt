@@ -33,3 +33,4 @@ C:\Users\danic\Source\Repos\SistemaIncidencias2\Sistema_Incidencias\Common\obj\D
 C:\Users\danic\Source\Repos\SistemaIncidencias2\Sistema_Incidencias\Common\obj\Debug\netstandard2.0\Common.csproj.CoreCompileInputs.cache
 C:\Users\danic\Source\Repos\SistemaIncidencias2\Sistema_Incidencias\Common\obj\Debug\netstandard2.0\Common.dll
 C:\Users\danic\Source\Repos\SistemaIncidencias2\Sistema_Incidencias\Common\obj\Debug\netstandard2.0\Common.pdb
+C:\Users\Oscar\Desktop\SistemaIncidencias\Sistema_Incidencias\Common\obj\Debug\netstandard2.0\Common.csprojAssemblyReference.cache

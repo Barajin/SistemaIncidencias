@@ -62,14 +62,14 @@ namespace Sistema_Incidencias
         {
 
         }
-<<<<<<< HEAD
+
 
         private void button3_Click(object sender, EventArgs e)
         {
             FormAsignarTecnico AbrirAsignar = new FormAsignarTecnico();
             AbrirAsignar.Show();
         }
-=======
->>>>>>> c91bfe6fc81a41eb9983fd047e62a1960ed723a7
+
+
     }
 }

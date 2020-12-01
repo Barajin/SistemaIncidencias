@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panelMenu = new System.Windows.Forms.Panel();
-<<<<<<< HEAD
+
             this.btnIncidencia = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.PictureBox();
             this.btnMenu = new System.Windows.Forms.PictureBox();
@@ -45,8 +45,7 @@
             this.btnMiPerfil = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
-=======
->>>>>>> c91bfe6fc81a41eb9983fd047e62a1960ed723a7
+
             this.PanelBarraTitulo = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnMaximizar = new System.Windows.Forms.Button();
@@ -59,10 +58,10 @@
             this.tmExpandirMenu = new System.Windows.Forms.Timer(this.components);
             this.tmContraerMenu = new System.Windows.Forms.Timer(this.components);
             this.tmFechaHora = new System.Windows.Forms.Timer(this.components);
-<<<<<<< HEAD
+
             this.button2 = new System.Windows.Forms.Button();
             this.btnAsignar = new System.Windows.Forms.Button();
-=======
+
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.btnNormal = new System.Windows.Forms.Button();
@@ -82,7 +81,7 @@
             this.btnMiPerfil = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
->>>>>>> c91bfe6fc81a41eb9983fd047e62a1960ed723a7
+
             this.panelMenu.SuspendLayout();
             this.PanelBarraTitulo.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -102,11 +101,11 @@
             // 
             this.panelMenu.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.panelMenu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-<<<<<<< HEAD
+
             this.panelMenu.Controls.Add(this.btnAsignar);
             this.panelMenu.Controls.Add(this.button2);
-=======
->>>>>>> c91bfe6fc81a41eb9983fd047e62a1960ed723a7
+
+
             this.panelMenu.Controls.Add(this.btnIncidencia);
             this.panelMenu.Controls.Add(this.btnSalir);
             this.panelMenu.Controls.Add(this.btnMenu);
@@ -124,7 +123,7 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-<<<<<<< HEAD
+
             this.panelMenu.Size = new System.Drawing.Size(230, 501);
             this.panelMenu.TabIndex = 8;
             // 
@@ -326,11 +325,10 @@
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = true;
             // 
-=======
             this.panelMenu.Size = new System.Drawing.Size(230, 450);
             this.panelMenu.TabIndex = 8;
             // 
->>>>>>> c91bfe6fc81a41eb9983fd047e62a1960ed723a7
+
             // PanelBarraTitulo
             // 
             this.PanelBarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -346,7 +344,7 @@
             this.PanelBarraTitulo.Size = new System.Drawing.Size(570, 43);
             this.PanelBarraTitulo.TabIndex = 9;
             // 
-<<<<<<< HEAD
+
             // pictureBox8
             // 
             this.pictureBox8.Location = new System.Drawing.Point(9, 9);
@@ -356,8 +354,7 @@
             this.pictureBox8.TabIndex = 5;
             this.pictureBox8.TabStop = false;
             // 
-=======
->>>>>>> c91bfe6fc81a41eb9983fd047e62a1960ed723a7
+
             // label1
             // 
             this.label1.AutoSize = true;
@@ -369,7 +366,7 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "TECNM";
             // 
-<<<<<<< HEAD
+
             // btnNormal
             // 
             this.btnNormal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -397,8 +394,7 @@
             this.btnMinimizar.TabIndex = 2;
             this.btnMinimizar.UseVisualStyleBackColor = true;
             // 
-=======
->>>>>>> c91bfe6fc81a41eb9983fd047e62a1960ed723a7
+
             // btnMaximizar
             // 
             this.btnMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -411,7 +407,6 @@
             this.btnMaximizar.TabIndex = 1;
             this.btnMaximizar.UseVisualStyleBackColor = true;
             // 
-<<<<<<< HEAD
             // btnCerrar
             // 
             this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -425,8 +420,7 @@
             this.btnCerrar.TabIndex = 0;
             this.btnCerrar.UseVisualStyleBackColor = true;
             // 
-=======
->>>>>>> c91bfe6fc81a41eb9983fd047e62a1960ed723a7
+
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
@@ -437,11 +431,11 @@
             this.panel1.Controls.Add(this.pictureBox7);
             this.panel1.Controls.Add(this.lblHora);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-<<<<<<< HEAD
+
             this.panel1.Location = new System.Drawing.Point(230, 401);
-=======
+
             this.panel1.Location = new System.Drawing.Point(230, 350);
->>>>>>> c91bfe6fc81a41eb9983fd047e62a1960ed723a7
+
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(570, 100);
             this.panel1.TabIndex = 10;
@@ -491,7 +485,6 @@
             this.lbFecha.TabIndex = 4;
             this.lbFecha.Text = "Lunes, 26 de septiembre 2018";
             // 
-<<<<<<< HEAD
             // pictureBox7
             // 
             this.pictureBox7.Image = global::Sistema_Incidencias.Properties.Resources.perfil;
@@ -502,8 +495,7 @@
             this.pictureBox7.TabIndex = 3;
             this.pictureBox7.TabStop = false;
             // 
-=======
->>>>>>> c91bfe6fc81a41eb9983fd047e62a1960ed723a7
+
             // lblHora
             // 
             this.lblHora.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -531,7 +523,7 @@
             this.tmFechaHora.Enabled = true;
             this.tmFechaHora.Tick += new System.EventHandler(this.tmFechaHora_Tick);
             // 
-<<<<<<< HEAD
+
             // button2
             // 
             this.button2.Cursor = System.Windows.Forms.Cursors.Default;
@@ -572,7 +564,7 @@
             this.btnAsignar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAsignar.UseVisualStyleBackColor = true;
             this.btnAsignar.Click += new System.EventHandler(this.button3_Click);
-=======
+
             // pictureBox7
             // 
             this.pictureBox7.Image = global::Sistema_Incidencias.Properties.Resources.perfil;
@@ -829,17 +821,17 @@
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = true;
->>>>>>> c91bfe6fc81a41eb9983fd047e62a1960ed723a7
+
             // 
             // FormMenuJefeTaller
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
+
             this.ClientSize = new System.Drawing.Size(800, 501);
-=======
+
             this.ClientSize = new System.Drawing.Size(800, 450);
->>>>>>> c91bfe6fc81a41eb9983fd047e62a1960ed723a7
+
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.PanelBarraTitulo);
             this.Controls.Add(this.panelMenu);
