@@ -142,5 +142,10 @@ namespace Sistema_Incidencias
             }
 
         }
+
+        private void CmbTipoElemento_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

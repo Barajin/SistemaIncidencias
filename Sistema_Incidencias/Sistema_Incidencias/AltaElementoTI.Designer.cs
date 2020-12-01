@@ -365,6 +365,7 @@
             this.CmbTipoElemento.Name = "CmbTipoElemento";
             this.CmbTipoElemento.Size = new System.Drawing.Size(164, 21);
             this.CmbTipoElemento.TabIndex = 6;
+            this.CmbTipoElemento.SelectedIndexChanged += new System.EventHandler(this.CmbTipoElemento_SelectedIndexChanged);
             // 
             // label7
             // 
