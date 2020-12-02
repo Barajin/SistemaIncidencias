@@ -64,7 +64,7 @@ namespace Sistema_Incidencias
                     mainMenuTecnico.Show();
                 }
 
-                else if (UserLoginCache.Cargo.Contains("Jefe del depto.") || UserLoginCache.Cargo.Contains("Jefa del depto."))
+                else if (UserLoginCache.Cargo.Contains("Jefe de departamento") || UserLoginCache.Cargo.Contains("Jefa del depto."))
                 {
                        FormMenuJefeDepto mainMenuJefeDepto = new FormMenuJefeDepto();
                        mainMenuJefeDepto.Show();

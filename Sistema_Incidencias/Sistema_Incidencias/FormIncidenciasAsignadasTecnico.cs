@@ -25,8 +25,8 @@ namespace Sistema_Incidencias
           int id =  UserLoginCache.id;
            
 
-            var select = "select i.id,  i.titulo, i.descripcion,e.modelo as ElementoTI,ti.nombre as Tipo,i.prioridad, p.nombre + p.apellidoPaterno as Solicitante,dpto.nombre as Departamento,i.fechaLevantamiento from incidencia i" +
-                " inner join incidencia_detalle d on i.id = d.fk_incidencia inner join persona p on i.persona = p.id inner join departamento dpto on dpto.id = d.departamento inner join tipos_incidencia ti on ti.id = i.tipo inner join elementoTI e on d.elementoTI = e.id inner join estados_incidencia ei on ei.id = i.estado where d.tecnico =" + id + " and ei.nombre = 'Aprobada' ";
+            var select = "select i.id,  i.titulo, i.descripcion, d.elementoTI, e.modelo as ElementoTI,ti.nombre as Tipo,i.prioridad, p.nombre + p.apellidoPaterno as Solicitante,dpto.nombre as Departamento,i.fechaLevantamiento from incidencia i" +
+                " inner join incidencia_detalle d on i.id = d.fk_incidencia inner join persona p on i.persona = p.id inner join departamento dpto on dpto.id = d.departamento inner join tipos_incidencia ti on ti.id = i.tipo inner join elementoTI e on d.elementoTI = e.id inner join estados_incidencia ei on ei.id = i.estado where d.tecnico =" + id + " and ei.nombre = 'Aprobada'  or ei.nombre = 'En curso' ";
 
             var comando = new SqlConnection("Server=.\\SQLEXPRESS; Database= Sistema_Incidencias; Integrated Security=True"); // Your Connection String here
             var dataAdapter = new SqlDataAdapter(select, comando);
@@ -35,6 +35,16 @@ namespace Sistema_Incidencias
             var ds = new DataSet();
             dataAdapter.Fill(ds);
             dgvIncidencias.DataSource = ds.Tables[0];
+
+            DataGridViewButtonColumn solucionarButtonColumn = new DataGridViewButtonColumn();
+            solucionarButtonColumn.Name = "Solucionar";
+            solucionarButtonColumn.Text = "Solucionar";
+            solucionarButtonColumn.UseColumnTextForButtonValue = true;
+            int columnIndex1 = dgvIncidencias.ColumnCount;
+            if (dgvIncidencias.Columns["Solucionar"] == null)
+            {
+                dgvIncidencias.Columns.Insert(columnIndex1, solucionarButtonColumn);
+            }
 
             DataGridViewButtonColumn finalizarButtonColumn = new DataGridViewButtonColumn();
             finalizarButtonColumn.Name = "Finalizar";
@@ -51,7 +61,16 @@ namespace Sistema_Incidencias
 
         private void dgvIncidencias_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.ColumnIndex == dgvIncidencias.Columns["Finalizar"].Index)
+            if (e.ColumnIndex == dgvIncidencias.Columns["Solucionar"].Index)
+            {
+                int idIncidenciaEnviar = Convert.ToInt32(dgvIncidencias.Rows[e.RowIndex].Cells[0].Value.ToString());
+
+                AsignarSolucion soluciones = new AsignarSolucion(idIncidenciaEnviar);
+                soluciones.ShowDialog();
+            }
+
+
+                if (e.ColumnIndex == dgvIncidencias.Columns["Finalizar"].Index)
             {
                 string id = dgvIncidencias.Rows[e.RowIndex].Cells[0].Value.ToString();
 

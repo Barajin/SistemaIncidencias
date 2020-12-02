@@ -60,6 +60,7 @@
             this.btnMenu = new System.Windows.Forms.PictureBox();
             this.btnSalir = new System.Windows.Forms.PictureBox();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.PanelBarraTitulo.SuspendLayout();
@@ -395,7 +396,7 @@
             this.button5.ForeColor = System.Drawing.Color.Navy;
             this.button5.Image = global::Sistema_Incidencias.Properties.Resources.logout;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(0, 231);
+            this.button5.Location = new System.Drawing.Point(-5, 281);
             this.button5.Name = "button5";
             this.button5.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.button5.Size = new System.Drawing.Size(230, 50);
@@ -442,6 +443,7 @@
             // 
             this.panelMenu.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.panelMenu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelMenu.Controls.Add(this.button2);
             this.panelMenu.Controls.Add(this.btnSalir);
             this.panelMenu.Controls.Add(this.btnMenu);
             this.panelMenu.Controls.Add(this.pictureBox5);
@@ -460,6 +462,27 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(230, 450);
             this.panelMenu.TabIndex = 7;
+            // 
+            // button2
+            // 
+            this.button2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Navy;
+            this.button2.Image = global::Sistema_Incidencias.Properties.Resources.megafono;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(2, 235);
+            this.button2.Name = "button2";
+            this.button2.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.button2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.button2.Size = new System.Drawing.Size(230, 50);
+            this.button2.TabIndex = 14;
+            this.button2.Text = "Resolver incidencias";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // FormMenuTecnico
             // 
@@ -524,5 +547,6 @@
         private System.Windows.Forms.PictureBox btnMenu;
         private System.Windows.Forms.PictureBox btnSalir;
         private System.Windows.Forms.Panel panelMenu;
+        private System.Windows.Forms.Button button2;
     }
 }

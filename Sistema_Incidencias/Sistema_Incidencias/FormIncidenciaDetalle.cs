@@ -27,25 +27,48 @@ namespace Sistema_Incidencias
 
         public void llenarTabla()
         {
-            var select = "select i.titulo, i.descripcion, i.prioridad, p.nombre, p.apellidoPaterno as 'Jefe Departamento', i.calificacion, ti.nombre as Tipo, cp.cargo, cp.fk_persona, inc.tecnico, inc.departamento, inc.fechaInicio, inc.fechaTerminacion from incidencia i  join persona p on i.persona = p.id  join cargo_persona cp on p.id = cp.fk_persona join tipos_incidencia ti on i.tipo = ti.id join incidencia_detalle inc on inc.fk_incidencia = i.id";
+            var select = "select i.titulo, i.descripcion, i.prioridad, " +
+                   "i.calificacion, ti.nombre as Tipo,  inc.tecnico, inc.departamento, " +
+                   "cargo_persona.cargo, persona.apellidoPaterno + ' ' + persona.apellidoMaterno " +
+                   "as 'Nombre de Jefe de Departamento', inc.fechaInicio, inc.fechaTerminacion from incidencia i " +
+                   "join tipos_incidencia ti on i.tipo = ti.id join incidencia_detalle inc on inc.fk_incidencia = i.id " +
+                   "join cargo_persona on cargo_persona.fk_departamento = inc.departamento join persona on persona.id = cargo_persona.fk_persona";
 
 
             if (UserLoginCache.Cargo == "Jefe de Taller de Hardware" || UserLoginCache.Cargo == "Técnico en Hardware")
             {
-                select = "select *  from incidencia i" +
-               " join persona p on i.persona = p.id join tipos_incidencia ti on i.tipo = ti.id where ti.nombre = 'Hardware'";
+                select = "select i.titulo, i.descripcion, i.prioridad," +
+                         "i.calificacion, ti.nombre as Tipo,  inc.tecnico, inc.departamento, cargo_persona.cargo, persona.apellidoPaterno + ' ' + persona.apellidoMaterno as 'Nombre de Jefe de Departamento', " +
+                         "inc.fechaInicio, inc.fechaTerminacion from incidencia i " +
+                         "join tipos_incidencia ti on i.tipo = ti.id " +
+                         "join incidencia_detalle inc on inc.fk_incidencia = i.id " +
+                         "join cargo_persona on cargo_persona.fk_departamento = inc.departamento " +
+                         "join persona on persona.id = cargo_persona.fk_persona " +
+                         "where ti.nombre = 'Hardware'";
             }
 
             else if (UserLoginCache.Cargo == "Jefe de Taller de Software" || UserLoginCache.Cargo == "Técnico en Software")
             {
-                select = "select *  from incidencia i" +
-               " join persona p on i.persona = p.id join tipos_incidencia ti on i.tipo = ti.id where ti.nombre = 'Software'";
+                select = "select i.titulo, i.descripcion, i.prioridad," +
+                      "i.calificacion, ti.nombre as Tipo,  inc.tecnico, inc.departamento, cargo_persona.cargo, persona.apellidoPaterno + ' ' + persona.apellidoMaterno as 'Nombre de Jefe de Departamento', " +
+                      "inc.fechaInicio, inc.fechaTerminacion from incidencia i " +
+                      "join tipos_incidencia ti on i.tipo = ti.id " +
+                      "join incidencia_detalle inc on inc.fk_incidencia = i.id " +
+                      "join cargo_persona on cargo_persona.fk_departamento = inc.departamento " +
+                      "join persona on persona.id = cargo_persona.fk_persona " +
+                      "where ti.nombre = 'Software'";
             }
 
             else if (UserLoginCache.Cargo == "Jefe de Taller de Redes" || UserLoginCache.Cargo == "Técnico en Redes")
             {
-                select = "select *  from incidencia i" +
-                " join persona p on i.persona = p.id join tipos_incidencia ti on i.tipo = ti.id where ti.nombre = 'Redes'";
+                select = "select i.titulo, i.descripcion, i.prioridad," +
+                      "i.calificacion, ti.nombre as Tipo,  inc.tecnico, inc.departamento, cargo_persona.cargo, persona.apellidoPaterno + ' ' + persona.apellidoMaterno as 'Nombre de Jefe de Departamento', " +
+                      "inc.fechaInicio, inc.fechaTerminacion from incidencia i " +
+                      "join tipos_incidencia ti on i.tipo = ti.id " +
+                      "join incidencia_detalle inc on inc.fk_incidencia = i.id " +
+                      "join cargo_persona on cargo_persona.fk_departamento = inc.departamento " +
+                      "join persona on persona.id = cargo_persona.fk_persona " +
+                      "where ti.nombre = 'Redes'";
             }
 
 
