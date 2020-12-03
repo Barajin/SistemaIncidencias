@@ -479,7 +479,7 @@
             this.button2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button2.Size = new System.Drawing.Size(230, 50);
             this.button2.TabIndex = 14;
-            this.button2.Text = "Resolver incidencias";
+            this.button2.Text = "Soluciones aplicadas";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = true;

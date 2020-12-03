@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Common.Cache;
 
 namespace Sistema_Incidencias
 {
@@ -116,7 +117,14 @@ namespace Sistema_Incidencias
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
                     command.Parameters.AddWithValue("@fk_incidencia", idIncidencia);
-                    command.Parameters.AddWithValue("@fk_elementoTI", idElemento);
+                    if(idElemento == 0)
+                    {
+                        command.Parameters.AddWithValue("@fk_elementoTI", DBNull.Value);
+                    }
+                    else
+                    {
+                        command.Parameters.AddWithValue("@fk_elementoTI", idElemento);
+                    }
                     command.Parameters.AddWithValue("@fk_servicio", idServicio);
 
                     connection.Open();
@@ -141,6 +149,10 @@ namespace Sistema_Incidencias
 
         public void ObtenerElementoTI()
         {
+            if (UserLoginCache.Cargo.Contains("Software"))
+            {
+                return;
+            }
             var select = "Select incidencia_detalle.elementoTI From incidencia_detalle inner join incidencia " +
                 "on incidencia_detalle.fk_incidencia = incidencia.id " +
                 "inner join estados_incidencia " +

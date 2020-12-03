@@ -21,12 +21,28 @@ namespace Sistema_Incidencias
 
         public void llenarTablaPendientes()
         {
-            
-          int id =  UserLoginCache.id;
-           
+            int id = UserLoginCache.id;
+            var select = "";
+            if (UserLoginCache.Cargo.Contains("Software") || UserLoginCache.Cargo.Contains("Redes"))
+            {
+                select = "select i.id,  i.titulo, i.descripcion, d.elementoTI, ti.nombre as Tipo,i.prioridad, " +
+                    " p.nombre + p.apellidoPaterno as Solicitante,dpto.nombre as Departamento,i.fechaLevantamiento " +
+                    "from incidencia i " +
+                " inner join incidencia_detalle d on i.id = d.fk_incidencia " +
+                "inner join persona p on i.persona = p.id " +
+                "inner join departamento dpto on dpto.id = d.departamento " +
+                "inner join tipos_incidencia ti on ti.id = i.tipo " +
+                "inner join estados_incidencia ei on ei.id = i.estado " +
+                "where d.tecnico =" + id + " and ei.nombre = 'Aprobada'  or ei.nombre = 'En curso' "; 
+            }
+            else
+            {
 
-            var select = "select i.id,  i.titulo, i.descripcion, d.elementoTI, e.modelo as ElementoTI,ti.nombre as Tipo,i.prioridad, p.nombre + p.apellidoPaterno as Solicitante,dpto.nombre as Departamento,i.fechaLevantamiento from incidencia i" +
-                " inner join incidencia_detalle d on i.id = d.fk_incidencia inner join persona p on i.persona = p.id inner join departamento dpto on dpto.id = d.departamento inner join tipos_incidencia ti on ti.id = i.tipo inner join elementoTI e on d.elementoTI = e.id inner join estados_incidencia ei on ei.id = i.estado where d.tecnico =" + id + " and ei.nombre = 'Aprobada'  or ei.nombre = 'En curso' ";
+             select = "select i.id,  i.titulo, i.descripcion, d.elementoTI, e.modelo as ElementoTI,ti.nombre as Tipo,i.prioridad, p.nombre + p.apellidoPaterno as Solicitante,dpto.nombre as Departamento,i.fechaLevantamiento from incidencia i" +
+             " inner join incidencia_detalle d on i.id = d.fk_incidencia inner join persona p on i.persona = p.id inner join departamento dpto on dpto.id = d.departamento inner join tipos_incidencia ti on ti.id = i.tipo inner join elementoTI e on d.elementoTI = e.id inner join estados_incidencia ei on ei.id = i.estado where d.tecnico =" + id + " and ei.nombre = 'Aprobada'  or ei.nombre = 'En curso' ";
+
+            }
+
 
             var comando = new SqlConnection("Server=.\\SQLEXPRESS; Database= Sistema_Incidencias; Integrated Security=True"); // Your Connection String here
             var dataAdapter = new SqlDataAdapter(select, comando);
@@ -106,10 +122,26 @@ namespace Sistema_Incidencias
         {
 
             int id = UserLoginCache.id;
+            var select = "";
+            if (UserLoginCache.Cargo.Contains("Software"))
+            {
+                select = "select i.titulo, i.descripcion, ti.nombre as Tipo,i.prioridad, 	" +
+                    " p.nombre + p.apellidoPaterno as Solicitante,dpto.nombre as Departamento,i.fechaLevantamiento 	 " +
+                    "from incidencia i " +
+                    "inner join incidencia_detalle d on i.id = d.fk_incidencia " +
+                    "inner join persona p on i.persona = p.id " +
+                    "inner join departamento dpto on dpto.id = d.departamento " +
+                    "inner join tipos_incidencia ti on ti.id = i.tipo " +
+                    "inner join estados_incidencia ei on ei.id = i.estado " +
+                    "where d.tecnico =" + id + " and ei.nombre = 'Finalizada' ";
+            }
 
+            else
+            {
+                select = "select i.titulo, i.descripcion,e.modelo as ElementoTI,ti.nombre as Tipo,i.prioridad, p.nombre + p.apellidoPaterno as Solicitante,dpto.nombre as Departamento,i.fechaLevantamiento from incidencia i" +
+          " inner join incidencia_detalle d on i.id = d.fk_incidencia inner join persona p on i.persona = p.id inner join departamento dpto on dpto.id = d.departamento inner join tipos_incidencia ti on ti.id = i.tipo inner join elementoTI e on d.elementoTI = e.id inner join estados_incidencia ei on ei.id = i.estado where d.tecnico =" + id + " and ei.nombre = 'Finalizada' ";
+            }
 
-            var select = "select i.titulo, i.descripcion,e.modelo as ElementoTI,ti.nombre as Tipo,i.prioridad, p.nombre + p.apellidoPaterno as Solicitante,dpto.nombre as Departamento,i.fechaLevantamiento from incidencia i" +
-                " inner join incidencia_detalle d on i.id = d.fk_incidencia inner join persona p on i.persona = p.id inner join departamento dpto on dpto.id = d.departamento inner join tipos_incidencia ti on ti.id = i.tipo inner join elementoTI e on d.elementoTI = e.id inner join estados_incidencia ei on ei.id = i.estado where d.tecnico =" + id + " and ei.nombre = 'Finalizada' ";
 
             var comando = new SqlConnection("Server=.\\SQLEXPRESS; Database= Sistema_Incidencias; Integrated Security=True"); // Your Connection String here
             var dataAdapter = new SqlDataAdapter(select, comando);
