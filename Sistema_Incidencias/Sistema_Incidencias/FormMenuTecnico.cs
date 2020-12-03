@@ -38,9 +38,22 @@ namespace Sistema_Incidencias
 
         private void btnMembresia_Click(object sender, EventArgs e)
         {
-            FormIncidenciasAsignadasTecnico incidencias = new FormIncidenciasAsignadasTecnico();
-            incidencias.Show();
-          
+            //FormIncidenciasAsignadasTecnico incidencias = new FormIncidenciasAsignadasTecnico();
+            //incidencias.Show();
+
+            Form frm = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is FormIncidenciasAsignadasTecnico);
+
+            if (frm != null)
+            {
+                //si la instancia existe la pongo en primer plano
+                frm.BringToFront();
+                return;
+            }
+
+            //sino existe la instancia se crea una nueva
+            frm = new FormIncidenciasAsignadasTecnico();
+            frm.Show();
+
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -52,5 +65,22 @@ namespace Sistema_Incidencias
         {
 
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Está seguro de cerrar?", "Alerta¡¡", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            FormLogin login = new FormLogin();
+            login.Show();
+        }
+
+
     }
 }

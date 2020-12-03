@@ -93,5 +93,10 @@ namespace Sistema_Incidencias
         {
             e.Handled = char.IsWhiteSpace(e.KeyChar);
         }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -86,8 +86,21 @@ namespace Sistema_Incidencias
 
             else if (e.ColumnIndex == dgvIncidencias.Columns["detalles"].Index)
             {
-                FormIncidenciaDetalle detalles = new FormIncidenciaDetalle();
-                detalles.Show();
+                //FormIncidenciaDetalle detalles = new FormIncidenciaDetalle();
+                //detalles.Show();
+
+                Form frm = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is FormIncidenciaDetalle);
+
+                if (frm != null)
+                {
+                    //si la instancia existe la pongo en primer plano
+                    frm.BringToFront();
+                    return;
+                }
+
+                //sino existe la instancia se crea una nueva
+                frm = new FormIncidenciaDetalle();
+                frm.Show();
             }
 
         }
@@ -162,8 +175,21 @@ namespace Sistema_Incidencias
 
         private void btnRegresar_Click(object sender, EventArgs e)
         {
-            FormMenuJefeTaller menu = new FormMenuJefeTaller();
-            menu.Show();
+            Form frm = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is FormMenuJefeTaller);
+
+            if (frm != null)
+            {
+                //si la instancia existe la pongo en primer plano
+                frm.BringToFront();
+                return;
+            }
+
+            //sino existe la instancia se crea una nueva
+            frm = new FormMenuJefeTaller();
+            frm.Show();
+
+            //FormMenuJefeTaller menu = new FormMenuJefeTaller();
+            //menu.Show();
             this.Close();
         }
 
