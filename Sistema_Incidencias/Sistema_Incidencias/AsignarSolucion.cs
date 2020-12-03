@@ -48,8 +48,7 @@ namespace Sistema_Incidencias
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            idServicio = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value.ToString());
-            textBox1.Text = idServicio.ToString();
+           
 
         }
 
@@ -149,7 +148,7 @@ namespace Sistema_Incidencias
 
         public void ObtenerElementoTI()
         {
-            if (UserLoginCache.Cargo.Contains("Software"))
+            if (UserLoginCache.Cargo.Contains("Software") || UserLoginCache.Cargo.Contains("Redes"))
             {
                 return;
             }
@@ -174,7 +173,10 @@ namespace Sistema_Incidencias
 
         }
 
-
-
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            idServicio = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value.ToString());
+            textBox1.Text = idServicio.ToString();
+        }
     }
 }

@@ -69,6 +69,8 @@ namespace Sistema_Incidencias
             dataAdapter.Fill(ds);
             dataGridView1.DataSource = ds.Tables[0];
 
+            dataGridView1.ClearSelection();
+
         }
 
         public DataTable cargarTennicos()
@@ -185,13 +187,28 @@ namespace Sistema_Incidencias
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            idIncidencia = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value.ToString());
-            textBox1.Text = idIncidencia.ToString();
+           
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void dataGridView1_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            dataGridView1.Rows[0].Selected = false;
+        }
+
+        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            idIncidencia = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value.ToString());
+            textBox1.Text = idIncidencia.ToString();
         }
     }
 }

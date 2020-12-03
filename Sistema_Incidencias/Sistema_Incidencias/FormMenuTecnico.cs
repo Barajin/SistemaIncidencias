@@ -81,6 +81,23 @@ namespace Sistema_Incidencias
             login.Show();
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form frm = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is FormSolucionesAsignadasHistorial);
+
+            if (frm != null)
+            {
+                //si la instancia existe la pongo en primer plano
+                frm.BringToFront();
+                return;
+            }
+
+            //sino existe la instancia se crea una nueva
+            frm = new FormSolucionesAsignadasHistorial();
+            frm.Show();
+        }
+
+
 
     }
 }
