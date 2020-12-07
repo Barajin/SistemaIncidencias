@@ -60,10 +60,10 @@ namespace Sistema_Incidencias
 
         private void btnRegresar_Click(object sender, EventArgs e)
         {
-            FormMenuJefeTaller menu = new FormMenuJefeTaller();
-            menu.Show();
+            //FormMenuJefeTaller menu = new FormMenuJefeTaller();
+            //menu.Show();
             // this.Close();
-            this.Hide();
+            this.Close();
         }
 
 

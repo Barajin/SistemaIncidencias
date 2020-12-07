@@ -117,6 +117,12 @@
     <Compile Include="FormEvaluarIncidencias.Designer.cs">
       <DependentUpon>FormEvaluarIncidencias.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormHistorialDeIncidencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHistorialDeIncidencias.Designer.cs">
+      <DependentUpon>FormHistorialDeIncidencias.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormIncidenciaDetalle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -244,6 +250,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormEvaluarIncidencias.resx">
       <DependentUpon>FormEvaluarIncidencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHistorialDeIncidencias.resx">
+      <DependentUpon>FormHistorialDeIncidencias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormIncidenciaDetalle.resx">
       <DependentUpon>FormIncidenciaDetalle.cs</DependentUpon>
