@@ -117,6 +117,12 @@
     <Compile Include="FormEvaluarIncidencias.Designer.cs">
       <DependentUpon>FormEvaluarIncidencias.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormHistorialDeIncidencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHistorialDeIncidencias.Designer.cs">
+      <DependentUpon>FormHistorialDeIncidencias.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormIncidenciaDetalle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +176,12 @@
     </Compile>
     <Compile Include="FormMenuTecnico.Designer.cs">
       <DependentUpon>FormMenuTecnico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSolucionesAsignadasHistorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSolucionesAsignadasHistorial.Designer.cs">
+      <DependentUpon>FormSolucionesAsignadasHistorial.cs</DependentUpon>
     </Compile>
     <Compile Include="FormTecnicosJefeTaller.cs">
       <SubType>Form</SubType>
@@ -239,6 +251,9 @@
     <EmbeddedResource Include="FormEvaluarIncidencias.resx">
       <DependentUpon>FormEvaluarIncidencias.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormHistorialDeIncidencias.resx">
+      <DependentUpon>FormHistorialDeIncidencias.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormIncidenciaDetalle.resx">
       <DependentUpon>FormIncidenciaDetalle.cs</DependentUpon>
     </EmbeddedResource>
@@ -265,6 +280,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuTecnico.resx">
       <DependentUpon>FormMenuTecnico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSolucionesAsignadasHistorial.resx">
+      <DependentUpon>FormSolucionesAsignadasHistorial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTecnicosJefeTaller.resx">
       <DependentUpon>FormTecnicosJefeTaller.cs</DependentUpon>

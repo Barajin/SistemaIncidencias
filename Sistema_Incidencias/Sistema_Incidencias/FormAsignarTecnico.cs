@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using Common.Cache;
 
 namespace Sistema_Incidencias
 {
@@ -32,11 +33,33 @@ namespace Sistema_Incidencias
 
         public void cargarincidencias()
         {
-            var select = "Select incidencia.id as 'ID', incidencia.titulo as 'Titulo' , incidencia.descripcion as 'Descripcion', incidencia.prioridad as 'Prioridad', " +
-            "incidencia.fechaLevantamiento as 'FechaLevantamiento', estados_incidencia.nombre as 'Nombre', incidencia.calificacion as 'Calificacion', incidencia_detalle.elementoTI as 'Detalle' From incidencia " +
-            "JOIN incidencia_detalle " +
-            "on incidencia_detalle.fk_incidencia = incidencia.id " +
-            "Join estados_incidencia on estados_incidencia.id = incidencia.estado Where incidencia.estado = 2";
+            var select = "";
+            if (UserLoginCache.Cargo.Contains("Hardware"))
+            {
+                select = "Select incidencia.id as 'ID', incidencia.titulo as 'Titulo' , incidencia.descripcion as 'Descripcion', incidencia.prioridad as 'Prioridad', " +
+                "incidencia.fechaLevantamiento as 'FechaLevantamiento', estados_incidencia.nombre as 'Nombre', incidencia.calificacion as 'Calificacion', incidencia_detalle.elementoTI as 'Detalle' From incidencia " +
+                "JOIN incidencia_detalle " +
+                "on incidencia_detalle.fk_incidencia = incidencia.id " +
+                "Join estados_incidencia on estados_incidencia.id = incidencia.estado Where incidencia.estado = 2 and incidencia.tipo = 1";
+            }
+
+            else if (UserLoginCache.Cargo.Contains("Software"))
+            {
+                select = "Select incidencia.id as 'ID', incidencia.titulo as 'Titulo' , incidencia.descripcion as 'Descripcion', incidencia.prioridad as 'Prioridad', " +
+               "incidencia.fechaLevantamiento as 'FechaLevantamiento', estados_incidencia.nombre as 'Nombre', incidencia.calificacion as 'Calificacion', incidencia_detalle.elementoTI as 'Detalle' From incidencia " +
+               "JOIN incidencia_detalle " +
+               "on incidencia_detalle.fk_incidencia = incidencia.id " +
+               "Join estados_incidencia on estados_incidencia.id = incidencia.estado Where incidencia.estado = 2 and incidencia.tipo = 2";
+            }
+
+            else if (UserLoginCache.Cargo.Contains("Redes"))
+            {
+                select = "Select incidencia.id as 'ID', incidencia.titulo as 'Titulo' , incidencia.descripcion as 'Descripcion', incidencia.prioridad as 'Prioridad', " +
+                 "incidencia.fechaLevantamiento as 'FechaLevantamiento', estados_incidencia.nombre as 'Nombre', incidencia.calificacion as 'Calificacion', incidencia_detalle.elementoTI as 'Detalle' From incidencia " +
+                 "JOIN incidencia_detalle " +
+                 "on incidencia_detalle.fk_incidencia = incidencia.id " +
+                 "Join estados_incidencia on estados_incidencia.id = incidencia.estado Where incidencia.estado = 2 and incidencia.tipo = 3";
+            }
 
             var comando = new SqlConnection("Server=.\\SQLEXPRESS; Database= Sistema_Incidencias; Integrated Security=True"); // Your Connection String here
             var dataAdapter = new SqlDataAdapter(select, comando);
@@ -46,9 +69,7 @@ namespace Sistema_Incidencias
             dataAdapter.Fill(ds);
             dataGridView1.DataSource = ds.Tables[0];
 
-
-            
-
+            dataGridView1.ClearSelection();
 
         }
 
@@ -61,10 +82,30 @@ namespace Sistema_Incidencias
                 {
                     using (var cmd = cn.CreateCommand())
                     {
-                        cmd.CommandText =   "Select * From Persona " +
+                        if (UserLoginCache.Cargo.Contains("Hardware"))
+                        {
+                            cmd.CommandText = "Select * From Persona " +
                                             "Inner join cargo_persona " +
                                             "on cargo_persona.fk_persona = persona.id " +
-                                            "Where cargo LIKE '%Técnico%' or cargo LIKE '%Técnica%'";
+                                            "Where cargo LIKE '%Técnico en Hardware%' or cargo LIKE '%Técnica en Hardware%'";
+                        }
+
+                        else if (UserLoginCache.Cargo.Contains("Software"))
+                        {
+                            cmd.CommandText = "Select * From Persona " +
+                                            "Inner join cargo_persona " +
+                                            "on cargo_persona.fk_persona = persona.id " +
+                                            "Where cargo LIKE '%Técnico en Software%' or cargo LIKE '%Técnica en Software%'";
+                        }
+
+                        else if (UserLoginCache.Cargo.Contains("Redes"))
+                        {
+                            cmd.CommandText = "Select * From Persona " +
+                                           "Inner join cargo_persona " +
+                                           "on cargo_persona.fk_persona = persona.id " +
+                                           "Where cargo LIKE '%Técnico en Redes%' or cargo LIKE '%Técnica en Redes%'";
+                        }
+                        
                         da.SelectCommand = cmd;
                         var dt = new DataTable();
                         da.Fill(dt);
@@ -146,13 +187,28 @@ namespace Sistema_Incidencias
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            idIncidencia = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value.ToString());
-            textBox1.Text = idIncidencia.ToString();
+           
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void dataGridView1_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            dataGridView1.Rows[0].Selected = false;
+        }
+
+        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            idIncidencia = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value.ToString());
+            textBox1.Text = idIncidencia.ToString();
         }
     }
 }

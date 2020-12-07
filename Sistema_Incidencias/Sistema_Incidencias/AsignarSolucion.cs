@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Common.Cache;
 
 namespace Sistema_Incidencias
 {
@@ -18,14 +19,19 @@ namespace Sistema_Incidencias
         int idElemento = 0;
         string connString = "Server=.\\SQLEXPRESS; Database= Sistema_Incidencias; Integrated Security=True";
 
-        public AsignarSolucion()
+        public AsignarSolucion(int idIncidenciaEnviada)
         {
             InitializeComponent();
+            idIncidencia = idIncidenciaEnviada;
         }
 
         private void AsignarSolucion_Load(object sender, EventArgs e)
         {
             MostrarSoluciones();
+            MessageBox.Show(idIncidencia.ToString());
+
+            ObtenerElementoTI();
+            MessageBox.Show(idElemento.ToString());
         }
 
         public void MostrarSoluciones()
@@ -42,7 +48,7 @@ namespace Sistema_Incidencias
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            idServicio = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value.ToString());
+           
 
         }
 
@@ -77,7 +83,7 @@ namespace Sistema_Incidencias
         public void ActualizarIncidenciaDetalle()
         {
             var connetionString = "Server=.\\SQLEXPRESS; Database= Sistema_Incidencias; Integrated Security=True";
-            var sql = "UPDATE incidencia_detalle SET fechaTerminacion = GETDATE() where incidencia.id = @id";// repeat for all variables
+            var sql = "UPDATE incidencia_detalle SET fechaTerminacion = GETDATE() where incidencia_detalle.fk_incidencia = @id";// repeat for all variables
 
             using (var connection = new SqlConnection(connetionString))
             {
@@ -104,13 +110,20 @@ namespace Sistema_Incidencias
         {
             using (SqlConnection connection = new SqlConnection(connString))
             {
-                String query = "INSERT INTO incidencia_soluciones(fk_incidencia,fk_elemento,fk_servicio) " +
-                    "VALUES (@fk_incidencia,@fk_elemento,@fk_servicio)";
+                String query = "INSERT INTO incidencia_soluciones(fk_incidencia,fk_elementoTI,fk_servicio) " +
+                    "VALUES (@fk_incidencia,@fk_elementoTI,@fk_servicio)";
 
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
                     command.Parameters.AddWithValue("@fk_incidencia", idIncidencia);
-                    command.Parameters.AddWithValue("@fk_elemento", idElemento);
+                    if(idElemento == 0)
+                    {
+                        command.Parameters.AddWithValue("@fk_elementoTI", DBNull.Value);
+                    }
+                    else
+                    {
+                        command.Parameters.AddWithValue("@fk_elementoTI", idElemento);
+                    }
                     command.Parameters.AddWithValue("@fk_servicio", idServicio);
 
                     connection.Open();
@@ -120,7 +133,7 @@ namespace Sistema_Incidencias
                     if (result < 0)
                         Console.WriteLine("Error inserting data into Database!");
                     else
-                        MessageBox.Show(("Cargo asignado"), "Cargo asignado correctamente", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show(("Incidencia resuelta"), "Incidencia resuelta exitosamente", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     connection.Close();
                 }
             }
@@ -133,7 +146,37 @@ namespace Sistema_Incidencias
             ActualizarIncidenciaDetalle();
         }
 
+        public void ObtenerElementoTI()
+        {
+            if (UserLoginCache.Cargo.Contains("Software") || UserLoginCache.Cargo.Contains("Redes"))
+            {
+                return;
+            }
+            var select = "Select incidencia_detalle.elementoTI From incidencia_detalle inner join incidencia " +
+                "on incidencia_detalle.fk_incidencia = incidencia.id " +
+                "inner join estados_incidencia " +
+                "on estados_incidencia.id = incidencia.estado " +
+                "where incidencia.id = @idIncidencia ";
+            
+            using (var con = new SqlConnection(connString))
+            {
+              
+                using (var cmd = new SqlCommand(select, con))
+                {
+                    cmd.Parameters.AddWithValue("@idIncidencia", idIncidencia);
+                    con.Open();
+                    string elemento = cmd.ExecuteScalar().ToString();
+                    idElemento = Convert.ToInt32(elemento.ToString());
+                }
+            }
 
 
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            idServicio = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value.ToString());
+            textBox1.Text = idServicio.ToString();
+        }
     }
 }
