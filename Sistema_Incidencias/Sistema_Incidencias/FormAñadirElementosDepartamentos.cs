@@ -100,7 +100,7 @@ namespace Sistema_Incidencias
             using (SqlConnection connection = new SqlConnection(connString))
             {
                 String query = "INSERT INTO elementoTI_departamento " +
-                    "VALUES (@fk_elementoTi, @fkDepartamento)";
+                    "VALUES (@fkDepartamento, @fk_elementoTi)";
 
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
