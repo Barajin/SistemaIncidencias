@@ -54,3 +54,17 @@ C:\Users\danic\Source\Repos\SistemaIncidencias2\Sistema_Incidencias\Dominio\obj\
 C:\Users\danic\Source\Repos\SistemaIncidencias2\Sistema_Incidencias\Dominio\obj\Debug\netstandard2.0\Dominio.csproj.CopyComplete
 C:\Users\danic\Source\Repos\SistemaIncidencias2\Sistema_Incidencias\Dominio\obj\Debug\netstandard2.0\Dominio.dll
 C:\Users\danic\Source\Repos\SistemaIncidencias2\Sistema_Incidencias\Dominio\obj\Debug\netstandard2.0\Dominio.pdb
+C:\Users\danic\Source\Repos\SistemaIncidencias3\Sistema_Incidencias\Dominio\bin\Debug\netstandard2.0\Dominio.deps.json
+C:\Users\danic\Source\Repos\SistemaIncidencias3\Sistema_Incidencias\Dominio\bin\Debug\netstandard2.0\Dominio.dll
+C:\Users\danic\Source\Repos\SistemaIncidencias3\Sistema_Incidencias\Dominio\bin\Debug\netstandard2.0\Dominio.pdb
+C:\Users\danic\Source\Repos\SistemaIncidencias3\Sistema_Incidencias\Dominio\bin\Debug\netstandard2.0\Common.dll
+C:\Users\danic\Source\Repos\SistemaIncidencias3\Sistema_Incidencias\Dominio\bin\Debug\netstandard2.0\DataAccess.dll
+C:\Users\danic\Source\Repos\SistemaIncidencias3\Sistema_Incidencias\Dominio\bin\Debug\netstandard2.0\Common.pdb
+C:\Users\danic\Source\Repos\SistemaIncidencias3\Sistema_Incidencias\Dominio\bin\Debug\netstandard2.0\DataAccess.pdb
+C:\Users\danic\Source\Repos\SistemaIncidencias3\Sistema_Incidencias\Dominio\obj\Debug\netstandard2.0\Dominio.csprojAssemblyReference.cache
+C:\Users\danic\Source\Repos\SistemaIncidencias3\Sistema_Incidencias\Dominio\obj\Debug\netstandard2.0\Dominio.AssemblyInfoInputs.cache
+C:\Users\danic\Source\Repos\SistemaIncidencias3\Sistema_Incidencias\Dominio\obj\Debug\netstandard2.0\Dominio.AssemblyInfo.cs
+C:\Users\danic\Source\Repos\SistemaIncidencias3\Sistema_Incidencias\Dominio\obj\Debug\netstandard2.0\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\danic\Source\Repos\SistemaIncidencias3\Sistema_Incidencias\Dominio\obj\Debug\netstandard2.0\Dominio.csproj.CopyComplete
+C:\Users\danic\Source\Repos\SistemaIncidencias3\Sistema_Incidencias\Dominio\obj\Debug\netstandard2.0\Dominio.dll
+C:\Users\danic\Source\Repos\SistemaIncidencias3\Sistema_Incidencias\Dominio\obj\Debug\netstandard2.0\Dominio.pdb

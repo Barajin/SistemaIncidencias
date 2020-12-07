@@ -34,3 +34,12 @@ C:\Users\danic\Source\Repos\SistemaIncidencias2\Sistema_Incidencias\Common\obj\D
 C:\Users\danic\Source\Repos\SistemaIncidencias2\Sistema_Incidencias\Common\obj\Debug\netstandard2.0\Common.dll
 C:\Users\danic\Source\Repos\SistemaIncidencias2\Sistema_Incidencias\Common\obj\Debug\netstandard2.0\Common.pdb
 C:\Users\Oscar\Desktop\SistemaIncidencias\Sistema_Incidencias\Common\obj\Debug\netstandard2.0\Common.csprojAssemblyReference.cache
+C:\Users\danic\Source\Repos\SistemaIncidencias3\Sistema_Incidencias\Common\bin\Debug\netstandard2.0\Common.deps.json
+C:\Users\danic\Source\Repos\SistemaIncidencias3\Sistema_Incidencias\Common\bin\Debug\netstandard2.0\Common.dll
+C:\Users\danic\Source\Repos\SistemaIncidencias3\Sistema_Incidencias\Common\bin\Debug\netstandard2.0\Common.pdb
+C:\Users\danic\Source\Repos\SistemaIncidencias3\Sistema_Incidencias\Common\obj\Debug\netstandard2.0\Common.csprojAssemblyReference.cache
+C:\Users\danic\Source\Repos\SistemaIncidencias3\Sistema_Incidencias\Common\obj\Debug\netstandard2.0\Common.AssemblyInfoInputs.cache
+C:\Users\danic\Source\Repos\SistemaIncidencias3\Sistema_Incidencias\Common\obj\Debug\netstandard2.0\Common.AssemblyInfo.cs
+C:\Users\danic\Source\Repos\SistemaIncidencias3\Sistema_Incidencias\Common\obj\Debug\netstandard2.0\Common.csproj.CoreCompileInputs.cache
+C:\Users\danic\Source\Repos\SistemaIncidencias3\Sistema_Incidencias\Common\obj\Debug\netstandard2.0\Common.dll
+C:\Users\danic\Source\Repos\SistemaIncidencias3\Sistema_Incidencias\Common\obj\Debug\netstandard2.0\Common.pdb
