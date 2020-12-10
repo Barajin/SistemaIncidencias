@@ -178,5 +178,11 @@ namespace Sistema_Incidencias
             idServicio = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value.ToString());
             textBox1.Text = idServicio.ToString();
         }
+
+        private void btnAñadirSolucion_Click(object sender, EventArgs e)
+        {
+            FormAñadirNuevaSolucion nueva = new FormAñadirNuevaSolucion();
+            nueva.Show();
+        }
     }
 }

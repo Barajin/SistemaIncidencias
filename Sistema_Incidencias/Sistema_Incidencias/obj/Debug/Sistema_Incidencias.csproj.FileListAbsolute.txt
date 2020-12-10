@@ -291,3 +291,5 @@ C:\Users\danic\Source\Repos\SistemaIncidencias3\Sistema_Incidencias\Sistema_Inci
 C:\Users\danic\Source\Repos\SistemaIncidencias3\Sistema_Incidencias\Sistema_Incidencias\bin\Debug\System.Data.SqlClient.xml
 C:\Users\danic\Source\Repos\SistemaIncidencias3\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.csproj.CopyComplete
 C:\Users\Oscar\Desktop\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.FormIncidenciasJefeDepto.resources
+C:\Users\Oscar\Desktop\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.FormAñadirNuevaSolucion.resources
+C:\Users\Oscar\Desktop\SistemaIncidencias\Sistema_Incidencias\Sistema_Incidencias\obj\Debug\Sistema_Incidencias.FormVerSoluciones.resources

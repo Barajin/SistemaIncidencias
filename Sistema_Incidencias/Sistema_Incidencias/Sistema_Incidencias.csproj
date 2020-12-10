@@ -105,6 +105,12 @@
     <Compile Include="FormAñadirElementosDepartamentos.Designer.cs">
       <DependentUpon>FormAñadirElementosDepartamentos.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAñadirNuevaSolucion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAñadirNuevaSolucion.Designer.cs">
+      <DependentUpon>FormAñadirNuevaSolucion.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDepartamentos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -219,6 +225,12 @@
     <Compile Include="FormVerIncidencias.Designer.cs">
       <DependentUpon>FormVerIncidencias.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormVerSoluciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVerSoluciones.Designer.cs">
+      <DependentUpon>FormVerSoluciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="Personal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -250,6 +262,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAñadirElementosDepartamentos.resx">
       <DependentUpon>FormAñadirElementosDepartamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAñadirNuevaSolucion.resx">
+      <DependentUpon>FormAñadirNuevaSolucion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormDepartamentos.resx">
       <DependentUpon>FormDepartamentos.cs</DependentUpon>
@@ -307,6 +322,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormVerIncidencias.resx">
       <DependentUpon>FormVerIncidencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVerSoluciones.resx">
+      <DependentUpon>FormVerSoluciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Personal.resx">
       <DependentUpon>Personal.cs</DependentUpon>
