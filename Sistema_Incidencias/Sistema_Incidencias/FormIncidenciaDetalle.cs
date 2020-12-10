@@ -64,8 +64,8 @@ namespace Sistema_Incidencias
 
             else if (UserLoginCache.Cargo == "Jefe de Taller de Redes" || UserLoginCache.Cargo == "Técnico en Redes")
             {
-                select = "select i.titulo, i.descripcion, i.prioridad," +
-                      "i.calificacion, ti.nombre as Tipo,  inc.tecnico, inc.departamento, cargo_persona.cargo, persona.apellidoPaterno + ' ' + persona.apellidoMaterno as 'Nombre de Jefe de Departamento', " +
+                select = "select i.id as 'Código de incidencia', i.titulo, i.descripcion, i.prioridad," +
+                      "i.calificacion, ti.nombre as Tipo,  inc.tecnico, inc.departamento as 'Código de departamento', cargo_persona.cargo as 'Solicitante', persona.apellidoPaterno + ' ' + persona.apellidoMaterno as 'Nombre de Jefe de Departamento', " +
                       "inc.fechaInicio, inc.fechaTerminacion from incidencia i " +
                       "join tipos_incidencia ti on i.tipo = ti.id " +
                       "join incidencia_detalle inc on inc.fk_incidencia = i.id " +
