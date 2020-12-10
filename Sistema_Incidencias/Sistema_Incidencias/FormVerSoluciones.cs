@@ -36,7 +36,7 @@ namespace Sistema_Incidencias
         }
 
         private void button2_Click(object sender, EventArgs e)
-        {
+        {            
             Form frm = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is FormAñadirNuevaSolucion);
 
             if (frm != null)
@@ -49,6 +49,16 @@ namespace Sistema_Incidencias
             //sino existe la instancia se crea una nueva
             frm = new FormAñadirNuevaSolucion();
             frm.Show();
+        }
+
+        private void FormVerSoluciones_MdiChildActivate(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormVerSoluciones_Activated(object sender, EventArgs e)
+        {
+            MostrarSoluciones();
         }
     }
 }

@@ -66,7 +66,9 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "FormVerSoluciones";
             this.Text = "FormVerSoluciones";
+            this.Activated += new System.EventHandler(this.FormVerSoluciones_Activated);
             this.Load += new System.EventHandler(this.FormVerSoluciones_Load);
+            this.MdiChildActivate += new System.EventHandler(this.FormVerSoluciones_MdiChildActivate);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
