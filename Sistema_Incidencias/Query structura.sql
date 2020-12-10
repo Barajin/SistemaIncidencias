@@ -562,11 +562,11 @@ nombre,
 tiempo_estimado
 )
 Values
-('Formateo', 'Formateo de equipos', null),
-('Se cambia disco duro y se instala todo el contenido del disco reemplazado', 'Cambio de disco duro', null),
-('Se descargan o actualizan los controladores', 'Instalación de drivers', null),
-('Se cambia la dirección IP de enlace para obtenerla correctamente por DHCP', 'Cambio Puerta Enlace IP', null),
-('Se reemplazan las unidades de memoria ram anteriores', 'Cambio de memoria ram', null),
-('Se busca la contraseña en la base de datos y se actualiza o se mantiene', 'Cambio o restauración de contraseña', null),
-('Se coloca pasta térmica en el procesador del equipo', 'Colocación de Pasta térmica', null);
+('Formateo', 'Formateo de equipos', 120),
+('Se cambia disco duro y se instala todo el contenido del disco reemplazado', 'Cambio de disco duro', 120),
+('Se descargan o actualizan los controladores', 'Instalación de drivers', 60),
+('Se cambia la dirección IP de enlace para obtenerla correctamente por DHCP', 'Cambio Puerta Enlace IP', 15),
+('Se reemplazan las unidades de memoria ram anteriores', 'Cambio de memoria ram', 10),
+('Se busca la contraseña en la base de datos y se actualiza o se mantiene', 'Cambio o restauración de contraseña', 5),
+('Se coloca pasta térmica en el procesador del equipo', 'Colocación de Pasta térmica', 15);
 Go

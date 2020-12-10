@@ -135,6 +135,12 @@
     <Compile Include="FormIncidenciasAsignadasTecnico.Designer.cs">
       <DependentUpon>FormIncidenciasAsignadasTecnico.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormIncidenciasJefeDepto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIncidenciasJefeDepto.Designer.cs">
+      <DependentUpon>FormIncidenciasJefeDepto.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormIncidenciasJefeTaller.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -259,6 +265,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormIncidenciasAsignadasTecnico.resx">
       <DependentUpon>FormIncidenciasAsignadasTecnico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIncidenciasJefeDepto.resx">
+      <DependentUpon>FormIncidenciasJefeDepto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormIncidenciasJefeTaller.resx">
       <DependentUpon>FormIncidenciasJefeTaller.cs</DependentUpon>

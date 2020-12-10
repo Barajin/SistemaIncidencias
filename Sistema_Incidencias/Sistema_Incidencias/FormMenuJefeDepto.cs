@@ -68,5 +68,13 @@ namespace Sistema_Incidencias
                 Application.Exit();
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormIncidenciasJefeDepto ver = new FormIncidenciasJefeDepto();
+            ver.Show();
+        }
+
+
     }
 }

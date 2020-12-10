@@ -98,7 +98,7 @@ namespace Sistema_Incidencias
                         Console.WriteLine("Error inserting data into Database!");
                     else
                     {
-                        MessageBox.Show("Incidencia finalizada.", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Incidencia actualizada.", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
 
                     connection.Close();
@@ -133,7 +133,7 @@ namespace Sistema_Incidencias
                     if (result < 0)
                         Console.WriteLine("Error inserting data into Database!");
                     else
-                        MessageBox.Show(("Incidencia resuelta"), "Incidencia resuelta exitosamente", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show(("Solución añadida"), "Solución añadida", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     connection.Close();
                 }
             }
