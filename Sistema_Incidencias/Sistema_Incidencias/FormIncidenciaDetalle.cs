@@ -22,6 +22,7 @@ namespace Sistema_Incidencias
         private void FormIncidenciaDetalle_Load(object sender, EventArgs e)
         {
             llenarTabla();
+        
         }
 
 
@@ -37,13 +38,15 @@ namespace Sistema_Incidencias
 
             if (UserLoginCache.Cargo == "Jefe de Taller de Hardware" || UserLoginCache.Cargo == "Técnico en Hardware")
             {
-                select = "select i.titulo, i.descripcion, i.prioridad," +
-                         "i.calificacion, ti.nombre as Tipo,  inc.tecnico, inc.departamento, cargo_persona.cargo, persona.apellidoPaterno + ' ' + persona.apellidoMaterno as 'Nombre de Jefe de Departamento', " +
+                select = "select i.titulo as 'Título', i.descripcion as 'Descripción', elementoTI.id as 'Código de elemento', tipos_elementoTI.nombre as 'Tipo de elemento', elementoTI.ubicacion as 'Ubicación', elementoTI.modelo as 'Modelo', i.prioridad, " +
+                         "i.calificacion, ti.nombre as Tipo,  inc.tecnico, inc.departamento as 'Código de departamento', departamento.nombre as 'Departamento', cargo_persona.cargo as 'Solicitante', persona.apellidoPaterno + ' ' + persona.apellidoMaterno as 'Nombre de Jefe de Departamento', " +
                          "inc.fechaInicio, inc.fechaTerminacion from incidencia i " +
                          "join tipos_incidencia ti on i.tipo = ti.id " +
                          "join incidencia_detalle inc on inc.fk_incidencia = i.id " +
-                         "join cargo_persona on cargo_persona.fk_departamento = inc.departamento " +
-                         "join persona on persona.id = cargo_persona.fk_persona " +
+                        "join cargo_persona on cargo_persona.fk_departamento = inc.departamento " +
+                         "join persona on persona.id = cargo_persona.fk_persona join elementoTI on elementoTI.id = inc.elementoTI  " +
+                         "join tipos_elementoTI on tipos_elementoTI.id = elementoTI.tipo " +
+                         "join departamento on departamento.id = inc.departamento " +
                          "where ti.nombre = 'Hardware'";
             }
 
