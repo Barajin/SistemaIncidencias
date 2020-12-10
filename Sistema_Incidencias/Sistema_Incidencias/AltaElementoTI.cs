@@ -92,6 +92,7 @@ namespace Sistema_Incidencias
             String modelo = "";
             String marca = "";
             String descripcion = "";
+            String ubicacion = "SIN ASIGNAR";
 
             int tipoElemento =Convert.ToInt32(CmbTipoElemento.SelectedValue.ToString());
             modelo = txtModelo.Text;
@@ -112,8 +113,8 @@ namespace Sistema_Incidencias
 
                 using (SqlConnection connection = new SqlConnection(connString))
                 {
-                    String query = "INSERT INTO elementoTI(tipo,marca,modelo,Descripcion,garantia,fechaCompra) " +
-                        "VALUES (@tipo,@marca,@modelo,@Descripcion,@garantia,@fechaCompra)";
+                    String query = "INSERT INTO elementoTI(tipo,marca,modelo,Descripcion,garantia,fechaCompra, ubicacion) " +
+                        "VALUES (@tipo,@marca,@modelo,@Descripcion,@garantia,@fechaCompra, @ubicacion)";
 
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
@@ -123,7 +124,8 @@ namespace Sistema_Incidencias
                         command.Parameters.AddWithValue("@Descripcion", descripcion);
                         command.Parameters.AddWithValue("@fechaCompra", fechaCompra);
                         command.Parameters.AddWithValue("@garantia", garantia);
-                        
+                        command.Parameters.AddWithValue("@ubicacion", ubicacion);
+
 
                         connection.Open();
                         int result = command.ExecuteNonQuery();
