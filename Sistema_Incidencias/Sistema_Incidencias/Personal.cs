@@ -87,6 +87,31 @@ namespace Sistema_Incidencias
             lblHora.Text = DateTime.Now.ToString("HH:mm:ssss");
         }
 
+        private void Personal_Activated(object sender, EventArgs e)
+        {
+            LoadUserData();
+
+            var select = "Select id as 'Código de Personal', nombre  +' '+ apellidoPaterno+  +' '+ apellidoMaterno as 'Nombre', cargo_persona.cargo as 'Cargo', numeroCelular as 'Número Telefónico', direccion as 'Dirección' " +
+                "From persona " +
+                "inner join cargo_persona on cargo_persona.fk_persona = persona.id";
+            var comando = new SqlConnection("Server=.\\SQLEXPRESS; Database= Sistema_Incidencias; Integrated Security=True"); // Your Connection String here
+            var dataAdapter = new SqlDataAdapter(select, comando);
+
+            var commandBuilder = new SqlCommandBuilder(dataAdapter);
+            var ds = new DataSet();
+            dataAdapter.Fill(ds);
+            tablaPersonalDGV.DataSource = ds.Tables[0];
+
+
+            tablaPersonalDGV.Columns[0].Visible = false;
+            tablaPersonalDGV.Columns[1].Visible = false;
+            tablaPersonalDGV.Columns[2].Visible = false;
+            tablaPersonalDGV.Columns[3].Visible = false;
+            tablaPersonalDGV.Columns[4].Visible = false;
+            tablaPersonalDGV.Columns[5].Visible = false;
+            tablaPersonalDGV.Columns[6].Visible = false;
+            tablaPersonalDGV.Columns[7].Visible = false;
+        }
 
 
     }

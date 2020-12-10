@@ -72,6 +72,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "FormVerElementosTI";
             this.Text = "FormVerElementosTI";
+            this.Activated += new System.EventHandler(this.FormVerElementosTI_Activated);
             this.Load += new System.EventHandler(this.FormVerElementosTI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
