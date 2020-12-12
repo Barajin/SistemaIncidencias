@@ -42,12 +42,14 @@ namespace Sistema_Incidencias
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.CmboTipoElemento = new System.Windows.Forms.ComboBox();
+            this.txtUbicacion = new System.Windows.Forms.TextBox();
+            this.lblUbicacion = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(37, 329);
+            this.label5.Location = new System.Drawing.Point(37, 321);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(74, 13);
@@ -58,7 +60,7 @@ namespace Sistema_Incidencias
             // 
             this.cmb_departamento.Enabled = false;
             this.cmb_departamento.FormattingEnabled = true;
-            this.cmb_departamento.Location = new System.Drawing.Point(40, 344);
+            this.cmb_departamento.Location = new System.Drawing.Point(40, 338);
             this.cmb_departamento.Margin = new System.Windows.Forms.Padding(2);
             this.cmb_departamento.Name = "cmb_departamento";
             this.cmb_departamento.Size = new System.Drawing.Size(175, 21);
@@ -113,7 +115,7 @@ namespace Sistema_Incidencias
             this.btnAgregarDepartamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarDepartamento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnAgregarDepartamento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregarDepartamento.Location = new System.Drawing.Point(40, 408);
+            this.btnAgregarDepartamento.Location = new System.Drawing.Point(51, 456);
             this.btnAgregarDepartamento.Name = "btnAgregarDepartamento";
             this.btnAgregarDepartamento.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnAgregarDepartamento.Size = new System.Drawing.Size(99, 31);
@@ -133,7 +135,7 @@ namespace Sistema_Incidencias
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(233, 408);
+            this.btnCancelar.Location = new System.Drawing.Point(235, 454);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnCancelar.Size = new System.Drawing.Size(98, 34);
@@ -202,12 +204,31 @@ namespace Sistema_Incidencias
             this.CmboTipoElemento.Size = new System.Drawing.Size(126, 21);
             this.CmboTipoElemento.TabIndex = 21;
             // 
+            // txtUbicacion
+            // 
+            this.txtUbicacion.Location = new System.Drawing.Point(40, 398);
+            this.txtUbicacion.Name = "txtUbicacion";
+            this.txtUbicacion.Size = new System.Drawing.Size(242, 20);
+            this.txtUbicacion.TabIndex = 34;
+            // 
+            // lblUbicacion
+            // 
+            this.lblUbicacion.AutoSize = true;
+            this.lblUbicacion.Location = new System.Drawing.Point(37, 381);
+            this.lblUbicacion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblUbicacion.Name = "lblUbicacion";
+            this.lblUbicacion.Size = new System.Drawing.Size(55, 13);
+            this.lblUbicacion.TabIndex = 35;
+            this.lblUbicacion.Text = "Ubicacion";
+            // 
             // FormAñadirElementosDepartamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(380, 513);
+            this.Controls.Add(this.lblUbicacion);
+            this.Controls.Add(this.txtUbicacion);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.cmb_departamento);
             this.Controls.Add(this.btn_consultar);
@@ -245,5 +266,7 @@ namespace Sistema_Incidencias
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox CmboTipoElemento;
+        private System.Windows.Forms.TextBox txtUbicacion;
+        private System.Windows.Forms.Label lblUbicacion;
     }
 }

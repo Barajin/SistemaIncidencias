@@ -30,22 +30,25 @@ namespace Sistema_Incidencias
             var select = "";
             if(UserLoginCache.Cargo == "Jefe de Taller de Hardware")
             {
-                select = " select p.nombre + p.apellidoPaterno as 'Nombre completo', cp.cargo from persona p " +
-                "join cargo_persona cp on p.id = cp.fk_persona " +
-                "where cp.cargo like 'Técnico en Hardware%'";
+                select = "select p.nombre + ' ' + p.apellidoPaterno as 'Nombre completo', cp.cargo, count(incidencia_detalle.fk_incidencia) as 'Incidencias asignadas' from persona p  " +
+                    "join cargo_persona cp on p.id = cp.fk_persona " +
+                    "left join incidencia_detalle on incidencia_detalle.tecnico = p.id where cp.cargo like 'Técnico en Hardware%' " +
+                    "group by incidencia_detalle.fk_incidencia, p.nombre, p.apellidoPaterno, cp.cargo";
             }
             else if (UserLoginCache.Cargo == "Jefe de Taller de Software")
             {
-                select = " select p.nombre + p.apellidoPaterno as 'Nombre completo', cp.cargo from persona p " +
-                "join cargo_persona cp on p.id = cp.fk_persona " +
-                "where cp.cargo like 'Técnico en Software%'";
+                select = "select p.nombre + ' ' + p.apellidoPaterno as 'Nombre completo', cp.cargo, count(incidencia_detalle.fk_incidencia) as 'Incidencias asignadas' from persona p  " +
+                  "join cargo_persona cp on p.id = cp.fk_persona " +
+                  "left join incidencia_detalle on incidencia_detalle.tecnico = p.id where cp.cargo like 'Técnico en Software%' " +
+                  "group by incidencia_detalle.fk_incidencia, p.nombre, p.apellidoPaterno, cp.cargo";
             }
 
             else if(UserLoginCache.Cargo == "Jefe de Taller de Redes")
             {
-                select = " select p.nombre + p.apellidoPaterno as 'Nombre completo', cp.cargo from persona p " +
-                "join cargo_persona cp on p.id = cp.fk_persona " +
-                "where cp.cargo like 'Técnico en Redes%'";
+                select = "select p.nombre + ' ' + p.apellidoPaterno as 'Nombre completo', cp.cargo, count(incidencia_detalle.fk_incidencia) as 'Incidencias asignadas' from persona p  " +
+                    "join cargo_persona cp on p.id = cp.fk_persona " +
+                    "left join incidencia_detalle on incidencia_detalle.tecnico = p.id where cp.cargo like 'Técnico en Redes%' " +
+                    "group by incidencia_detalle.fk_incidencia, p.nombre, p.apellidoPaterno, cp.cargo";
             }
             
 

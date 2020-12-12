@@ -42,6 +42,7 @@ CREATE TABLE elementoTI(
 	Descripcion VARCHAR(200) NOT NULL,
 	garantia int NOT NULL,
 	fechaCompra date NOT NULL,
+	ubicacion varchar(70) NOT NULL,
 	PRIMARY KEY (id),
 
     FOREIGN KEY (tipo)
@@ -454,16 +455,17 @@ INSERT INTO elementoTI(
 	modelo,
 	Descripcion,
 	garantia,
-	fechaCompra
+	fechaCompra,
+	ubicacion
 )
 
 VALUES
  /***** Elementos de TI *****/
-(1, 'DELL', 'Optiplex 7040', 'PROCESADOR INTEL CORE I7 6700 DE 6TH 8 GB DE RAM 2 TB DE DISCO DURO', 1, GETDATE()),
-(2, 'CISCO', 'SERVIDOR CISCO 2040', 'PROCESADOR INTEL CORE I9 6700 DE 6TH', 2, GETDATE()),
-(3, 'ALIENWARE', 'LAPTOP ALIENWARE A40X', 'PROCESADOR INTEL CORE I20 14000 DE 6TH 92 GB DE RAM 200 TB DE DISCO DURO', 2, GETDATE()),
-(4, 'CANON', 'PROYECTOR CANON WIDE', 'RGB', 3, GETDATE()),
-(7, 'COPPEL', 'ACCESS POINT COPPEL READY', 'BANDA DE 2.4 GHZ RAM 2', 5, GETDATE());
+(1, 'DELL', 'Optiplex 7040', 'PROCESADOR INTEL CORE I7 6700 DE 6TH 8 GB DE RAM 2 TB DE DISCO DURO', 1, GETDATE(), 'Aula C1'),
+(2, 'CISCO', 'SERVIDOR CISCO 2040', 'PROCESADOR INTEL CORE I9 6700 DE 6TH', 2, GETDATE(), 'AULA E2'),
+(3, 'ALIENWARE', 'LAPTOP ALIENWARE A40X', 'PROCESADOR INTEL CORE I20 14000 DE 6TH 92 GB DE RAM 200 TB DE DISCO DURO', 2, GETDATE(), 'AULA F2'),
+(4, 'CANON', 'PROYECTOR CANON WIDE', 'RGB', 3, GETDATE(), 'OFICINA DEL DEPARTAMENTO'),
+(7, 'COPPEL', 'ACCESS POINT COPPEL READY', 'BANDA DE 2.4 GHZ RAM 2', 5, GETDATE(), 'LABORATORIO DE REDES');
 GO
 
 /****** Script for Insert Into Tipos_incidencia command from SSMS  ******/
@@ -562,11 +564,11 @@ nombre,
 tiempo_estimado
 )
 Values
-('Formateo', 'Formateo de equipos', null),
-('Se cambia disco duro y se instala todo el contenido del disco reemplazado', 'Cambio de disco duro', null),
-('Se descargan o actualizan los controladores', 'Instalación de drivers', null),
-('Se cambia la dirección IP de enlace para obtenerla correctamente por DHCP', 'Cambio Puerta Enlace IP', null),
-('Se reemplazan las unidades de memoria ram anteriores', 'Cambio de memoria ram', null),
-('Se busca la contraseña en la base de datos y se actualiza o se mantiene', 'Cambio o restauración de contraseña', null),
-('Se coloca pasta térmica en el procesador del equipo', 'Colocación de Pasta térmica', null);
+('Formateo', 'Formateo de equipos', 120),
+('Se cambia disco duro y se instala todo el contenido del disco reemplazado', 'Cambio de disco duro', 120),
+('Se descargan o actualizan los controladores', 'Instalación de drivers', 60),
+('Se cambia la dirección IP de enlace para obtenerla correctamente por DHCP', 'Cambio Puerta Enlace IP', 15),
+('Se reemplazan las unidades de memoria ram anteriores', 'Cambio de memoria ram', 10),
+('Se busca la contraseña en la base de datos y se actualiza o se mantiene', 'Cambio o restauración de contraseña', 5),
+('Se coloca pasta térmica en el procesador del equipo', 'Colocación de Pasta térmica', 15);
 Go

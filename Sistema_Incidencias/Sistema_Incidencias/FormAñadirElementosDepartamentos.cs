@@ -18,6 +18,7 @@ namespace Sistema_Incidencias
         DataTable dt3;
         String tmp1 = "";
         String tmp2 = "";
+        String ubicacion = "";
 
         string connString = "Server=.\\SQLEXPRESS; Database= Sistema_Incidencias; Integrated Security=True";
         public FormAñadirElementosDepartamentos()
@@ -117,7 +118,7 @@ namespace Sistema_Incidencias
                         Console.WriteLine("Error inserting data into Database!");
                     else
                         MessageBox.Show(("Se asignó correctamente el departamento al Elemento de TI"), "Asignación de elemento de TI correcta", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                    connection.Close();
                 }
             }
         }
@@ -164,12 +165,51 @@ namespace Sistema_Incidencias
             this.tmp2 = cmb_departamento.Text;
 
             Incersion();
+            ActualizarUbicacion();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             Close();
         }
+
+        public void ActualizarUbicacion()
+        {
+            ubicacion = txtUbicacion.Text;
+
+            if(ubicacion != "")
+            {
+                string connString = "Server=.\\SQLEXPRESS; Database= Sistema_Incidencias; Integrated Security=True";
+
+                int id = Convert.ToInt32(CmboTipoElemento.Text);
+
+                using (SqlConnection connection = new SqlConnection(connString))
+                {
+                    String query = "UPDATE elementoTI SET ubicacion = @ubicacion " +
+                        "WHERE id = @id";
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@ubicacion", ubicacion);
+                        command.Parameters.AddWithValue("@id", tmp1);
+
+
+
+                        connection.Open();
+                        int result = command.ExecuteNonQuery();
+
+                        // Check Error
+                        if (result < 0)
+                            Console.WriteLine("Error inserting data into Database!");
+
+                        connection.Close();
+                    }
+                }
+            }
+        }
+
+
+
 
     }
 }

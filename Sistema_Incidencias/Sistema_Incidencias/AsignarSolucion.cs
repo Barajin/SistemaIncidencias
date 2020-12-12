@@ -98,7 +98,7 @@ namespace Sistema_Incidencias
                         Console.WriteLine("Error inserting data into Database!");
                     else
                     {
-                        MessageBox.Show("Incidencia finalizada.", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Incidencia actualizada.", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
 
                     connection.Close();
@@ -133,7 +133,7 @@ namespace Sistema_Incidencias
                     if (result < 0)
                         Console.WriteLine("Error inserting data into Database!");
                     else
-                        MessageBox.Show(("Incidencia resuelta"), "Incidencia resuelta exitosamente", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show(("Solución añadida"), "Solución añadida", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     connection.Close();
                 }
             }
@@ -177,6 +177,12 @@ namespace Sistema_Incidencias
         {
             idServicio = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value.ToString());
             textBox1.Text = idServicio.ToString();
+        }
+
+        private void btnAñadirSolucion_Click(object sender, EventArgs e)
+        {
+            FormAñadirNuevaSolucion nueva = new FormAñadirNuevaSolucion();
+            nueva.Show();
         }
     }
 }

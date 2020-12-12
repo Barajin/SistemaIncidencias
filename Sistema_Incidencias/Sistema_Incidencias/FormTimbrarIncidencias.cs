@@ -43,6 +43,12 @@ namespace Sistema_Incidencias
 
         private void FormTimbrarIncidencias_Load(object sender, EventArgs e)
         {
+            comboBox2.Items.Clear();
+            comboBox2.Items.Add("Alta");
+            comboBox2.Items.Add("Media");
+            comboBox2.Items.Add("Baja");
+
+
             DataTable dt = ObtenerTipoIncidencia();
             comboBox3.DataSource = dt;
             comboBox3.ValueMember = "id";
@@ -73,7 +79,6 @@ namespace Sistema_Incidencias
             Variabledescripcion = textBox1.Text;
             VariableTipoIncidencia = Convert.ToInt32(comboBox3.SelectedValue.ToString());
             VariablePersona = UserLoginCache.id;
-            VariablePrioridad = "Alta";
             VariableFechaLevantamiento = DateTime.Now;
             VariableEstado = 1; //Abierta
             VariableCalificacion = "0";
@@ -270,6 +275,11 @@ namespace Sistema_Incidencias
             {
                 dataGridView1.Visible = false;
             }
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            VariablePrioridad = comboBox2.SelectedItem.ToString();
         }
 
 

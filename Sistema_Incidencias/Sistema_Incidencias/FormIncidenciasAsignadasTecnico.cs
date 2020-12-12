@@ -38,7 +38,7 @@ namespace Sistema_Incidencias
             else
             {
 
-             select = "select i.id,  i.titulo, i.descripcion, d.elementoTI, e.modelo as ElementoTI,ti.nombre as Tipo,i.prioridad, p.nombre + p.apellidoPaterno as Solicitante,dpto.nombre as Departamento,i.fechaLevantamiento from incidencia i" +
+             select = "select i.id,  i.titulo, i.descripcion, d.elementoTI, e.ubicacion, e.modelo as ElementoTI,ti.nombre as Tipo,i.prioridad, p.nombre + p.apellidoPaterno as Solicitante,dpto.nombre as Departamento,i.fechaLevantamiento from incidencia i" +
              " inner join incidencia_detalle d on i.id = d.fk_incidencia inner join persona p on i.persona = p.id inner join departamento dpto on dpto.id = d.departamento inner join tipos_incidencia ti on ti.id = i.tipo inner join elementoTI e on d.elementoTI = e.id inner join estados_incidencia ei on ei.id = i.estado where d.tecnico =" + id + " and ei.nombre = 'Aprobada'  or ei.nombre = 'En curso' ";
 
             }
