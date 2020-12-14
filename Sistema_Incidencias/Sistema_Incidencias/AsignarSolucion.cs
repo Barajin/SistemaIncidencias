@@ -28,10 +28,8 @@ namespace Sistema_Incidencias
         private void AsignarSolucion_Load(object sender, EventArgs e)
         {
             MostrarSoluciones();
-            MessageBox.Show(idIncidencia.ToString());
 
             ObtenerElementoTI();
-            MessageBox.Show(idElemento.ToString());
         }
 
         public void MostrarSoluciones()

@@ -36,16 +36,16 @@
             this.btnMaximizar = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dgvIncidencias = new System.Windows.Forms.DataGridView();
-            this.btnRegresar = new System.Windows.Forms.Button();
-            this.dgvIncidenciasTerminadas = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dgvIncidenciasTerminadas = new System.Windows.Forms.DataGridView();
+            this.btnRegresar = new System.Windows.Forms.Button();
+            this.dgvIncidencias = new System.Windows.Forms.DataGridView();
             this.PanelBarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvIncidencias)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvIncidenciasTerminadas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvIncidencias)).BeginInit();
             this.SuspendLayout();
             // 
             // PanelBarraTitulo
@@ -146,18 +146,39 @@
             this.panel2.Size = new System.Drawing.Size(800, 450);
             this.panel2.TabIndex = 10;
             // 
-            // dgvIncidencias
+            // label2
             // 
-            this.dgvIncidencias.AllowUserToAddRows = false;
-            this.dgvIncidencias.AllowUserToDeleteRows = false;
-            this.dgvIncidencias.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dgvIncidencias.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dgvIncidencias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvIncidencias.Location = new System.Drawing.Point(9, 117);
-            this.dgvIncidencias.Name = "dgvIncidencias";
-            this.dgvIncidencias.ReadOnly = true;
-            this.dgvIncidencias.Size = new System.Drawing.Size(776, 116);
-            this.dgvIncidencias.TabIndex = 0;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(12, 254);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(172, 20);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Incidencias finalizadas:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(5, 94);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(176, 20);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Incidencias en proceso:";
+            // 
+            // dgvIncidenciasTerminadas
+            // 
+            this.dgvIncidenciasTerminadas.AllowUserToAddRows = false;
+            this.dgvIncidenciasTerminadas.AllowUserToDeleteRows = false;
+            this.dgvIncidenciasTerminadas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvIncidenciasTerminadas.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgvIncidenciasTerminadas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvIncidenciasTerminadas.Location = new System.Drawing.Point(11, 277);
+            this.dgvIncidenciasTerminadas.Name = "dgvIncidenciasTerminadas";
+            this.dgvIncidenciasTerminadas.ReadOnly = true;
+            this.dgvIncidenciasTerminadas.Size = new System.Drawing.Size(776, 136);
+            this.dgvIncidenciasTerminadas.TabIndex = 2;
             // 
             // btnRegresar
             // 
@@ -173,39 +194,18 @@
             this.btnRegresar.UseVisualStyleBackColor = false;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
-            // dgvIncidenciasTerminadas
+            // dgvIncidencias
             // 
-            this.dgvIncidenciasTerminadas.AllowUserToAddRows = false;
-            this.dgvIncidenciasTerminadas.AllowUserToDeleteRows = false;
-            this.dgvIncidenciasTerminadas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dgvIncidenciasTerminadas.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dgvIncidenciasTerminadas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvIncidenciasTerminadas.Location = new System.Drawing.Point(11, 277);
-            this.dgvIncidenciasTerminadas.Name = "dgvIncidenciasTerminadas";
-            this.dgvIncidenciasTerminadas.ReadOnly = true;
-            this.dgvIncidenciasTerminadas.Size = new System.Drawing.Size(776, 136);
-            this.dgvIncidenciasTerminadas.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(5, 94);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(176, 20);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Incidencias en proceso:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 254);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(172, 20);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Incidencias finalizadas:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.dgvIncidencias.AllowUserToAddRows = false;
+            this.dgvIncidencias.AllowUserToDeleteRows = false;
+            this.dgvIncidencias.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvIncidencias.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgvIncidencias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvIncidencias.Location = new System.Drawing.Point(9, 117);
+            this.dgvIncidencias.Name = "dgvIncidencias";
+            this.dgvIncidencias.ReadOnly = true;
+            this.dgvIncidencias.Size = new System.Drawing.Size(776, 116);
+            this.dgvIncidencias.TabIndex = 0;
             // 
             // FormIncidenciasAsignadasTecnico
             // 
@@ -216,14 +216,15 @@
             this.Controls.Add(this.panel2);
             this.Name = "FormIncidenciasAsignadasTecnico";
             this.Text = "Incidencias Asignadas Técnico";
+            this.Activated += new System.EventHandler(this.FormIncidenciasAsignadasTecnico_Activated);
             this.Load += new System.EventHandler(this.FormIncidenciasAsignadasTecnico_Load);
             this.PanelBarraTitulo.ResumeLayout(false);
             this.PanelBarraTitulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvIncidencias)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvIncidenciasTerminadas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvIncidencias)).EndInit();
             this.ResumeLayout(false);
 
         }

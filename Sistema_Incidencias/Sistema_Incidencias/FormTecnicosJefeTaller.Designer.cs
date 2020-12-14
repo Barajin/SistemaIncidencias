@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.PanelBarraTitulo = new System.Windows.Forms.Panel();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label14 = new System.Windows.Forms.Label();
             this.btnNormal = new System.Windows.Forms.Button();
             this.btnMinimizar = new System.Windows.Forms.Button();
@@ -38,11 +39,13 @@
             this.lblId = new System.Windows.Forms.Label();
             this.btnRegresar = new System.Windows.Forms.Button();
             this.dgvTecnicos = new System.Windows.Forms.DataGridView();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
             this.PanelBarraTitulo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTecnicos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // PanelBarraTitulo
@@ -59,6 +62,15 @@
             this.PanelBarraTitulo.Name = "PanelBarraTitulo";
             this.PanelBarraTitulo.Size = new System.Drawing.Size(800, 43);
             this.PanelBarraTitulo.TabIndex = 3;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Location = new System.Drawing.Point(9, 9);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(28, 28);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 5;
+            this.pictureBox8.TabStop = false;
             // 
             // label14
             // 
@@ -123,6 +135,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.dataGridView1);
             this.panel2.Controls.Add(this.lblId);
             this.panel2.Controls.Add(this.btnRegresar);
             this.panel2.Controls.Add(this.dgvTecnicos);
@@ -135,11 +149,11 @@
             // lblId
             // 
             this.lblId.AutoSize = true;
-            this.lblId.Location = new System.Drawing.Point(217, 29);
+            this.lblId.Location = new System.Drawing.Point(36, 13);
             this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(35, 13);
+            this.lblId.Size = new System.Drawing.Size(105, 13);
             this.lblId.TabIndex = 2;
-            this.lblId.Text = "label1";
+            this.lblId.Text = "Incidencias en curso";
             // 
             // btnRegresar
             // 
@@ -157,20 +171,34 @@
             // 
             // dgvTecnicos
             // 
+            this.dgvTecnicos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvTecnicos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvTecnicos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTecnicos.Location = new System.Drawing.Point(49, 85);
+            this.dgvTecnicos.Location = new System.Drawing.Point(484, 85);
             this.dgvTecnicos.Name = "dgvTecnicos";
-            this.dgvTecnicos.Size = new System.Drawing.Size(690, 257);
+            this.dgvTecnicos.Size = new System.Drawing.Size(209, 203);
             this.dgvTecnicos.TabIndex = 0;
             // 
-            // pictureBox8
+            // dataGridView1
             // 
-            this.pictureBox8.Location = new System.Drawing.Point(9, 9);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(28, 28);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 5;
-            this.pictureBox8.TabStop = false;
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(26, 85);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(383, 203);
+            this.dataGridView1.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(511, 66);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(134, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "INCIDENCIAS EN CURSO";
             // 
             // FormTecnicosJefeTaller
             // 
@@ -184,10 +212,11 @@
             this.Load += new System.EventHandler(this.FormTecnicosJefeTaller_Load);
             this.PanelBarraTitulo.ResumeLayout(false);
             this.PanelBarraTitulo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTecnicos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -205,5 +234,7 @@
         private System.Windows.Forms.Label lblId;
         private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.DataGridView dgvTecnicos;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label1;
     }
 }

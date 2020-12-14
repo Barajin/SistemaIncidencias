@@ -79,7 +79,7 @@ namespace Sistema_Incidencias
         {
             if (e.ColumnIndex == dgvIncidencias.Columns["Solucionar"].Index)
             {
-                int idIncidenciaEnviar = Convert.ToInt32(dgvIncidencias.Rows[e.RowIndex].Cells[0].Value.ToString());
+                int idIncidenciaEnviar = Convert.ToInt32(dgvIncidencias.Rows[e.RowIndex].Cells[2].Value.ToString());
 
                 AsignarSolucion soluciones = new AsignarSolucion(idIncidenciaEnviar);
                 soluciones.ShowDialog();
@@ -88,7 +88,7 @@ namespace Sistema_Incidencias
 
                 if (e.ColumnIndex == dgvIncidencias.Columns["Finalizar"].Index)
             {
-                string id = dgvIncidencias.Rows[e.RowIndex].Cells[0].Value.ToString();
+                string id = dgvIncidencias.Rows[e.RowIndex].Cells[2].Value.ToString();
 
                 var connetionString = "Server=.\\SQLEXPRESS; Database= Sistema_Incidencias; Integrated Security=True";
                 
@@ -108,6 +108,7 @@ namespace Sistema_Incidencias
                         else
                         {
                             MessageBox.Show("Incidencia finalizada.", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            
                         }
                     }
                 }
@@ -173,5 +174,16 @@ namespace Sistema_Incidencias
         {
 
         }
+
+        private void FormIncidenciasAsignadasTecnico_Activated(object sender, EventArgs e)
+        {
+            llenarTablaTerminados();
+            dgvIncidencias.DataSource = null;
+            llenarTablaPendientes();
+         
+
+        }
+
+
     }
 }

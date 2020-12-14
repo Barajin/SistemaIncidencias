@@ -47,7 +47,7 @@ namespace Sistema_Incidencias
                          "join persona on persona.id = cargo_persona.fk_persona join elementoTI on elementoTI.id = inc.elementoTI  " +
                          "join tipos_elementoTI on tipos_elementoTI.id = elementoTI.tipo " +
                          "join departamento on departamento.id = inc.departamento " +
-                         "where ti.nombre = 'Hardware'";
+                         "where ti.nombre = 'Hardware' and i.estado = 1";
             }
 
             else if (UserLoginCache.Cargo == "Jefe de Taller de Software" || UserLoginCache.Cargo == "Técnico en Software")
@@ -59,7 +59,7 @@ namespace Sistema_Incidencias
                       "join incidencia_detalle inc on inc.fk_incidencia = i.id " +
                       "join cargo_persona on cargo_persona.fk_departamento = inc.departamento " +
                       "join persona on persona.id = cargo_persona.fk_persona " +
-                      "where ti.nombre = 'Software'";
+                      "where ti.nombre = 'Software' and i.estado = 1";
             }
 
             else if (UserLoginCache.Cargo == "Jefe de Taller de Redes" || UserLoginCache.Cargo == "Técnico en Redes")
@@ -71,7 +71,7 @@ namespace Sistema_Incidencias
                       "join incidencia_detalle inc on inc.fk_incidencia = i.id " +
                       "join cargo_persona on cargo_persona.fk_departamento = inc.departamento " +
                       "join persona on persona.id = cargo_persona.fk_persona " +
-                      "where ti.nombre = 'Redes'";
+                      "where ti.nombre = 'Redes' and i.estado = 1";
             }
 
 

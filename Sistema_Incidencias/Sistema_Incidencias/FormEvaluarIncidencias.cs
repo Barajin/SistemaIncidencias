@@ -75,7 +75,7 @@ namespace Sistema_Incidencias
                 {
                     using (var cmd = cn.CreateCommand())
                     {
-                        cmd.CommandText = "SELECT id, titulo,calificacion From incidencia where calificacion is null";
+                        cmd.CommandText = "SELECT id, titulo,calificacion From incidencia where estado = 5 and persona = " + UserLoginCache.id;
                         da.SelectCommand = cmd;
                         var dt = new DataTable();
                         da.Fill(dt);
@@ -96,7 +96,7 @@ namespace Sistema_Incidencias
 
             using (SqlConnection connection = new SqlConnection(connString))
             {
-                String query = "UPDATE incidencia SET calificacion =" + comboBox2.SelectedItem + " WHERE id = " + comboBox1.SelectedValue;
+                String query = "UPDATE incidencia SET calificacion =" + comboBox2.SelectedItem + ", " + "estado = 6 " + " WHERE id = " + comboBox1.SelectedValue;
 
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {

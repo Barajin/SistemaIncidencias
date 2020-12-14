@@ -23,6 +23,7 @@ namespace Sistema_Incidencias
         {
             lblId.Text = UserLoginCache.departamento.ToString();
             llenarTabla();
+            InformacionPersona();
         }
 
         public void llenarTabla()
@@ -30,25 +31,31 @@ namespace Sistema_Incidencias
             var select = "";
             if(UserLoginCache.Cargo == "Jefe de Taller de Hardware")
             {
-                select = "select p.nombre + ' ' + p.apellidoPaterno as 'Nombre completo', cp.cargo, count(incidencia_detalle.fk_incidencia) as 'Incidencias asignadas' from persona p  " +
-                    "join cargo_persona cp on p.id = cp.fk_persona " +
-                    "left join incidencia_detalle on incidencia_detalle.tecnico = p.id where cp.cargo like 'Técnico en Hardware%' " +
-                    "group by incidencia_detalle.fk_incidencia, p.nombre, p.apellidoPaterno, cp.cargo";
+                select = "Select p.nombre + ' ' + p.apellidoPaterno as 'Nombre completo',  count(p.id) as 'Incidencias asignadas' from persona p " +
+                    "join cargo_persona cp on p.id = cp.fk_persona left join incidencia_detalle on incidencia_detalle.tecnico = p.id  " +
+                    "join incidencia on incidencia.id = incidencia_detalle.fk_incidencia  " +
+                    "where cp.cargo like 'Técnico en Hardware%' and estado < 6 " +
+                    "group by p.id, p.apellidoPaterno, p.nombre " +
+                    "order by p.id desc";
             }
             else if (UserLoginCache.Cargo == "Jefe de Taller de Software")
             {
-                select = "select p.nombre + ' ' + p.apellidoPaterno as 'Nombre completo', cp.cargo, count(incidencia_detalle.fk_incidencia) as 'Incidencias asignadas' from persona p  " +
-                  "join cargo_persona cp on p.id = cp.fk_persona " +
-                  "left join incidencia_detalle on incidencia_detalle.tecnico = p.id where cp.cargo like 'Técnico en Software%' " +
-                  "group by incidencia_detalle.fk_incidencia, p.nombre, p.apellidoPaterno, cp.cargo";
+                select = "select p.id, p.nombre + ' ' + p.apellidoPaterno as 'Nombre completo',  count(p.id) as 'Incidencias asignadas' from persona p " +
+                  "join cargo_persona cp on p.id = cp.fk_persona left join incidencia_detalle on incidencia_detalle.tecnico = p.id  " +
+                  "join incidencia on incidencia.id = incidencia_detalle.fk_incidencia  " +
+                  "where cp.cargo like 'Técnico en Software%' and estado < 6 " +
+                  "group by p.id, p.apellidoPaterno, p.nombre " +
+                  "order by p.id desc";
             }
 
             else if(UserLoginCache.Cargo == "Jefe de Taller de Redes")
             {
-                select = "select p.nombre + ' ' + p.apellidoPaterno as 'Nombre completo', cp.cargo, count(incidencia_detalle.fk_incidencia) as 'Incidencias asignadas' from persona p  " +
-                    "join cargo_persona cp on p.id = cp.fk_persona " +
-                    "left join incidencia_detalle on incidencia_detalle.tecnico = p.id where cp.cargo like 'Técnico en Redes%' " +
-                    "group by incidencia_detalle.fk_incidencia, p.nombre, p.apellidoPaterno, cp.cargo";
+                select = "select p.id, p.nombre + ' ' + p.apellidoPaterno as 'Nombre completo',  count(p.id) as 'Incidencias asignadas' from persona p " +
+                  "join cargo_persona cp on p.id = cp.fk_persona left join incidencia_detalle on incidencia_detalle.tecnico = p.id  " +
+                  "join incidencia on incidencia.id = incidencia_detalle.fk_incidencia  " +
+                  "where cp.cargo like 'Técnico en Redes%' and estado < 6 " +
+                  "group by p.id, p.apellidoPaterno, p.nombre " +
+                  "order by p.id desc";
             }
             
 
@@ -67,6 +74,36 @@ namespace Sistema_Incidencias
             //menu.Show();
             // this.Close();
             this.Close();
+        }
+
+        public void InformacionPersona()
+        {
+            var select = "";
+            if (UserLoginCache.Cargo == "Jefe de Taller de Hardware")
+            {
+                select = "Select p.id, p.nombre + ' ' + p.apellidoPaterno as 'Nombre completo', cp.cargo From persona p " +
+                    "inner join cargo_persona cp on p.id = cp.fk_persona where cp.cargo like 'Técnico en Hardware%'";
+            }
+            else if (UserLoginCache.Cargo == "Jefe de Taller de Software")
+            {
+                select = "Select p.id, p.nombre + ' ' + p.apellidoPaterno as 'Nombre completo', cp.cargo From persona p " +
+                    "inner join cargo_persona cp on p.id = cp.fk_persona where cp.cargo like 'Técnico en Software%'";
+            }
+
+            else if (UserLoginCache.Cargo == "Jefe de Taller de Redes")
+            {
+                select = "Select p.id, p.nombre + ' ' + p.apellidoPaterno as 'Nombre completo', cp.cargo From persona p " +
+                    "inner join cargo_persona cp on p.id = cp.fk_persona where cp.cargo like 'Técnico en Redes%'";
+            }
+
+
+            var comando = new SqlConnection("Server=.\\SQLEXPRESS; Database= Sistema_Incidencias; Integrated Security=True"); // Your Connection String here
+            var dataAdapter = new SqlDataAdapter(select, comando);
+
+            var commandBuilder = new SqlCommandBuilder(dataAdapter);
+            var ds1 = new DataSet();
+            dataAdapter.Fill(ds1);
+            dataGridView1.DataSource = ds1.Tables[0];
         }
 
 
